@@ -46,5 +46,9 @@
   {"name": "SoundCloud", "category": "distribution", "url": "https://soundcloud.com/"},
   {"name": "iZotope Learn", "category": "learn", "url": "https://learn.izotope.com/"},
   {"name": "FMOD Learn", "category": "learn", "url": "https://www.fmod.com/learn"},
-  {"name": "Wwise Learn", "category": "learn", "url": "https://www.audiokinetic.com/learn/"}
+  {"name": "Wwise Learn", "category": "learn", "url": "https://www.audiokinetic.com/learn/"},
+  {"name": "Audient", "category": "hardware", "url": "https://audient.com/"},
+  {"name": "DistroKid", "category": "distribution", "url": "https://distrokid.com/"},
+  {"name": "Global Game Jam", "category": "community", "url": "https://globalgamejam.org/"},
+  {"name": "itch.io Game Jams", "category": "community", "url": "https://itch.io/jams"}
 ]
