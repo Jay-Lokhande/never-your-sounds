@@ -1,0 +1,10 @@
+[
+  {"name": "Audacity", "category": "daw", "url": "https://www.audacityteam.org/"},
+  {"name": "Reaper", "category": "daw", "url": "https://www.reaper.fm/"},
+  {"name": "LMMS", "category": "daw", "url": "https://lmms.io/"},
+  {"name": "MuseScore", "category": "notation", "url": "https://musescore.org/"},
+  {"name": "Freesound", "category": "samples", "url": "https://freesound.org/"},
+  {"name": "FMOD", "category": "game-audio", "url": "https://www.fmod.com/"},
+  {"name": "Wwise", "category": "game-audio", "url": "https://www.audiokinetic.com/"},
+  {"name": "OBS Studio", "category": "podcast", "url": "https://obsproject.com/"}
+]

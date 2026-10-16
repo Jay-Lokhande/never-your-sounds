@@ -1,0 +1,9 @@
+title: Sound Student
+description: FOSS and security grants — NLnet, Mozilla, GitHub Secure OSS
+theme: jekyll-theme-cayman
+markdown: GFM
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
