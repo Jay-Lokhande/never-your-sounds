@@ -1,5 +1,5 @@
 (function () {
-  var dataUrl = window.SOUND_STUDENT_DATA;
+  var dataUrl = window.NYS_CATALOG_DATA;
   if (!dataUrl) return;
 
   var listEl = document.getElementById("browse-list");

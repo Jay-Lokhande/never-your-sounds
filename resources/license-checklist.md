@@ -2,7 +2,7 @@
 
 Print or duplicate this list for each project (game jam, YouTube video, Bandcamp single, school assignment).
 
-Back: [samples-and-licensing guide](../guides/samples-and-licensing.md) · [Home on Pages](https://jay-lokhande.github.io/sound-student/)
+Back: [samples-and-licensing guide](../guides/samples-and-licensing.md) · [Home on Pages](https://jay-lokhande.github.io/never-your-sounds/)
 
 ---
 

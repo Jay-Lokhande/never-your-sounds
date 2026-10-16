@@ -1,7 +1,7 @@
-title: Sound Student
-description: One-stop hub for student music production, game audio, podcasts, legal samples, and edu pricing.
+title: Never Your Sounds
+description: Never Your Sounds — official student audio hub. DAWs, game SFX, podcasts, legal samples, edu pricing.
 url: https://jay-lokhande.github.io
-baseurl: /sound-student
+baseurl: /never-your-sounds
 markdown: GFM
 plugins:
   - jekyll-relative-links

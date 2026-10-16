@@ -1,6 +1,6 @@
 # Programs, competitions & community
 
-Sound Student focuses on **tools and official links**. Paid summers, hackathons, and tuition scholarships live in sister catalogs.
+Never Your Sounds focuses on **tools and official links**. Paid summers, hackathons, and tuition scholarships live in sister catalogs.
 
 | Goal | Catalog |
 | --- | --- |

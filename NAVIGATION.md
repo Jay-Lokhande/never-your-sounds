@@ -1,11 +1,11 @@
-# Navigation — Sound Student (one stop)
+# Navigation — Never Your Sounds (one stop)
 
 | I want… | Go to |
 | --- | --- |
 | **Start** | [resources/start-here.md](resources/start-here.md) |
 | **Hub (all dev catalogs)** | [student-dev-catalogs](https://jay-lokhande.github.io/student-dev-catalogs/) |
 | Sister catalogs | [resources/sister-repos.md](resources/sister-repos.md) |
-| **Pages** | [student-dev-catalogs](https://jay-lokhande.github.io/student-dev-catalogs/) · [oss-programs-and-hackathons](https://jay-lokhande.github.io/oss-programs-and-hackathons/) · [build-grants](https://jay-lokhande.github.io/build-grants/) · [hack-safe](https://jay-lokhande.github.io/hack-safe/) · [ai-catalog](https://jay-lokhande.github.io/ai-catalog/) · [coding-platforms](https://jay-lokhande.github.io/coding-platforms/) · [public-apis](https://jay-lokhande.github.io/public-apis/) · [design-for-devs](https://jay-lokhande.github.io/design-for-devs/) · [cloud-student](https://jay-lokhande.github.io/cloud-student/) · [maker-student](https://jay-lokhande.github.io/maker-student/) · [game-dev-student](https://jay-lokhande.github.io/game-dev-student/) · [sound-student](https://jay-lokhande.github.io/sound-student/) |
+| **Pages** | [student-dev-catalogs](https://jay-lokhande.github.io/student-dev-catalogs/) · [oss-programs-and-hackathons](https://jay-lokhande.github.io/oss-programs-and-hackathons/) · [build-grants](https://jay-lokhande.github.io/build-grants/) · [hack-safe](https://jay-lokhande.github.io/hack-safe/) · [ai-catalog](https://jay-lokhande.github.io/ai-catalog/) · [coding-platforms](https://jay-lokhande.github.io/coding-platforms/) · [public-apis](https://jay-lokhande.github.io/public-apis/) · [design-for-devs](https://jay-lokhande.github.io/design-for-devs/) · [cloud-student](https://jay-lokhande.github.io/cloud-student/) · [maker-student](https://jay-lokhande.github.io/maker-student/) · [game-dev-student](https://jay-lokhande.github.io/game-dev-student/) · [never-your-sounds](https://jay-lokhande.github.io/never-your-sounds/) |
 
 ## Topic guides
 
@@ -36,5 +36,5 @@
 | Accessibility | [guides/accessibility.md](guides/accessibility.md) |
 | Maintainers | [MAINTAINERS.md](MAINTAINERS.md) |
 | Audio scams | [resources/audio-scams.md](resources/audio-scams.md) |
-| GitHub Pages | [jay-lokhande.github.io/sound-student](https://jay-lokhande.github.io/sound-student/) |
+| GitHub Pages | [jay-lokhande.github.io/never-your-sounds](https://jay-lokhande.github.io/never-your-sounds/) |
 | Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |

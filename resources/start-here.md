@@ -1,6 +1,6 @@
 # Start here
 
-Sound Student is a **one-stop** catalog: pick a path, open one guide, follow official links only.
+Never Your Sounds is a **one-stop** catalog: pick a path, open one guide, follow official links only.
 
 ## 1 — Pick your path
 

@@ -1,6 +1,6 @@
 # Contributing
 
-Sound Student is a **one-stop hub**: overview in [README.md](README.md), detailed tables in [guides/](guides/), paths in [resources/start-here.md](resources/start-here.md).
+Never Your Sounds is a **one-stop hub**: overview in [README.md](README.md), detailed tables in [guides/](guides/), paths in [resources/start-here.md](resources/start-here.md).
 
 When adding a tool:
 
