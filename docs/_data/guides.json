@@ -1,0 +1,12 @@
+[
+  {"icon": "🎛", "title": "Production", "blurb": "DAWs, plugins, MIDI, FFmpeg", "path": "guides/production.md"},
+  {"icon": "🎓", "title": "Edu pricing", "blurb": "Ableton, Pro Tools, Adobe — official stores", "path": "guides/edu-pricing.md"},
+  {"icon": "🎮", "title": "Game audio", "blurb": "FMOD, Wwise, engine docs", "path": "guides/game-audio.md"},
+  {"icon": "🎙", "title": "Podcast & stream", "blurb": "OBS, hosts, routing", "path": "guides/podcast-and-streaming.md"},
+  {"icon": "📜", "title": "Samples & licensing", "blurb": "CC, SFX, attribution habits", "path": "guides/samples-and-licensing.md"},
+  {"icon": "📚", "title": "Learn & theory", "blurb": "Notation, MOOCs, vendor learn", "path": "guides/learn-and-theory.md"},
+  {"icon": "✨", "title": "AI audio", "blurb": "Bridge to ai-catalog", "path": "guides/ai-audio.md"},
+  {"icon": "🔌", "title": "Hardware", "blurb": "Interfaces and mics", "path": "guides/hardware.md"},
+  {"icon": "🚀", "title": "Release", "blurb": "Bandcamp, distributors", "path": "guides/release-and-distribution.md"},
+  {"icon": "🤝", "title": "Programs & community", "blurb": "Jams, OSS summers", "path": "guides/programs-and-community.md"}
+]

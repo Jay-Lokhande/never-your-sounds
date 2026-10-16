@@ -1,9 +1,19 @@
 title: Sound Student
-description: FOSS and security grants — NLnet, Mozilla, GitHub Secure OSS
-theme: jekyll-theme-cayman
+description: One-stop hub for student music production, game audio, podcasts, legal samples, and edu pricing.
+url: https://jay-lokhande.github.io
+baseurl: /sound-student
 markdown: GFM
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
+defaults:
+  - scope:
+      path: site
+    values:
+      layout: page
+  - scope:
+      path: browse.html
+    values:
+      layout: page

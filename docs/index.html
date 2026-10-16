@@ -1,0 +1,91 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <title>{{ site.title }} — Student audio hub</title>
+</head>
+<body class="page-home">
+  {% include site-header.html %}
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">One-stop platform</p>
+        <h1>Build sound with confidence.</h1>
+        <p class="hero-lead">DAWs, game audio, podcasts, legal samples, edu pricing, and safe links to AI tools — curated for students. Every link goes to an official vendor site.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{{ site.baseurl }}/site/resources/start-here.html">Start here</a>
+          <a class="btn btn-ghost" href="{{ site.baseurl }}/browse.html">Browse tools</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="wave-panel">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+        <p class="hero-caption">Produce · Game · Podcast · Release</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="paths wrap">
+    <h2 class="section-title">Pick a path</h2>
+    <div class="path-grid">
+      {% for track in site.data.tracks %}
+      <a class="path-card" href="{{ site.baseurl }}/site/{{ track.steps.first.guide | replace: '.md', '.html' }}">
+        <span class="path-id">{{ track.id }}</span>
+        <h3>{{ track.title }}</h3>
+        <p>{{ track.steps.size }} steps · official links</p>
+      </a>
+      {% endfor %}
+      <a class="path-card path-card-warn" href="{{ site.baseurl }}/site/resources/audio-scams.html">
+        <span class="path-id">safe</span>
+        <h3>Too good to be true?</h3>
+        <p>Cracks, fake plugins, scam samples</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="guides wrap" id="guides">
+    <h2 class="section-title">Topic guides</h2>
+    <p class="section-sub">Full tables live in each guide — production, licensing, hardware, and more.</p>
+    <div class="guide-grid">
+      {% assign guides = site.data.guides %}
+      {% for g in guides %}
+      <a class="guide-card" href="{{ site.baseurl }}/site/{{ g.path | replace: '.md', '.html' }}">
+        <span class="guide-icon" aria-hidden="true">{{ g.icon }}</span>
+        <h3>{{ g.title }}</h3>
+        <p>{{ g.blurb }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="cta wrap">
+    <div class="cta-panel">
+      <h2>Machine-readable index</h2>
+      <p>Use <code>sound-resources.json</code> and <code>tracks.json</code> in apps, coursework, or your own dashboards.</p>
+      <div class="cta-links">
+        <a href="{{ site.baseurl }}/site/data/sound-resources.json">sound-resources.json</a>
+        <a href="{{ site.baseurl }}/site/data/tracks.json">tracks.json</a>
+        <a href="{{ site.baseurl }}/site/README.html">Full README</a>
+      </div>
+    </div>
+  </section>
+
+  {% include site-footer.html %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="page-doc">
+  {% include site-header.html %}
+  <article class="doc wrap">
+    {% if page.url contains '/site/README' %}
+    <p class="doc-eyebrow">Overview</p>
+    <p class="doc-callout">Prefer the visual hub? <a href="{{ site.baseurl }}/">Open the home page</a> for paths and guide cards.</p>
+    {% elsif page.url contains '/guides/' %}
+    <p class="doc-eyebrow">Guide</p>
+    {% elsif page.url contains '/resources/' %}
+    <p class="doc-eyebrow">Resource</p>
+    {% endif %}
+    <div class="doc-body prose">
+      {{ content }}
+    </div>
+    <p class="doc-back"><a href="{{ site.baseurl }}/">← Back to home</a></p>
+  </article>
+  {% include site-footer.html %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "produce",
+    "title": "Produce music",
+    "steps": [
+      {"label": "Pick a DAW", "guide": "guides/production.md", "categories": ["daw"]},
+      {"label": "Check edu pricing", "guide": "guides/edu-pricing.md", "categories": ["edu"]},
+      {"label": "Free instruments", "guide": "guides/production.md", "categories": ["plugin"]},
+      {"label": "Learn mixing basics", "guide": "guides/learn-and-theory.md", "categories": ["learn"]}
+    ]
+  },
+  {
+    "id": "game-audio",
+    "title": "Game & interactive audio",
+    "steps": [
+      {"label": "Legal SFX libraries", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
+      {"label": "Middleware (FMOD / Wwise)", "guide": "guides/game-audio.md", "categories": ["game-audio"]},
+      {"label": "Engine audio docs", "guide": "guides/game-audio.md", "categories": ["game-audio"]},
+      {"label": "Ship a jam build", "guide": "guides/programs-and-community.md", "categories": []}
+    ]
+  },
+  {
+    "id": "podcast",
+    "title": "Podcast & video",
+    "steps": [
+      {"label": "Record & edit", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast", "daw"]},
+      {"label": "Stream routing", "guide": "guides/production.md", "categories": ["utility"]},
+      {"label": "Host & publish", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast"]},
+      {"label": "Captions & a11y", "guide": "guides/ai-audio.md", "categories": []}
+    ]
+  },
+  {
+    "id": "release",
+    "title": "Release a track",
+    "steps": [
+      {"label": "Master / loudness (learn)", "guide": "guides/learn-and-theory.md", "categories": ["learn"]},
+      {"label": "Sample licenses filed", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
+      {"label": "Distribution", "guide": "guides/release-and-distribution.md", "categories": ["distribution"]}
+    ]
+  }
+]

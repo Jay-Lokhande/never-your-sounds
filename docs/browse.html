@@ -1,0 +1,23 @@
+---
+title: Browse tools
+description: Search the Sound Student JSON catalog of official audio tools and resources.
+layout: page
+---
+<div class="browse-header">
+  <h1>Browse catalog</h1>
+  <p>Filter by name or category. Data from <a href="{{ site.baseurl }}/site/data/sound-resources.json">sound-resources.json</a>.</p>
+</div>
+
+<div class="browse-toolbar">
+  <label class="sr-only" for="browse-q">Search</label>
+  <input type="search" id="browse-q" class="browse-input" placeholder="Search tools…" autocomplete="off">
+  <div class="browse-filters" id="browse-filters" role="group" aria-label="Category filters"></div>
+</div>
+
+<p class="browse-meta" id="browse-meta" aria-live="polite"></p>
+<ul class="browse-list" id="browse-list"></ul>
+
+<script>
+  window.SOUND_STUDENT_DATA = "{{ site.baseurl }}/site/data/sound-resources.json";
+</script>
+<script src="{{ site.baseurl }}/assets/js/browse.js" defer></script>

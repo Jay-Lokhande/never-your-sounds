@@ -9,4 +9,6 @@ mkdir -p "$SITE/resources" "$SITE/data" "$SITE/guides"
 for f in "$ROOT/resources/"*.md; do [ -f "$f" ] && cp "$f" "$SITE/resources/"; done
 for f in "$ROOT/guides/"*.md; do [ -f "$f" ] && cp "$f" "$SITE/guides/"; done
 for f in "$ROOT/data/"*.json; do [ -f "$f" ] && cp "$f" "$SITE/data/"; done
-echo "Synced $(find "$SITE" -type f | wc -l) files"
+mkdir -p "$ROOT/docs/_data"
+[ -f "$ROOT/data/tracks.json" ] && cp "$ROOT/data/tracks.json" "$ROOT/docs/_data/tracks.json"
+echo "Synced $(find "$SITE" -type f | wc -l) site files (+ docs/_data)"
