@@ -6,7 +6,8 @@
       {"label": "Pick a DAW", "guide": "guides/production.md", "categories": ["daw"]},
       {"label": "Check edu pricing", "guide": "guides/edu-pricing.md", "categories": ["edu"]},
       {"label": "Free instruments", "guide": "guides/production.md", "categories": ["plugin"]},
-      {"label": "Learn mixing basics", "guide": "guides/learn-and-theory.md", "categories": ["learn"]}
+      {"label": "Learn mixing basics", "guide": "guides/learn-and-theory.md", "categories": ["learn"]},
+      {"label": "License checklist", "guide": "resources/license-checklist.md", "categories": []}
     ]
   },
   {
@@ -26,7 +27,17 @@
       {"label": "Record & edit", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast", "daw"]},
       {"label": "Stream routing", "guide": "guides/production.md", "categories": ["utility"]},
       {"label": "Host & publish", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast"]},
-      {"label": "Captions & a11y", "guide": "guides/ai-audio.md", "categories": []}
+      {"label": "Captions & a11y", "guide": "guides/accessibility.md", "categories": []}
+    ]
+  },
+  {
+    "id": "film",
+    "title": "Film & YouTube mix",
+    "steps": [
+      {"label": "Edit dialog", "guide": "guides/film-and-video.md", "categories": ["video", "daw"]},
+      {"label": "LUFS / loudness", "guide": "guides/film-and-video.md", "categories": ["plugin"]},
+      {"label": "Clear samples", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
+      {"label": "License checklist", "guide": "resources/license-checklist.md", "categories": []}
     ]
   },
   {

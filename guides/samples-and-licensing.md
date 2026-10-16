@@ -22,4 +22,6 @@
 2. Keep attribution text in your game credits or video description when required.  
 3. “Royalty-free” on a random blog is not a license — use the **official** library site above.
 
+Printable list: [resources/license-checklist.md](../resources/license-checklist.md)
+
 Back: [game-audio.md](game-audio.md) · [README](../README.md)

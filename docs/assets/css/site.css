@@ -489,6 +489,39 @@ a:hover { color: #a5f3eb; }
   border-radius: var(--radius-sm);
 }
 
+.browse-item-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.browse-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.browse-badge {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.browse-cost {
+  border-color: rgba(201, 162, 39, 0.35);
+  color: var(--accent);
+}
+
+.browse-plat {
+  border-color: rgba(110, 231, 217, 0.2);
+  color: var(--accent-2);
+}
+
 .browse-list a {
   font-weight: 600;
   color: var(--text);

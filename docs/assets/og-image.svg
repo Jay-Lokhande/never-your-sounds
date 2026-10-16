@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0e14"/>
+      <stop offset="100%" style="stop-color:#181c28"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="200" width="12" height="180" rx="6" fill="#c9a227" opacity="0.9"/>
+  <rect x="110" y="160" width="12" height="260" rx="6" fill="#d4af37"/>
+  <rect x="140" y="190" width="12" height="200" rx="6" fill="#6ee7d9"/>
+  <rect x="170" y="140" width="12" height="300" rx="6" fill="#c9a227"/>
+  <rect x="200" y="175" width="12" height="230" rx="6" fill="#6ee7d9"/>
+  <text x="80" y="120" fill="#e8eaf0" font-family="Georgia, serif" font-size="56" font-weight="600">Sound Student</text>
+  <text x="80" y="480" fill="#9aa3b5" font-family="system-ui, sans-serif" font-size="32">One-stop hub for student audio</text>
+</svg>

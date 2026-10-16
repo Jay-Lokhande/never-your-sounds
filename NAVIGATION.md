@@ -13,7 +13,9 @@
 | --- | --- |
 | Production & DAWs | [guides/production.md](guides/production.md) |
 | Edu pricing | [guides/edu-pricing.md](guides/edu-pricing.md) |
+| Film & video | [guides/film-and-video.md](guides/film-and-video.md) |
 | Game audio | [guides/game-audio.md](guides/game-audio.md) |
+| Accessibility | [guides/accessibility.md](guides/accessibility.md) |
 | Podcast / stream | [guides/podcast-and-streaming.md](guides/podcast-and-streaming.md) |
 | Samples & licenses | [guides/samples-and-licensing.md](guides/samples-and-licensing.md) |
 | Learn & theory | [guides/learn-and-theory.md](guides/learn-and-theory.md) |
@@ -29,6 +31,10 @@
 | Overview + flowchart | [README.md](README.md) |
 | JSON tools | [data/sound-resources.json](data/sound-resources.json) |
 | JSON paths | [data/tracks.json](data/tracks.json) |
+| License checklist | [resources/license-checklist.md](resources/license-checklist.md) |
+| Film & video | [guides/film-and-video.md](guides/film-and-video.md) |
+| Accessibility | [guides/accessibility.md](guides/accessibility.md) |
+| Maintainers | [MAINTAINERS.md](MAINTAINERS.md) |
 | Audio scams | [resources/audio-scams.md](resources/audio-scams.md) |
 | GitHub Pages | [jay-lokhande.github.io/sound-student](https://jay-lokhande.github.io/sound-student/) |
 | Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |

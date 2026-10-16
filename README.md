@@ -24,6 +24,7 @@ flowchart TD
   start --> theory[Notation and theory]
   start --> ai[AI voice / music / transcription]
   start --> release[Release on Bandcamp / streaming]
+  start --> film[Film or YouTube mix]
   start --> safe[Deals that look too good]
 
   prod --> g1[guides/production.md]
@@ -33,6 +34,7 @@ flowchart TD
   theory --> g4[guides/learn-and-theory.md]
   ai --> g5[guides/ai-audio.md]
   release --> g6[guides/release-and-distribution.md]
+  film --> g7[guides/film-and-video.md]
   safe --> scam[resources/audio-scams.md]
   scam --> g1
 ```
@@ -51,7 +53,10 @@ flowchart TD
 | OBS, podcast hosts, Riverside | [guides/podcast-and-streaming.md](guides/podcast-and-streaming.md) |
 | CC samples, SFX, attribution | [guides/samples-and-licensing.md](guides/samples-and-licensing.md) |
 | Theory, MOOCs, vendor learn portals | [guides/learn-and-theory.md](guides/learn-and-theory.md) |
+| Film, YouTube, dialog & LUFS | [guides/film-and-video.md](guides/film-and-video.md) |
+| Captions & accessible media | [guides/accessibility.md](guides/accessibility.md) |
 | AI TTS / music (bridge to ai-catalog) | [guides/ai-audio.md](guides/ai-audio.md) |
+| Before you ship (checklist) | [resources/license-checklist.md](resources/license-checklist.md) |
 | Interfaces, mics (official brands) | [guides/hardware.md](guides/hardware.md) |
 | Bandcamp, distributors | [guides/release-and-distribution.md](guides/release-and-distribution.md) |
 | Programs, jams, scholarships | [guides/programs-and-community.md](guides/programs-and-community.md) |

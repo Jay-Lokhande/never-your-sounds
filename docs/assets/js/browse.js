@@ -9,14 +9,21 @@
   var items = [];
   var activeCat = "";
 
+  function getQueryCat() {
+    var params = new URLSearchParams(window.location.search);
+    return params.get("cat") || "";
+  }
+
   function render() {
     var q = (qEl && qEl.value || "").trim().toLowerCase();
     var filtered = items.filter(function (item) {
       if (activeCat && item.category !== activeCat) return false;
       if (!q) return true;
+      var tagStr = (item.tags || []).join(" ").toLowerCase();
       return (
         item.name.toLowerCase().indexOf(q) !== -1 ||
-        item.category.toLowerCase().indexOf(q) !== -1
+        item.category.toLowerCase().indexOf(q) !== -1 ||
+        tagStr.indexOf(q) !== -1
       );
     });
 
@@ -27,8 +34,20 @@
     if (!listEl) return;
     listEl.innerHTML = filtered
       .map(function (item) {
+        var badges =
+          (item.cost
+            ? '<span class="browse-badge browse-cost">' + escapeHtml(item.cost) + "</span>"
+            : "") +
+          (item.platform && item.platform.length
+            ? item.platform
+                .map(function (p) {
+                  return '<span class="browse-badge browse-plat">' + escapeHtml(p) + "</span>";
+                })
+                .join("")
+            : "");
         return (
           "<li>" +
+          '<div class="browse-item-main">' +
           '<a href="' +
           item.url +
           '" rel="noopener">' +
@@ -37,6 +56,8 @@
           '<span class="browse-cat">' +
           escapeHtml(item.category) +
           "</span>" +
+          "</div>" +
+          (badges ? '<div class="browse-badges">' + badges + "</div>" : "") +
           "</li>"
         );
       })
@@ -44,21 +65,28 @@
   }
 
   function escapeHtml(s) {
-    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  }
+
+  function setActiveFilter(cat) {
+    activeCat = cat;
+    if (!filtersEl) return;
+    filtersEl.querySelectorAll(".filter-chip").forEach(function (b) {
+      var match = !cat ? b.textContent === "All" : b.dataset.cat === cat;
+      b.classList.toggle("is-active", match);
+    });
   }
 
   function buildFilters(categories) {
     if (!filtersEl) return;
+    filtersEl.innerHTML = "";
     var allBtn = document.createElement("button");
     allBtn.type = "button";
-    allBtn.className = "filter-chip is-active";
+    allBtn.className = "filter-chip";
     allBtn.textContent = "All";
     allBtn.addEventListener("click", function () {
-      activeCat = "";
-      filtersEl.querySelectorAll(".filter-chip").forEach(function (b) {
-        b.classList.remove("is-active");
-      });
-      allBtn.classList.add("is-active");
+      setActiveFilter("");
+      history.replaceState(null, "", window.location.pathname);
       render();
     });
     filtersEl.appendChild(allBtn);
@@ -67,13 +95,11 @@
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "filter-chip";
+      btn.dataset.cat = cat;
       btn.textContent = cat;
       btn.addEventListener("click", function () {
-        activeCat = cat;
-        filtersEl.querySelectorAll(".filter-chip").forEach(function (b) {
-          b.classList.remove("is-active");
-        });
-        btn.classList.add("is-active");
+        setActiveFilter(cat);
+        history.replaceState(null, "", "?cat=" + encodeURIComponent(cat));
         render();
       });
       filtersEl.appendChild(btn);
@@ -94,6 +120,12 @@
       });
       cats.sort();
       buildFilters(cats);
+      var initial = getQueryCat();
+      if (initial && cats.indexOf(initial) !== -1) {
+        setActiveFilter(initial);
+      } else {
+        setActiveFilter("");
+      }
       if (qEl) qEl.addEventListener("input", render);
       render();
     })
