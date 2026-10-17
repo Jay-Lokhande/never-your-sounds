@@ -1,52 +1,334 @@
 [
   {
+    "id": "first-beat",
+    "title": "Make your first beat",
+    "description": "Start small: a drum pattern, a bass part and a simple arrangement. Finish a short idea before collecting more tools.",
+    "outcome": "A saved session and a short beat export you can listen to away from your workstation.",
+    "steps": [
+      {
+        "label": "Set up one workstation",
+        "guide": "guides/production.md",
+        "categories": [
+          "daw"
+        ],
+        "action": "Choose one DAW that runs on your device. Create a project, choose a comfortable tempo and save it in a dedicated folder."
+      },
+      {
+        "label": "Build a four-bar groove",
+        "guide": "guides/production.md",
+        "categories": [
+          "plugin"
+        ],
+        "action": "Use an included drum instrument to place a kick, snare and hi-hat pattern. Loop four bars and change one rhythm or velocity at a time."
+      },
+      {
+        "label": "Add bass and a musical idea",
+        "guide": "guides/learn-and-theory.md",
+        "categories": [
+          "learn",
+          "notation"
+        ],
+        "action": "Choose a few notes from one scale. Make a bass part and a short melody, leaving space so the drums still feel clear."
+      },
+      {
+        "label": "Arrange and export a first draft",
+        "guide": "guides/production.md",
+        "categories": [],
+        "action": "Duplicate the loop into a short arrangement. Remove or add parts for contrast, lower any clipping channels, export and listen to the file from beginning to end."
+      },
+      {
+        "label": "Keep track of your sounds",
+        "guide": "resources/license-checklist.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "List the sources of any downloaded sounds. Save their terms and required credits before sharing your beat publicly."
+      }
+    ]
+  },
+  {
     "id": "produce",
     "title": "Produce music",
     "steps": [
-      {"label": "Pick a DAW", "guide": "guides/production.md", "categories": ["daw"]},
-      {"label": "Check edu pricing", "guide": "guides/edu-pricing.md", "categories": ["edu"]},
-      {"label": "Free instruments", "guide": "guides/production.md", "categories": ["plugin"]},
-      {"label": "Learn mixing basics", "guide": "guides/learn-and-theory.md", "categories": ["learn"]},
-      {"label": "License checklist", "guide": "resources/license-checklist.md", "categories": []}
+      {
+        "label": "Pick a DAW",
+        "guide": "guides/production.md",
+        "categories": [
+          "daw"
+        ],
+        "action": "Choose one workstation that fits your device. Create a project folder and save an empty session before adding sounds."
+      },
+      {
+        "label": "Check edu pricing",
+        "guide": "guides/edu-pricing.md",
+        "categories": [
+          "edu"
+        ],
+        "action": "If you qualify, compare the vendor's current education terms with its standard license. Check renewal and upgrade conditions before buying."
+      },
+      {
+        "label": "Free instruments",
+        "guide": "guides/production.md",
+        "categories": [
+          "plugin"
+        ],
+        "action": "Choose one instrument and make a four-bar part. Use the included sounds first, and note the license for any downloaded presets or samples."
+      },
+      {
+        "label": "Learn mixing basics",
+        "guide": "guides/learn-and-theory.md",
+        "categories": [
+          "learn"
+        ],
+        "action": "Arrange your parts, set levels before effects, then compare quietly with a reference you know. Make one change at a time and save a new version."
+      },
+      {
+        "label": "License checklist",
+        "guide": "resources/license-checklist.md",
+        "categories": [],
+        "action": "Review every external asset and keep its source, permission and credit requirements alongside the session."
+      }
+    ],
+    "description": "Learn music production and mixing through a small, repeatable session: one DAW, a few instruments and deliberate listening.",
+    "outcome": "A short arrangement with balanced levels and a saved project you can reopen."
+  },
+  {
+    "id": "artist",
+    "title": "Rapper & independent artist",
+    "description": "Create a repeatable writing, recording and release workflow with clear permissions and organized sessions.",
+    "outcome": "A vocal demo with an organized session, contributor notes and a next revision plan.",
+    "steps": [
+      {
+        "label": "Choose a beat and check permissions",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "Use an original beat or read the specific license for a licensed beat. Confirm the permitted release and keep the agreement with the project."
+      },
+      {
+        "label": "Write and rehearse a short section",
+        "guide": "guides/learn-and-theory.md",
+        "categories": [
+          "learn"
+        ],
+        "action": "Write a verse or hook, rehearse it against the beat and record a rough voice memo. Mark breath points and revise lines that feel rushed."
+      },
+      {
+        "label": "Record clean, organized takes",
+        "guide": "guides/production.md",
+        "categories": [
+          "daw"
+        ],
+        "action": "Record a level test and listen for clipping, room noise and headphone bleed. Name each take and keep the original recordings before choosing a comp."
+      },
+      {
+        "label": "Balance the voice and beat",
+        "guide": "guides/learn-and-theory.md",
+        "categories": [
+          "learn",
+          "plugin"
+        ],
+        "action": "Start with level and panning. Check that the words remain clear at quiet volume, and compare edits before adding more effects."
+      },
+      {
+        "label": "Prepare credits and a release plan",
+        "guide": "guides/release-and-distribution.md",
+        "categories": [
+          "distribution"
+        ],
+        "action": "Record contributors and agreed credits, gather permissions and choose a realistic next action: revise the demo, share privately for feedback or prepare a release."
+      }
+    ]
+  },
+  {
+    "id": "sample-workflow",
+    "title": "Build a responsible sample workflow",
+    "description": "Make source and permission records part of the creative process, from download to final credits.",
+    "outcome": "A sample folder with traceable sources, saved terms and credits for your intended project.",
+    "steps": [
+      {
+        "label": "Choose a traceable source",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "Find a sound on the original library or creator page. Record its file or pack name, creator and source URL; avoid download mirrors with unclear ownership."
+      },
+      {
+        "label": "Read the exact asset terms",
+        "guide": "resources/license-checklist.md",
+        "categories": [],
+        "action": "Check the license for the particular file and your intended use. Look for attribution, commercial-use, redistribution and modification conditions. If unclear, use another asset or ask the owner."
+      },
+      {
+        "label": "Save permission records with the audio",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [],
+        "action": "Keep a copy of the terms, download date, purchase receipt when relevant and required credit text alongside the original audio."
+      },
+      {
+        "label": "Build and document your session",
+        "guide": "guides/production.md",
+        "categories": [
+          "daw"
+        ],
+        "action": "Import working copies, label sample tracks clearly and record which assets appear in the finished arrangement. Keep originals separate from edited versions."
+      },
+      {
+        "label": "Review credits before publishing",
+        "guide": "resources/license-checklist.md",
+        "categories": [],
+        "action": "Match the final project against your asset list, add required credits and check whether the intended release fits the saved terms. Recheck any changed terms or unresolved permission questions."
+      }
     ]
   },
   {
     "id": "game-audio",
     "title": "Game & interactive audio",
     "steps": [
-      {"label": "Legal SFX libraries", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
-      {"label": "Middleware (FMOD / Wwise)", "guide": "guides/game-audio.md", "categories": ["game-audio"]},
-      {"label": "Engine audio docs", "guide": "guides/game-audio.md", "categories": ["game-audio"]},
-      {"label": "Ship a jam build", "guide": "guides/programs-and-community.md", "categories": []}
-    ]
+      {
+        "label": "Legal SFX libraries",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "Choose a small set of sound effects from the original source. Save each file's terms and credit text with the asset."
+      },
+      {
+        "label": "Middleware (FMOD / Wwise)",
+        "guide": "guides/game-audio.md",
+        "categories": [
+          "game-audio"
+        ],
+        "action": "Decide whether your project needs middleware. Follow the official introductory material and make a single event respond to a parameter."
+      },
+      {
+        "label": "Engine audio docs",
+        "guide": "guides/game-audio.md",
+        "categories": [
+          "game-audio"
+        ],
+        "action": "Connect one sound to an in-game action. Test its volume, looping and behavior when the action repeats or stops."
+      },
+      {
+        "label": "Ship a jam build",
+        "guide": "guides/programs-and-community.md",
+        "categories": [],
+        "action": "Build a small scene, test audio in the exported game and include required credits. Ask a collaborator to try it on another device."
+      }
+    ],
+    "description": "Move from a sound folder to a small interactive scene, with a repeatable test and credits workflow.",
+    "outcome": "A playable scene with a triggered sound, a tested mix and asset credits."
   },
   {
     "id": "podcast",
     "title": "Podcast & video",
     "steps": [
-      {"label": "Record & edit", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast", "daw"]},
-      {"label": "Stream routing", "guide": "guides/production.md", "categories": ["utility"]},
-      {"label": "Host & publish", "guide": "guides/podcast-and-streaming.md", "categories": ["podcast"]},
-      {"label": "Captions & a11y", "guide": "guides/accessibility.md", "categories": []}
-    ]
+      {
+        "label": "Record & edit",
+        "guide": "guides/podcast-and-streaming.md",
+        "categories": [
+          "podcast",
+          "daw"
+        ],
+        "action": "Record a short voice test, listen on headphones, then edit a two-minute segment. Keep an untouched copy of the original recording."
+      },
+      {
+        "label": "Stream routing",
+        "guide": "guides/production.md",
+        "categories": [
+          "utility"
+        ],
+        "action": "Route your microphone and playback to the recorder deliberately. Make a private test recording to catch missing sources, feedback or doubled audio."
+      },
+      {
+        "label": "Host & publish",
+        "guide": "guides/podcast-and-streaming.md",
+        "categories": [
+          "podcast"
+        ],
+        "action": "Compare hosting terms and export requirements at the source. Prepare a title, description and credits, then listen to the full exported file."
+      },
+      {
+        "label": "Captions & a11y",
+        "guide": "guides/accessibility.md",
+        "categories": [],
+        "action": "Create captions or a transcript, check names and technical words, and confirm the text matches the published audio."
+      }
+    ],
+    "description": "Build a recording and publishing routine for spoken audio, video or a live stream.",
+    "outcome": "A short edited recording with checked routing and an accessible transcript."
   },
   {
     "id": "film",
     "title": "Film & YouTube mix",
     "steps": [
-      {"label": "Edit dialog", "guide": "guides/film-and-video.md", "categories": ["video", "daw"]},
-      {"label": "LUFS / loudness", "guide": "guides/film-and-video.md", "categories": ["plugin"]},
-      {"label": "Clear samples", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
-      {"label": "License checklist", "guide": "resources/license-checklist.md", "categories": []}
-    ]
+      {
+        "label": "Edit dialog",
+        "guide": "guides/film-and-video.md",
+        "categories": [
+          "video",
+          "daw"
+        ],
+        "action": "Organize dialogue takes, trim distracting gaps and use short fades at edits. Listen for consistency before adding processing."
+      },
+      {
+        "label": "LUFS / loudness",
+        "guide": "guides/film-and-video.md",
+        "categories": [
+          "plugin"
+        ],
+        "action": "Check your destination's current loudness and true-peak specification. Measure the finished export with a suitable meter; a reference value alone is not a measurement."
+      },
+      {
+        "label": "Clear samples",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "Check the exact license for each music cue and sound effect, including your intended distribution and any attribution requirements."
+      },
+      {
+        "label": "License checklist",
+        "guide": "resources/license-checklist.md",
+        "categories": [],
+        "action": "Collect permissions and credits, review the final video from start to finish, and archive the delivered version with its project files."
+      }
+    ],
+    "description": "Make speech easy to follow and prepare a video mix with organized sources and delivery checks.",
+    "outcome": "An intelligible dialogue edit and an export checked against your destination's requirements."
   },
   {
     "id": "release",
     "title": "Release a track",
     "steps": [
-      {"label": "Master / loudness (learn)", "guide": "guides/learn-and-theory.md", "categories": ["learn"]},
-      {"label": "Sample licenses filed", "guide": "guides/samples-and-licensing.md", "categories": ["samples"]},
-      {"label": "Distribution", "guide": "guides/release-and-distribution.md", "categories": ["distribution"]}
-    ]
+      {
+        "label": "Master / loudness (learn)",
+        "guide": "guides/learn-and-theory.md",
+        "categories": [
+          "learn"
+        ],
+        "action": "Compare your final mix at matched listening level and check the export for clipping or missing endings. Read the destination's format requirements before delivery."
+      },
+      {
+        "label": "Sample licenses filed",
+        "guide": "guides/samples-and-licensing.md",
+        "categories": [
+          "samples"
+        ],
+        "action": "Keep source URLs, receipts, permission records and required credits for every external sample or beat. Resolve unclear permissions before publishing."
+      },
+      {
+        "label": "Distribution",
+        "guide": "guides/release-and-distribution.md",
+        "categories": [
+          "distribution"
+        ],
+        "action": "Compare current distributor terms, prepare artist and contributor metadata, confirm artwork permissions and check the uploaded audio before submitting."
+      }
+    ],
+    "description": "Turn a finished session into a release package with deliberate audio, rights and delivery checks.",
+    "outcome": "A checked audio export, an asset-permissions folder and a release metadata sheet."
   }
 ]

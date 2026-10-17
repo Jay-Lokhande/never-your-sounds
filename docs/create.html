@@ -1,0 +1,110 @@
+---
+layout: app
+title: Creator toolkit
+description: Tap a tempo, keep time, explore scales, and prepare your next release with useful browser-based audio tools.
+---
+<link rel="stylesheet" href="{{ '/assets/css/create.css' | relative_url }}">
+<div class="creator-page">
+  <header class="page-heading">
+    <p class="eyebrow">CREATE / YOUR SESSION STARTS HERE</p>
+    <h1>Less friction.<br><span class="accent-text">More making.</span></h1>
+    <p class="muted">A few good tools for the moments between inspiration and the finished track. Open a session. Find your tempo. Make your next move.</p>
+  </header>
+  <nav class="tool-nav" aria-label="Jump to a creator tool">
+    <a href="#tempo">01 Tempo</a><a href="#time">02 Musical time</a><a href="#scales">03 Scales</a><a href="#licensing">04 Licensing</a><a href="#release">05 Release</a><a href="#reference">06 Reference</a>
+  </nav>
+  <noscript><p class="tool-notice">Enable JavaScript for the calculators, metronome, scale selector, and saved checklists. The reference guides and printable checklist text remain available below.</p></noscript>
+
+  <section class="panel tempo-panel" id="tempo" aria-labelledby="tempo-title">
+    <div class="section-head"><div><p class="eyebrow">01 / GET IN THE POCKET</p><h2 id="tempo-title">Find your tempo.</h2></div><span class="badge">BROWSER AUDIO</span></div>
+    <div class="tempo-grid">
+      <div class="tap-tool">
+        <h3>Tap tempo</h3><p class="muted">Tap along with the quarter-note pulse. We'll average your last 8 intervals.</p>
+        <div class="tempo-readout"><output id="tap-bpm" aria-label="Estimated tempo">—</output><span>BPM</span></div>
+        <div class="tool-actions"><button type="button" class="btn btn-primary tap-button" id="tap-button">Tap the beat <span aria-hidden="true">↗</span></button><button type="button" class="btn btn-ghost" id="tap-reset">Reset taps</button></div>
+        <p class="tool-feedback" id="tap-status" role="status">Use the button, or press Space while it is focused.</p>
+        <button type="button" class="text-button" id="tap-use" disabled>Use this tempo in the metronome →</button>
+      </div>
+      <div class="metronome-tool" id="metronome">
+        <h3>Stay on time</h3>
+        <div class="tool-fields"><label for="metro-bpm">Tempo <span class="muted">(quarter-note BPM)</span><input id="metro-bpm" type="number" min="20" max="300" step="1" value="120" inputmode="numeric"></label><label for="metro-meter">Time signature<select id="metro-meter"><option>2/4</option><option>3/4</option><option selected>4/4</option><option>5/4</option><option>6/8</option><option>7/8</option><option>9/8</option><option>12/8</option></select></label></div>
+        <label class="range-label" for="metro-range">Adjust tempo <span id="metro-range-value">120 BPM</span></label><input type="range" id="metro-range" min="20" max="300" value="120" aria-label="Adjust metronome tempo">
+        <div id="beat-lights" class="beat-lights" aria-hidden="true"></div>
+        <div class="metro-options"><label class="checkbox-label"><input id="metro-accent" type="checkbox" checked> Accent the first beat</label><label for="metro-volume">Volume <input id="metro-volume" type="range" min="0" max="100" value="35" aria-label="Metronome volume"></label></div>
+        <button type="button" class="btn btn-primary" id="metro-toggle" aria-pressed="false">Start metronome</button>
+        <p class="tool-feedback" id="metro-status" role="status">Ready. Sound starts only when you press Start.</p>
+        <p class="small muted">One click per denominator note: in 6/8, six eighth-note clicks per bar. BPM stays quarter-note based. Playback stops when this page is hidden.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="tool-two-column">
+    <section class="panel" id="time" aria-labelledby="time-title">
+      <p class="eyebrow">02 / ARRANGEMENT MATH</p><h2 id="time-title">From bars to seconds.</h2><p class="muted">Plan a loop, a cue, or a whole track at a constant tempo.</p>
+      <form id="time-form">
+        <div class="tool-fields"><label for="time-bpm">Quarter-note BPM<input id="time-bpm" type="number" min="20" max="300" step="any" value="120" required></label><label for="time-meter">Time signature<select id="time-meter"><option>2/4</option><option>3/4</option><option selected>4/4</option><option>5/4</option><option>6/8</option><option>7/8</option><option>9/8</option><option>12/8</option></select></label></div>
+        <label for="time-direction">Convert<select id="time-direction"><option value="bars">Bars + beats → seconds</option><option value="seconds">Seconds → bars + beats</option></select></label>
+        <div class="tool-fields" id="time-bars-fields"><label for="time-bars">Whole bars<input id="time-bars" type="number" min="0" max="100000" step="1" value="8" required></label><label for="time-beats">Additional beats<input id="time-beats" type="number" min="0" max="100000" step="any" value="0" required></label></div>
+        <div id="time-seconds-field" hidden><label for="time-seconds">Duration in seconds<input id="time-seconds" type="number" min="0" max="86400" step="any" value="16" disabled required></label></div>
+        <button type="submit" class="btn btn-ghost">Calculate duration</button>
+      </form>
+      <div class="calculation-result" aria-live="polite" aria-atomic="true"><strong id="time-result">16 seconds</strong><p id="time-detail">8 bars × 4 beats × 0.5 seconds per beat.</p></div>
+      <p class="small muted">“Beat” here means the note named by the denominator. In 6/8, a beat is an eighth note; a dotted-quarter pulse spans three of them. Fractions of beats are supported.</p>
+    </section>
+    <section class="panel" id="scales" aria-labelledby="scales-title">
+      <p class="eyebrow">03 / FIND A STARTING POINT</p><h2 id="scales-title">A little musical direction.</h2><p class="muted">Choose a root and a scale. Use the notes as a starting point for a melody or a bassline.</p>
+      <div class="tool-fields"><label for="scale-root">Root note<select id="scale-root"><option value="C">C</option><option value="C#">C♯</option><option value="Db">D♭</option><option value="D">D</option><option value="Eb">E♭</option><option value="E">E</option><option value="F">F</option><option value="F#">F♯</option><option value="Gb">G♭</option><option value="G">G</option><option value="Ab">A♭</option><option value="A">A</option><option value="Bb">B♭</option><option value="B">B</option></select></label><label for="scale-type">Scale<select id="scale-type"><option value="major">Major</option><option value="minor">Natural minor</option><option value="dorian">Dorian</option><option value="mixolydian">Mixolydian</option><option value="majorPentatonic">Major pentatonic</option><option value="minorPentatonic">Minor pentatonic</option></select></label></div>
+      <div class="scale-output" aria-live="polite" aria-atomic="true"><h3 id="scale-title">C major</h3><ol class="scale-notes" id="scale-notes"><li>C</li><li>D</li><li>E</li><li>F</li><li>G</li><li>A</li><li>B</li></ol><p class="scale-formula" id="scale-formula">1 · 2 · 3 · 4 · 5 · 6 · 7</p></div>
+      <p class="small muted">Degrees are relative to the major scale on the same root. Notes are spelled for their scale: E♯ can be the correct name even though it shares a piano key with F. This is a note reference, with no audio playback.</p>
+      <a class="text-button" href="{{ '/site/guides/learn-and-theory.html' | relative_url }}">Keep learning music theory →</a>
+    </section>
+  </div>
+
+  <div class="section-head checklist-heading"><div><p class="eyebrow">THE LAST MILE</p><h2>A good idea deserves a good release.</h2></div><button type="button" id="print-checklists" class="btn btn-ghost">Print checklists</button></div>
+  <p class="tool-feedback storage-status" id="checklist-storage" role="status">Checklists are saved on this browser when storage is available.</p>
+  <div class="tool-two-column checklist-grid">
+    <section class="panel checklist-panel" id="licensing" aria-labelledby="licensing-title" data-checklist="licensing">
+      <p class="eyebrow">04 / KNOW WHAT YOU CAN USE</p><h2 id="licensing-title">Sample licensing.</h2><p class="muted">Work through this for each project. Free to download does not automatically mean free for every use.</p>
+      <label for="license-project">Project name <span class="muted">(optional)</span><input id="license-project" type="text" maxlength="120" placeholder="My next track" data-project></label>
+      <div class="checklist-progress"><progress max="6" value="0" aria-label="Sample licensing checklist completion"></progress><span data-progress-label>0 of 6 checked</span></div>
+      <div class="checklist-items">
+        <label><input type="checkbox" data-check="source"><span>I saved the original source, creator name, and license for every sample or recording.</span></label>
+        <label><input type="checkbox" data-check="scope"><span>I checked the terms for my intended use, including commercial release, edits, platforms, and distribution.</span></label>
+        <label><input type="checkbox" data-check="rights"><span>I checked any separate permissions needed for compositions, recordings, voices, or other included material.</span></label>
+        <label><input type="checkbox" data-check="credit"><span>I prepared any required credit, license links, and a description of my changes.</span></label>
+        <label><input type="checkbox" data-check="proof"><span>I kept dated copies of the terms and receipts with the project files.</span></label>
+        <label><input type="checkbox" data-check="unclear"><span>I resolved unclear permissions with the rights holder or replaced the material.</span></label>
+      </div>
+      <p class="small muted">For Creative Commons credits, a useful starting point is Title, Author, Source, License (TASL), plus changes when required. <a href="https://creativecommons.org/reusing-cc-licensed-content/" target="_blank" rel="noopener noreferrer">Read the official attribution guidance ↗</a></p>
+      <p class="small muted">This checklist records your review; it does not grant permission or certify clearance.</p>
+      <div class="tool-actions"><button type="button" class="btn btn-ghost" data-reset>Reset licensing checklist</button><a class="text-button" href="{{ '/site/guides/samples-and-licensing.html' | relative_url }}">Licensing guide →</a></div>
+    </section>
+    <section class="panel checklist-panel" id="release" aria-labelledby="release-title" data-checklist="release">
+      <p class="eyebrow">05 / READY WHEN YOU ARE</p><h2 id="release-title">Release readiness.</h2><p class="muted">A practical review before you send a finished track out into the world.</p>
+      <label for="release-project">Release name <span class="muted">(optional)</span><input id="release-project" type="text" maxlength="120" placeholder="My next release" data-project></label>
+      <div class="checklist-progress"><progress max="7" value="0" aria-label="Release readiness checklist completion"></progress><span data-progress-label>0 of 7 checked</span></div>
+      <div class="checklist-items">
+        <label><input type="checkbox" data-check="listen"><span>I listened to the complete final export, including the beginning, ending, fades, and silence.</span></label>
+        <label><input type="checkbox" data-check="translation"><span>I checked the mix on more than one playback system and in mono.</span></label>
+        <label><input type="checkbox" data-check="delivery"><span>I checked the destination's current file, channel, loudness, and artwork requirements.</span></label>
+        <label><input type="checkbox" data-check="clearance"><span>I finished the licensing review and agreed contributor credits, splits, and permissions.</span></label>
+        <label><input type="checkbox" data-check="metadata"><span>I proofread the artist name, track title, credits, lyrics, explicit-content flag, and release date.</span></label>
+        <label><input type="checkbox" data-check="backup"><span>I backed up the project, final master, stems where needed, artwork, and permission records.</span></label>
+        <label><input type="checkbox" data-check="schedule"><span>I allowed time for my distributor's review and checked the release preview before submitting.</span></label>
+      </div>
+      <p class="small muted">Progress reflects your own checks. Submission rules and processing times vary by destination.</p>
+      <div class="tool-actions"><button type="button" class="btn btn-ghost" data-reset>Reset release checklist</button><a class="text-button" href="{{ '/site/guides/release-and-distribution.html' | relative_url }}">Release guide →</a></div>
+    </section>
+  </div>
+
+  <section class="panel reference-panel" id="reference" aria-labelledby="reference-title">
+    <div class="section-head"><div><p class="eyebrow">06 / KEEP IT CLOSE</p><h2 id="reference-title">Your studio reference.</h2></div><span class="badge">EDUCATIONAL REFERENCE</span></div>
+    <p class="muted">Plain-language reminders for the session. These references do not measure or process an audio file.</p>
+    <div class="reference-grid">
+      <div><h3>Follow the signal</h3><ol class="signal-flow"><li><strong>Source</strong><span>Voice, instrument, or sample</span></li><li><strong>Input &amp; gain</strong><span>Set a clean recording level</span></li><li><strong>Track processing</strong><span>Edit, EQ, dynamics, and effects</span></li><li><strong>Bus &amp; master</strong><span>Combine and check your mix</span></li><li><strong>Export</strong><span>Render to the delivery format</span></li></ol><p class="small muted">A common recording path, not a fixed rule. Sends can route a copy to an effect; buses combine signals. Track your DAW's actual routing.</p></div>
+      <div><h3>Speak the language</h3><dl class="vocabulary"><dt>Gain staging</dt><dd>Managing level through each stage so a signal has useful headroom and avoids unwanted overload.</dd><dt>EQ</dt><dd>Changing the balance of frequency ranges. Try subtracting a problem before boosting everything else.</dd><dt>Compression</dt><dd>Reducing dynamic range according to threshold, ratio, attack, and release settings.</dd><dt>Latency</dt><dd>The delay between an input and its output. Audio buffering and processing can add to it.</dd><dt>Headroom</dt><dd>The space between the current signal level and a chosen limit, such as clipping.</dd></dl></div>
+      <div><h3>Loudness &amp; export</h3><dl class="vocabulary"><dt>LUFS</dt><dd>A loudness measure. Integrated loudness describes a programme over time; it is different from the highest peak.</dd><dt>dBTP</dt><dd>True-peak level estimates peaks in the reconstructed waveform, including peaks between samples.</dd><dt>Delivery format</dt><dd>Match the destination's requested format, sample rate, bit depth, and channel layout. Keep a lossless master.</dd><dt>Final listen</dt><dd>Reimport the exported file and listen through it. Check the correct version, tails, channel layout, and any unintended clipping.</dd></dl><p class="small muted">There is no single loudness target for every release. For example, <a href="https://tech.ebu.ch/publications/r128" target="_blank" rel="noopener noreferrer">EBU R 128 ↗</a> is a broadcast recommendation, not a universal music mastering preset. Use a suitable meter and your destination's current delivery specification.</p></div>
+    </div>
+  </section>
+</div>
+<script type="module" src="{{ '/assets/js/create.js' | relative_url }}"></script>

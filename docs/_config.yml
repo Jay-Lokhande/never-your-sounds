@@ -1,8 +1,10 @@
 title: Never Your Sounds
-description: Never Your Sounds — official student audio hub. DAWs, game SFX, podcasts, legal samples, edu pricing.
+description: Your entire audio world. One place. Discover audio resources, use browser tools, and build your craft with guided learning paths.
 url: https://jay-lokhande.github.io
 baseurl: /never-your-sounds
-markdown: GFM
+markdown: kramdown
+kramdown:
+  input: GFM
 plugins:
   - jekyll-relative-links
 relative_links:

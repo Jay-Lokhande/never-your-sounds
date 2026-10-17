@@ -1,19 +1,17 @@
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="logo" href="{{ site.baseurl }}/">
-      <span class="logo-mark" aria-hidden="true"></span>
-      <span class="logo-text">{{ site.title }}</span>
+    <a class="logo" href="{{ site.baseurl }}/" aria-label="Never Your Sounds home">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12v8m6-14v20m6-17v14m6-19v24m6-16v8"/></svg>
+      <span>NEVER YOUR<span class="logo-second">SOUNDS<span class="logo-dot">.</span></span></span>
     </a>
-    <nav class="nav-main" aria-label="Primary">
-      <a href="{{ site.baseurl }}/site/resources/start-here.html">Start</a>
-      <a href="{{ site.baseurl }}/#guides">Guides</a>
-      <a href="{{ site.baseurl }}/browse.html">Browse</a>
-      <a href="{{ site.baseurl }}/site/resources/license-checklist.html">Checklist</a>
-      <a href="{{ site.baseurl }}/site/resources/audio-scams.html">Stay safe</a>
-      <a class="nav-gh" href="https://github.com/Jay-Lokhande/never-your-sounds" rel="noopener">GitHub</a>
+    <button type="button" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav class="nav-main" id="primary-nav" aria-label="Primary">
+      <a href="{{ site.baseurl }}/browse.html"{% if page.url == '/browse.html' %} aria-current="page"{% endif %}>Discover</a>
+      <a href="{{ site.baseurl }}/create.html"{% if page.url == '/create.html' %} aria-current="page"{% endif %}>Create</a>
+      <a href="{{ site.baseurl }}/learn.html"{% if page.url == '/learn.html' %} aria-current="page"{% endif %}>Learn</a>
+      <a href="{{ site.baseurl }}/trust.html"{% if page.url == '/trust.html' %} aria-current="page"{% endif %}>Stay safe</a>
+      <a class="nav-gh" href="https://github.com/Jay-Lokhande/never-your-sounds">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
-    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>

@@ -16,3 +16,10 @@ jobs:
           python-version: "3.12"
       - name: Validate JSON catalog
         run: python3 scripts/validate-catalog.py
+      - name: Test catalogue validation failures
+        run: python3 scripts/test-validator.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test audio math and resource filtering
+        run: npm test

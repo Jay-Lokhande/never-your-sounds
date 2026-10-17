@@ -1,23 +1,61 @@
 ---
-title: Browse tools
-description: Search the Never Your Sounds JSON catalog of official audio tools and resources.
-layout: page
+title: Discover audio tools
+description: Find audio software, samples, learning resources, and creative tools. Search by your goal, budget, and platform.
+layout: app
 ---
-<div class="browse-header">
-  <h1>Browse catalog</h1>
-  <p>Filter by name or category. Data from <a href="{{ site.baseurl }}/site/data/sound-resources.json">sound-resources.json</a>.</p>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/browse.css">
+<header class="page-heading discovery-heading">
+  <div>
+    <p class="eyebrow">DISCOVER / THE RESOURCE LIBRARY</p>
+    <h1>Your next sound<br>starts here<span class="discovery-dot">.</span></h1>
+    <p class="muted">From your first recording to the final export. Find the tools, sounds, and knowledge that fit your workflow.</p>
+  </div>
+  <a class="btn btn-ghost" href="{{ site.baseurl }}/learn.html">Need a starting point? &rarr;</a>
+</header>
+<div id="catalogue" data-source="{{ site.baseurl }}/site/data/sound-resources.json">
+  <form id="browse-form" class="catalogue-search" role="search" aria-label="Search audio resources">
+    <label for="browse-q">What are you looking for?</label>
+    <div class="catalogue-search-row">
+      <input type="search" id="browse-q" name="q" placeholder="Try synth, podcast, Windows, or open source…" autocomplete="off" maxlength="200" aria-describedby="browse-search-help">
+      <button type="submit" class="btn btn-primary">Find resources <span aria-hidden="true">&rarr;</span></button>
+    </div>
+    <p id="browse-search-help" class="muted">Search names, categories, tags, platforms, and resource notes.</p>
+  </form>
+  <div class="discovery-layout">
+    <aside class="discovery-sidebar" aria-labelledby="filter-heading">
+      <div class="filter-title"><h2 id="filter-heading">Refine your search</h2><button id="browse-reset" type="button" class="reset-filters">Reset</button></div>
+      <div class="filter-field"><label for="browse-category">Category</label><select id="browse-category" disabled><option value="">All categories</option></select></div>
+      <div class="filter-field"><label for="browse-cost">Cost model</label><select id="browse-cost" disabled><option value="">All cost models</option></select></div>
+      <div class="filter-field"><label for="browse-platform">Your platform</label><select id="browse-platform" disabled><option value="">All platforms</option></select></div>
+      <p class="filter-explainer">Free access can have limits. Cost and platform labels are catalogue metadata; confirm the current edition, system requirements, and terms at the source.</p>
+      <a class="filter-trust-link" href="{{ site.baseurl }}/trust.html">Know your license <span aria-hidden="true">&nearr;</span></a>
+      <details class="cost-key"><summary>What do the cost labels mean?</summary><dl>
+        <dt>Free</dt><dd>No access fee listed; usage rights may still be restricted.</dd>
+        <dt>Freemium</dt><dd>A free tier with paid features or services.</dd>
+        <dt>Paid</dt><dd>A license or payment is required; a trial may be available.</dd>
+        <dt>Education</dt><dd>Education-specific offers; eligibility must be checked.</dd>
+        <dt>Varies / Unknown</dt><dd>Costs depend on the offering, or are not recorded.</dd>
+      </dl></details>
+    </aside>
+    <section class="discovery-results" aria-label="Resource results" aria-busy="true" id="browse-results">
+      <div class="catalogue-results-bar">
+        <p id="browse-meta" role="status" aria-live="polite" aria-atomic="true">Loading the catalogue…</p>
+        <div class="sort-field"><label for="browse-sort">Sort</label><select id="browse-sort" disabled>
+          <option value="name">Name A–Z</option><option value="name-desc">Name Z–A</option><option value="category">Category</option><option value="free-first">Free first</option><option value="reviewed">Review date</option>
+        </select></div>
+      </div>
+      <p class="catalogue-notice" id="browse-notice" hidden></p>
+      <div id="browse-state" class="catalogue-state panel">
+        <span class="loading-signal" aria-hidden="true"></span>
+        <h2 id="browse-state-title">Getting the library ready</h2>
+        <p id="browse-state-message">Loading resource information from this site's catalogue.</p>
+        <button id="browse-retry" class="btn btn-primary" type="button" hidden>Try again</button>
+        <button id="browse-empty-reset" class="btn btn-ghost" type="button" hidden>Clear search and filters</button>
+      </div>
+      <ul class="resource-grid" id="browse-list" aria-label="Matching resources"></ul>
+    </section>
+  </div>
 </div>
-
-<div class="browse-toolbar">
-  <label class="sr-only" for="browse-q">Search</label>
-  <input type="search" id="browse-q" class="browse-input" placeholder="Search tools…" autocomplete="off">
-  <div class="browse-filters" id="browse-filters" role="group" aria-label="Category filters"></div>
-</div>
-
-<p class="browse-meta" id="browse-meta" aria-live="polite"></p>
-<ul class="browse-list" id="browse-list"></ul>
-
-<script>
-  window.NYS_CATALOG_DATA = "{{ site.baseurl }}/site/data/sound-resources.json";
-</script>
-<script src="{{ site.baseurl }}/assets/js/browse.js" defer></script>
+<noscript><div class="panel catalogue-noscript"><h2>Explore the catalogue without JavaScript</h2><p>Interactive filtering needs JavaScript. You can still read the <a href="{{ site.baseurl }}/site/data/sound-resources.json">complete resource catalogue</a> or start with the <a href="{{ site.baseurl }}/site/guides/production.html">production guide</a>.</p></div><style>#catalogue { display: none; }</style></noscript>
+<div class="catalogue-bottom-note"><p>Listed here does not mean current terms have been verified. Free access does not grant unrestricted commercial use.</p><a href="{{ site.baseurl }}/site/data/sound-resources.json">View the catalogue data <span aria-hidden="true">&nearr;</span></a></div>
+<script type="module" src="{{ site.baseurl }}/assets/js/browse.js"></script>

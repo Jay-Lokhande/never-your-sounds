@@ -1,5 +1,17 @@
 # Navigation — Never Your Sounds (one stop)
 
+## Interactive platform
+
+| Section | Website | Purpose |
+| --- | --- | --- |
+| Home | [Start](https://jay-lokhande.github.io/never-your-sounds/) | Search, goals, toolkit, and all topic guides |
+| Discover | [Resource explorer](https://jay-lokhande.github.io/never-your-sounds/browse.html) | Real catalogue search, filters, sorting and resource details |
+| Create | [Creator toolkit](https://jay-lokhande.github.io/never-your-sounds/create.html) | Tap tempo, metronome, time math, scales, references and checklists |
+| Learn | [Learning pathways](https://jay-lokhande.github.io/never-your-sounds/learn.html) | Eight practical journeys with optional saved progress |
+| Trust | [Trust & licensing](https://jay-lokhande.github.io/never-your-sounds/trust.html) | Source verification, cost labels, permissions and privacy |
+
+Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` together. Learning links use anchors: `#first-beat`, `#produce`, `#artist`, `#sample-workflow`, `#game-audio`, `#podcast`, `#film`, `#release`. Existing guide URLs remain under `/never-your-sounds/site/guides/`; existing resource URLs remain under `/never-your-sounds/site/resources/`.
+
 | I want… | Go to |
 | --- | --- |
 | **Start** | [resources/start-here.md](resources/start-here.md) |

@@ -1,6 +1,19 @@
 # Never Your Sounds
 
-**Official audio for students — never unofficial sounds.** One-stop hub for music production, game SFX, podcasts, streaming, theory, legal samples, edu pricing, and links to AI voice/music tools. Official vendor sites only; no cracks or warez.
+**Your entire audio world. One place.** Discover audio resources, use practical browser tools, and follow a learning path from a first idea to a finished project.
+
+**Find your sound. Build your craft. Ship with confidence.**
+
+[Open the platform](https://jay-lokhande.github.io/never-your-sounds/) · [Discover](https://jay-lokhande.github.io/never-your-sounds/browse.html) · [Create](https://jay-lokhande.github.io/never-your-sounds/create.html) · [Learn](https://jay-lokhande.github.io/never-your-sounds/learn.html) · [Trust & licensing](https://jay-lokhande.github.io/never-your-sounds/trust.html)
+
+## What works in the browser
+
+- **Discover:** all 60 catalogue records, text search across metadata, combined category/cost/platform filters, five sort modes, shareable query URLs, and resource details with cost and license caveats. Invalid records are safely omitted; empty or failed loads offer a retry.
+- **Create:** tap tempo, a Web Audio metronome with accents and time signatures, bars/beats/seconds conversion, six scales with correct note spelling, production vocabulary, signal flow, and loudness/export references. The metronome starts on a button press and stops when the page is hidden.
+- **Prepare a release:** browser-local licensing and release checklists with project names, progress, reset, and print layouts. These are personal checklists, not legal clearance or audio measurement.
+- **Learn:** eight self-guided pathways for a first beat, production/mixing, recording artists, responsible sampling, games, podcasts/streams, video/dialogue, and release. Guide links remain available without JavaScript. Progress is saved only when the visitor opts in.
+
+There is no account, backend, API key, analytics, microphone access, or audio upload. Checklist storage stays on the current browser; it does not sync across devices. Read [development and verification instructions](DEVELOPMENT.md), the [data schema](SCHEMA.md), and the [implementation report](IMPLEMENTATION.md).
 
 > **Disclaimer:** Student pricing and license terms change on vendor sites only.
 
@@ -63,7 +76,7 @@ flowchart TD
 
 ---
 
-## Quick picks (zero install)
+## Quick picks by workflow
 
 | Goal | Start with |
 | --- | --- |
@@ -81,6 +94,8 @@ flowchart TD
 | --- | --- |
 | [data/sound-resources.json](data/sound-resources.json) | All tools by `category` |
 | [data/tracks.json](data/tracks.json) | Recommended path steps per goal |
+| [data/guides.json](data/guides.json) | Preserved topic-guide navigation |
+| [SCHEMA.md](SCHEMA.md) | Compatible data contracts and metadata rules |
 
 ---
 

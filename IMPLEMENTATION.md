@@ -1,0 +1,50 @@
+# Implementation and verification report
+
+## Baseline and constraints
+
+Started from upstream commit `bafad82` (Rename project to Never Your Sounds), cloned into the delivery workspace because no checkout was present. Read the full repository tree, README, navigation, guides, resources, license, contribution/maintainer files, JSON, layouts/includes, assets, scripts and both Actions workflows before implementation. The baseline validator passed for 60 resources and five pathways. There were no existing frontend tests or dependency manifests.
+
+The deployment contract is preserved: GitHub Actions stages canonical Markdown/JSON into `docs/site`, builds Jekyll from `docs`, uploads `_site`, and deploys to the project URL with `/never-your-sounds`. Existing `browse.html?cat=...`, `/site/guides/*.html`, `/site/resources/*.html`, JSON paths, original pathway IDs and sister links remain supported. The CC BY 4.0 license and repository documentation remain present.
+
+Baseline gaps: catalogue search supported only name/category/tags, cards omitted descriptions and context, raw URLs were concatenated into HTML, paths opened only their first guide, and no browser utilities existed. The home template emitted duplicate titles, mobile navigation lacked Escape/focus behavior, and Markdown rendering relied on Pages-specific defaults. No claim is made that the upstream hosted site was successfully inspected: its URL could not be retrieved during the initial audit.
+
+## Delivered features
+
+- **Design and navigation:** charcoal, violet and restrained lime system; responsive homepage with working search, workflow/goals, open-source starting points, existing guide index and trust section; shared header/footer; skip link, focus states, reduced motion, progressive mobile navigation and 404 page. Local SVG favicon and 1200×630 social-preview PNG with editable SVG source. No external font requests.
+- **Discovery:** all original 60 resources retained. Metadata-aware search with platform aliases, combined filters, five sorts, URL restoration, result counts, accessible expandable detail, official-site links, cost/license caveats, honest historical review dates, recoverable loading/errors, omitted-malformed-record notices, no-JS fallback. DOM construction uses text nodes and validated HTTPS URLs rather than catalogue HTML injection.
+- **Metadata:** added grounded descriptions, optional pricing/license notes and source URLs. Targeted corrections to REAPER, Bitwig, SoundBridge, MuseScore, legacy Cakewalk and Studio One labels; no blanket new review dates. The existing film guide's overly broad YouTube-library restriction was replaced with exact-track/platform verification guidance.
+- **Creation:** tap tempo averaged across up to eight intervals; metronome at 20–300 quarter-note BPM with accents, volume and eight signatures; bidirectional bars/beats/seconds calculator; six scales with degree-aware spelling; production vocabulary, signal flow, loudness/export reference; project-named licensing/release checklists with browser-local saving, reset and printable layout. Web Audio starts only on request and closes on stop/hide/navigation/interruption.
+- **Learning:** eight server-rendered journeys, with ordered actions, guide/category links, next step and progress. First beat, independent artist and sampling journeys join the original five. Local persistence is opt-in; disabling it removes saved progress. Reset current/all paths and blocked/corrupt storage behavior are implemented.
+- **Trust and privacy:** dedicated explanation of listed versus verified resources, cost models, licensing records and local storage. No accounts, analytics, third-party client libraries, microphone use, uploads, keys or backend.
+- **Engineering:** cross-platform Python staging with explicit front matter, retained shell entry point, GitHub-compatible Kramdown/GFM configuration, reproducible development manifests, data/schema regression checks, real browser tests, rendered-link checker and CI extensions.
+
+## Changed files
+
+Core pages: `docs/index.html`, `docs/browse.html`, new `docs/create.html`, `docs/learn.html`, `docs/trust.html`, `docs/404.html`.
+
+Shared site: `docs/_config.yml`, `_includes/head.html`, `_includes/site-header.html`, `_includes/site-footer.html`, `_layouts/page.html`, new `_layouts/app.html`; `docs/assets/css/site.css`, new `browse.css`, `create.css`, `learn.css`; `docs/assets/js/site.js`, `browse.js`, new `create.js`, `learn.js`, `audio-math.mjs`; favicon and social images.
+
+Data/content: `data/sound-resources.json`, `data/tracks.json`, synced `docs/_data/tracks.json`, `guides/film-and-video.md`. `data/guides.json` and the original topic guides otherwise remain intact.
+
+Development/documentation: README, NAVIGATION, CONTRIBUTING, MAINTAINERS, new SCHEMA, DEVELOPMENT and this report; Gemfile, package.json/package-lock.json, `.gitignore`, `.gitattributes`; staging/validation scripts, new `test-validator.py`, `test-audio-math.mjs`, `test-discovery.mjs`, `test-browser.mjs`, `check-built-site.py`; Pages and validation workflows.
+
+## Verification performed
+
+- Baseline `python scripts/validate-catalog.py`: passed, 60 resources and five tracks.
+- Updated `python scripts/validate-catalog.py`: passed, 60 resources, 12 guides and eight tracks.
+- `python scripts/test-validator.py`: all 22 regression cases passed. Initial Windows-sandbox temporary-directory failures were resolved by pointing process-local TEMP/TMP into the workspace; no tests were skipped.
+- `npm test`: all nine Node test groups passed, covering tempo/math/scales and safe catalogue normalization/search/filter/sort.
+- `python scripts/sync-pages-site.py`: executed successfully; original Markdown and JSON staged with explicit front matter.
+- Official **Jekyll 3.10.0** source executed successfully through its CLI `build` command with the committed configuration. This machine had no Ruby; a workspace-local Ruby runtime and gems were used. Pure-Ruby library paths were supplied through a small local bootstrap because native watch/live-reload gems could not be installed without a Windows Devkit. Jekyll source and rendering code were not changed. Normal Bundler installation and GitHub-hosted Actions execution were not run here.
+- `node scripts/test-browser.mjs`: the final expanded run passed **77 assertions** in headless Microsoft Edge. It covered real Web Audio event spacing/accents and context cleanup, 320/390/768/1024/1440px layouts, filter URLs, keyboard details, local storage, safe malformed data handling, HTTP errors, unsupported audio, printing controls and no-JS fallbacks. Earlier harness failures were corrected to measure elapsed tap time and scheduled audio-parameter values, rather than assuming automation has no timing overhead or reading future values before their scheduled time.
+- Both **project-base-path and domain-root Jekyll builds passed**. `python scripts/check-built-site.py` passed on each: **29 HTML pages and 881 local links/assets**, including local fragments and single title/main/h1 checks. No external network checks are part of this test.
+- Desktop and mobile screenshots were inspected visually for the homepage and product pages. The SVG social graphic was rendered into a 73 KB PNG. `git diff --check` was run and formatting issues corrected.
+- Preservation checks compared the final data against `git show HEAD:data/...`: all 60 original resource names and all original pathway labels, guide references, category links and step order remain present.
+
+## Remaining boundaries and deployment
+
+Publishing is handled by the existing Pages workflow after a push to `main`, or by manual workflow dispatch. Repository Pages source must remain **GitHub Actions**. A successful push does not by itself confirm a completed deployment; check the workflow result. No new infrastructure or credentials are required.
+
+No DAW, microphone recording, audio-file analysis, mastering, generated audio, accounts, cloud sync, accreditation or live vendor monitoring was added. References and calculators are explicitly identified as such. Browser metronome timing and sound-device output vary; the tests verify scheduled audio, not perceived volume or hardware latency. Cross-browser Safari/Firefox and physical mobile audio were not tested. External links were not exhaustively checked for reachability or current license terms. The source notes identify focused metadata provenance; historical review dates are not current-term guarantees.
+
+Official references used for focused descriptions/corrections include [REAPER licensing](https://www.reaper.fm/purchase.php), [Bitwig trial](https://www.bitwig.com/support/shop_license_activation/bitwig-studio-trial-48/), [SoundBridge offerings](https://www.soundbridge.io/en/amplifier), [MuseScore](https://musescore.org/en), [Cakewalk transition guidance](https://help.cakewalk.com/hc/en-us/articles/360021858293-What-happened-to-the-old-SONAR-What-happens-to-everything-I-paid-for), [Audacity](https://www.audacityteam.org/) and [Surge XT](https://surge-synthesizer.github.io/). LMMS's source role was retained from existing repository content; its homepage returned 403 during the focused check.

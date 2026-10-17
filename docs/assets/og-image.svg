@@ -1,16 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0c0e14"/>
-      <stop offset="100%" style="stop-color:#181c28"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="80" y="200" width="12" height="180" rx="6" fill="#c9a227" opacity="0.9"/>
-  <rect x="110" y="160" width="12" height="260" rx="6" fill="#d4af37"/>
-  <rect x="140" y="190" width="12" height="200" rx="6" fill="#6ee7d9"/>
-  <rect x="170" y="140" width="12" height="300" rx="6" fill="#c9a227"/>
-  <rect x="200" y="175" width="12" height="230" rx="6" fill="#6ee7d9"/>
-  <text x="80" y="120" fill="#e8eaf0" font-family="Georgia, serif" font-size="56" font-weight="600">Never Your Sounds</text>
-  <text x="80" y="480" fill="#9aa3b5" font-family="system-ui, sans-serif" font-size="32">One-stop hub for student audio</text>
+  <rect width="1200" height="630" fill="#0e0e12"/>
+  <path d="M74 70v22m13-36v50m13-42v34m13-50v66m13-44v22" stroke="#b4a0ff" stroke-width="5" stroke-linecap="round"/>
+  <text x="150" y="78" fill="#f3f2f7" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">NEVER YOUR SOUNDS.</text>
+  <text x="70" y="255" fill="#f3f2f7" font-family="Segoe UI,Arial,sans-serif" font-size="85" font-weight="700" letter-spacing="-4">Find your sound.</text>
+  <text x="70" y="350" fill="#b4a0ff" font-family="Segoe UI,Arial,sans-serif" font-size="85" font-weight="700" letter-spacing="-4">Build your craft.</text>
+  <text x="75" y="425" fill="#aaa7b7" font-family="Segoe UI,Arial,sans-serif" font-size="27">Your entire audio world. One place.</text>
+  <g fill="none" stroke="#514464"><circle cx="990" cy="290" r="150"/><circle cx="990" cy="290" r="135"/><circle cx="990" cy="290" r="108"/><circle cx="990" cy="290" r="80"/><circle cx="990" cy="290" r="49"/></g>
+  <path d="M822 290h20l10-16 10 40 10-75 10 110 10-80 10 50 10-30 10-70 10 137 10-105 10 50 10-95 10 170 10-112 10 66 10-105 10 127 10-66 10 37 10-55 10 45 10-17h18" fill="none" stroke="#b4a0ff" stroke-width="3"/>
+  <circle cx="990" cy="290" r="9" fill="#dcf990"/>
+  <path d="M75 520h1050" stroke="#303039"/>
+  <text x="75" y="565" fill="#dcf990" font-family="Consolas,monospace" font-size="18" letter-spacing="3">DISCOVER / CREATE / LEARN</text>
+  <text x="760" y="565" fill="#aaa7b7" font-family="Segoe UI,Arial,sans-serif" font-size="18">Ship with confidence.</text>
 </svg>

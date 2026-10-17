@@ -29,6 +29,8 @@ jobs:
         with:
           source: ./docs
           destination: ./_site
+      - name: Check rendered pages and internal links
+        run: python3 scripts/check-built-site.py _site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site

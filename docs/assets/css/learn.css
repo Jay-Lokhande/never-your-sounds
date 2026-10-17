@@ -1,0 +1,82 @@
+.learn-page { padding-bottom: 4rem; }
+.learn-page [hidden] { display: none !important; }
+.learn-heading { max-width: 780px; }
+.learn-heading h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); line-height: 1.05; letter-spacing: -.055em; }
+.learn-heading > p:last-child { max-width: 650px; line-height: 1.8; }
+.learn-storage { display: flex; gap: 1.5rem; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; margin: 2.5rem 0 0; }
+.learn-save { display: flex; align-items: center; gap: .65rem; font-weight: 650; }
+.learn-page input[type="checkbox"] { accent-color: var(--accent); width: 1.15rem; height: 1.15rem; flex-shrink: 0; cursor: pointer; }
+.learn-page input[type="checkbox"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.learn-storage p { margin: .45rem 0 0; font-size: .85rem; }
+.learn-storage button { font-size: .8rem; flex-shrink: 0; }
+.learn-status { min-height: 1.5em; margin: .6rem 0 1.2rem; font-size: .9rem; color: var(--lime); }
+.learning-workspace { display: grid; grid-template-columns: minmax(240px, 300px) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.journey-nav { position: sticky; top: 100px; }
+.journey-nav > .eyebrow { margin: 0 0 1rem .75rem; }
+.journey-link { display: flex; align-items: center; gap: .8rem; padding: 1rem .8rem; border: 1px solid transparent; border-radius: 10px; color: var(--text); text-decoration: none; margin-bottom: .35rem; }
+.journey-link:hover { background: var(--surface); }
+.journey-link[aria-current="true"] { border-color: var(--line); background: var(--surface); }
+.journey-link[aria-current="true"] .journey-index { color: var(--accent); }
+.journey-index { font: .8rem ui-monospace, SFMono-Regular, Consolas, monospace; color: var(--muted); }
+.journey-link strong { display: block; font-size: .92rem; line-height: 1.4; font-weight: 600; }
+.journey-link small { display: block; color: var(--muted); margin-top: .3rem; font-size: .75rem; }
+.journey-arrow { margin-left: auto; color: var(--muted); }
+.journey { padding: clamp(1.2rem, 3vw, 2.5rem); scroll-margin-top: 100px; margin-bottom: 2rem; }
+.journey-heading h2 { font-size: clamp(1.65rem, 3vw, 2.4rem); letter-spacing: -.04em; margin: 1rem 0 .7rem; }
+.journey-heading h2:focus { outline: none; }
+.journey-heading > p { line-height: 1.75; }
+.journey-outcome { margin: 1.2rem 0; font-size: .9rem; }
+.journey-outcome strong { color: var(--lime); }
+.journey-progress { margin: 1.7rem 0; }
+.journey-progress > div { display: flex; justify-content: space-between; gap: 1rem; font-size: .8rem; color: var(--muted); }
+.journey-progress progress { appearance: none; border: none; display: block; width: 100%; height: 5px; margin-top: .75rem; border-radius: 9px; overflow: hidden; background: var(--line); color: var(--accent); }
+.journey-progress progress::-webkit-progress-bar { background: var(--line); }
+.journey-progress progress::-webkit-progress-value { background: var(--accent); }
+.journey-progress progress::-moz-progress-bar { background: var(--accent); }
+.journey-next { margin: 1.7rem 0; padding: 1.25rem; border: 1px solid #4b4262; border-radius: 12px; background: #b4a0ff09; }
+.journey-next .eyebrow { color: var(--accent); margin: 0; font-size: .65rem; }
+.journey-next > p:nth-child(2) { margin: .65rem 0 1rem; line-height: 1.6; }
+.journey-next .btn { font-size: .8rem; }
+.journey-steps { list-style: none; margin: 1.6rem 0 0; padding: 0; }
+.journey-step { display: flex; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--line); }
+.step-number { width: 2rem; height: 2rem; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; flex-shrink: 0; font: .72rem ui-monospace, SFMono-Regular, Consolas, monospace; color: var(--muted); }
+.journey-step.is-complete .step-number { color: var(--lime); border-color: #dcf99050; background: #dcf99009; }
+.journey-step.is-next .step-number { color: var(--accent); border-color: #b4a0ff65; }
+.step-content { min-width: 0; flex: 1; }
+.step-content h3 { font-size: 1rem; margin: .15rem 0 .6rem; }
+.step-content > p { color: var(--muted); font-size: .9rem; line-height: 1.75; margin: 0; }
+.step-links { display: flex; flex-wrap: wrap; gap: .45rem 1.2rem; margin: .9rem 0; }
+.step-links a { color: var(--accent); font-size: .8rem; text-underline-offset: 4px; }
+.step-check { display: inline-flex; align-items: center; gap: .55rem; font-size: .8rem; min-height: 36px; cursor: pointer; }
+.journey-step.is-complete .step-check { color: var(--lime); }
+.journey-footer { border-top: 1px solid var(--line); padding-top: 1.2rem; display: flex; align-items: center; gap: 1rem; justify-content: space-between; }
+.journey-footer > p { font-size: .75rem; line-height: 1.6; margin: 0; max-width: 360px; }
+.journey-footer button { flex-shrink: 0; font-size: .75rem; }
+.learn-trust { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 2rem; margin-top: 3rem; }
+.learn-trust h2 { font-size: 1.7rem; letter-spacing: -.035em; margin: .5rem 0; }
+.learn-trust p:last-child { max-width: 620px; font-size: .9rem; line-height: 1.7; margin-bottom: 0; }
+.learn-trust .btn { flex-shrink: 0; }
+.learn-no-js { padding: 1rem; line-height: 1.7; }
+@media (max-width: 900px) {
+  .learning-workspace { grid-template-columns: 240px minmax(0, 1fr); gap: 1rem; }
+  .learn-storage, .learn-trust, .journey-footer { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 680px) {
+  .learning-workspace { display: block; }
+  .journey-nav { position: static; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem; margin-bottom: 1.5rem; }
+  .journey-nav > .eyebrow { grid-column: 1 / -1; }
+  .journey-link { border-color: var(--line); padding: .75rem; gap: .55rem; margin: 0; }
+  .journey-link[aria-current="true"] { border-color: var(--accent); }
+  .journey-link strong { font-size: .8rem; }
+  .journey-index, .journey-arrow { display: none; }
+  .learn-storage { padding: 1rem; }
+  .learn-save { font-size: .9rem; }
+  .learn-trust { padding: 1.3rem; }
+  .journey-step { gap: .75rem; }
+}
+@media print {
+  .journey-nav, .learn-storage, .step-check, .journey-footer button, .journey-next, .learn-status { display: none !important; }
+  .learning-workspace { display: block; }
+  .journey { border-color: #ccc; }
+  .journey-step { break-inside: avoid; }
+}

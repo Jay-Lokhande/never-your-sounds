@@ -15,10 +15,15 @@
 | `name` | yes | unique string |
 | `category` | yes | see `scripts/validate-catalog.py` |
 | `url` | yes | `https://` official vendor only |
-| `cost` | no | `free`, `freemium`, `paid`, `edu`, `varies` |
+| `cost` | no | `free`, `freemium`, `paid`, `edu`, `varies`, `unknown` |
 | `platform` | no | `web`, `win`, `mac`, `linux`, `ios`, `android` |
 | `tags` | no | string array |
-| `reviewed` | no | `YYYY-MM` for edu pricing |
+| `reviewed` | no | actual recorded review month `YYYY-MM` or date `YYYY-MM-DD` |
+| `description` | no | grounded concise description |
+| `pricing_notes`, `license_notes` | no | relevant known caveats, without invented permissions |
+| `source_url` | no | official HTTPS source for metadata notes |
+
+See [SCHEMA.md](SCHEMA.md) for full validation rules. A listing is not a current license verification. Preserve absent review dates; never stamp the entire catalogue with the build date.
 
 ## Link hygiene
 
@@ -29,3 +34,5 @@
 ## GitHub Pages
 
 Push to `main` runs `scripts/sync-pages-site.sh` then Jekyll on `docs/`. Edit themed files under `docs/_layouts`, `docs/assets`, etc.
+
+The shell entry point delegates to the cross-platform Python staging script. Generated copies under `docs/site/` receive explicit front matter and include contribution, maintainer, license, schema, and development documentation. Keep `docs/_config.yml` at `baseurl: /never-your-sounds`; use Liquid `relative_url` or `site.baseurl` for every site link. See [DEVELOPMENT.md](DEVELOPMENT.md) for commands and deployment settings.

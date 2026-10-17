@@ -23,7 +23,7 @@ Back: [README](../README.md) · [license checklist](../resources/license-checkli
 
 ## Music & SFX for video
 
-Use [samples-and-licensing.md](samples-and-licensing.md) — YouTube Audio Library only covers **YouTube** uses; other platforms need their own license proof.
+Use [samples-and-licensing.md](samples-and-licensing.md). Check the exact track's terms for the intended platform and use, including attribution. Availability in a platform's library alone does not establish permission for every destination; save the applicable license with your project.
 
 ## Captions & access
 

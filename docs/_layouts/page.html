@@ -5,7 +5,7 @@
 </head>
 <body class="page-doc">
   {% include site-header.html %}
-  <article class="doc wrap">
+  <main class="doc wrap" id="main" tabindex="-1"><article>
     {% if page.url contains '/site/README' %}
     <p class="doc-eyebrow">Overview</p>
     <p class="doc-callout">Prefer the visual hub? <a href="{{ site.baseurl }}/">Open the home page</a> for paths and guide cards.</p>
@@ -18,7 +18,7 @@
       {{ content }}
     </div>
     <p class="doc-back"><a href="{{ site.baseurl }}/">← Back to home</a></p>
-  </article>
+  </article></main>
   {% include site-footer.html %}
 </body>
 </html>

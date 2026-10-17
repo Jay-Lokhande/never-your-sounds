@@ -1,0 +1,84 @@
+---
+layout: app
+title: Learn — Creator pathways
+description: Eight practical audio pathways. Choose a project, work through real steps, and optionally save progress in your browser.
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/learn.css">
+<div class="learn-page">
+  <header class="page-heading learn-heading">
+    <p class="eyebrow">Learn / Make something real</p>
+    <h1>A little direction.<br>A lot of possibility.</h1>
+    <p class="muted">Pick a project. Follow the steps. Make the next thing a little better. These self-guided pathways connect practical actions with our guides and resource explorer.</p>
+  </header>
+
+  <div class="learn-storage panel" id="learning-preferences" hidden>
+    <div>
+      <label class="learn-save"><input id="save-learning" type="checkbox"> Remember my progress on this device</label>
+      <p class="muted" id="learning-storage-note">Progress stays in this tab until you opt in. No account or cloud sync.</p>
+    </div>
+    <button type="button" class="btn btn-ghost" id="reset-all-learning">Reset all pathway progress</button>
+  </div>
+  <p class="learn-status" role="status" aria-live="polite" id="learning-status"></p>
+  <noscript><p class="panel learn-no-js">All pathways and guide links work without JavaScript. Enable JavaScript to check off steps and optionally save your progress.</p></noscript>
+
+  <div class="learning-workspace">
+    <nav class="journey-nav" aria-label="Choose a learning pathway">
+      <p class="eyebrow">Your next project</p>
+      {% for track in site.data.tracks %}
+      <a class="journey-link" href="#{{ track.id | escape }}" data-journey-link="{{ track.id | escape }}">
+        <span class="journey-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+        <span><strong>{{ track.title | escape }}</strong><small data-path-summary="{{ track.id | escape }}">{{ track.steps.size }} practical steps</small></span>
+        <span class="journey-arrow" aria-hidden="true">↗</span>
+      </a>
+      {% endfor %}
+    </nav>
+
+    <div class="journey-content">
+      {% for track in site.data.tracks %}
+      <article class="journey panel" id="{{ track.id | escape }}" data-journey="{{ track.id | escape }}" aria-labelledby="title-{{ track.id | escape }}">
+        <header class="journey-heading">
+          <span class="badge">{{ track.steps.size }} steps · Self-guided</span>
+          <h2 id="title-{{ track.id | escape }}" tabindex="-1">{{ track.title | escape }}</h2>
+          {% if track.description %}<p class="muted">{{ track.description | escape }}</p>{% endif %}
+          {% if track.outcome %}<p class="journey-outcome"><strong>Make this:</strong> {{ track.outcome | escape }}</p>{% endif %}
+        </header>
+        <div class="journey-progress" hidden>
+          <div><span data-progress-text>0 of {{ track.steps.size }} steps complete</span><span data-progress-percent>0%</span></div>
+          <progress max="{{ track.steps.size }}" value="0" aria-label="{{ track.title | escape }} progress"></progress>
+        </div>
+        <div class="journey-next" hidden>
+          <p class="eyebrow">Your next action</p>
+          <p data-next-text></p>
+          <a class="btn btn-primary" data-next-link href="{{ site.baseurl }}/site/{{ track.steps.first.guide | replace: '.md', '.html' }}">Open step guide <span aria-hidden="true">↗</span></a>
+        </div>
+        <ol class="journey-steps">
+          {% for step in track.steps %}
+          <li class="journey-step" data-step="{{ forloop.index0 }}">
+            <span class="step-number" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+            <div class="step-content">
+              <h3>{{ step.label | escape }}</h3>
+              {% if step.action %}<p>{{ step.action | escape }}</p>{% endif %}
+              <div class="step-links">
+                <a data-step-guide href="{{ site.baseurl }}/site/{{ step.guide | replace: '.md', '.html' }}">Read guide <span aria-hidden="true">↗</span></a>
+                {% for category in step.categories %}<a href="{{ site.baseurl }}/browse.html?cat={{ category | url_encode }}">Explore {{ category | replace: '-', ' ' | escape }}</a>{% endfor %}
+              </div>
+              <label class="step-check" hidden><input type="checkbox" data-step-check aria-label="Complete step {{ forloop.index }}: {{ step.label | escape }}"> Mark complete</label>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+        <footer class="journey-footer">
+          <p class="muted">Go at your pace. Completion records your own checklist; it is not a certification.</p>
+          <button type="button" class="btn btn-ghost" data-reset-journey hidden>Reset this pathway</button>
+        </footer>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <aside class="learn-trust panel">
+    <div><p class="eyebrow">Build good habits early</p><h2>Your sound. Clear permissions.</h2><p class="muted">A free download is not a promise of commercial-use rights. Read the terms for the exact tool, sample or pack before you publish.</p></div>
+    <a class="btn btn-ghost" href="{{ site.baseurl }}/site/resources/license-checklist.html">Open license checklist <span aria-hidden="true">↗</span></a>
+  </aside>
+</div>
+<script src="{{ site.baseurl }}/assets/js/learn.js" defer></script>

@@ -1,0 +1,10 @@
+{
+  "name": "never-your-sounds-checks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/test-audio-math.mjs scripts/test-discovery.mjs",
+    "test:browser": "node scripts/test-browser.mjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}
