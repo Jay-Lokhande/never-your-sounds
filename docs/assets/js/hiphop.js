@@ -4,15 +4,17 @@ function mountFilters() {
   const form = document.querySelector('[data-filter]');
   if (!form) return;
   const query = form.querySelector('#hh-q'), select = form.querySelector('#hh-group');
+  const kind = form.querySelector('#hh-kind');
   const groups = [...select.options].map(option=>option.value);
+  const kinds = kind ? [...kind.options].map(option=>option.value) : [];
   // Cache editorial text before people begin writing their own listening notes.
-  const entries = [...document.querySelectorAll('[data-entry]')].map(node=>({node,text:node.textContent,group:node.dataset.group}));
+  const entries = [...document.querySelectorAll('[data-entry]')].map(node=>({node,text:node.textContent+' '+(node.dataset.search || ''),group:node.dataset.group,kind:node.dataset.kind || ''}));
   const indexes = [...document.querySelectorAll('[data-term-index]')];
   const count = document.querySelector('#hh-count'), empty = document.querySelector('#hh-empty');
   function render() {
     let visible = 0;
     for (const entry of entries) {
-      entry.node.hidden = !matchesEntry(entry.text,entry.group,query.value,select.value);
+      entry.node.hidden = !matchesEntry(entry.text,entry.group,query.value,select.value,entry.kind,kind?.value || '');
       if (!entry.node.hidden) visible++;
     }
     for (const link of indexes) link.hidden = document.getElementById(link.dataset.termIndex).hidden;
@@ -22,28 +24,39 @@ function mountFilters() {
   function updateURL(push = false) {
     const url = new URL(location.href);
     url.searchParams.delete('q'); url.searchParams.delete('group');
+    if (kind) url.searchParams.delete('kind');
     if (query.value.trim()) url.searchParams.set('q',query.value.trim());
     if (select.value) url.searchParams.set('group',select.value);
+    if (kind?.value) url.searchParams.set('kind',kind.value);
     url.hash = '';
     if (url.href !== location.href) history[push ? 'pushState':'replaceState'](null,'',url);
   }
-  function reset(push = true) {query.value='';select.value='';render();updateURL(push);}
+  function reset(push = true) {query.value='';select.value='';if(kind) kind.value='';render();updateURL(push);}
   function followAnchor() {
     let id; try {id=decodeURIComponent(location.hash.slice(1));} catch {return;}
     const entry=entries.find(item=>item.node.id===id);
     if (entry?.node.hidden) {
-      query.value=''; select.value=''; render();
-      const url=new URL(location.href);url.searchParams.delete('q');url.searchParams.delete('group');history.replaceState(null,'',url);
+      query.value=''; select.value=''; if(kind) kind.value=''; render();
+      const url=new URL(location.href);url.searchParams.delete('q');url.searchParams.delete('group');if(kind) url.searchParams.delete('kind');history.replaceState(null,'',url);
       entry.node.scrollIntoView();
+    }
+    const details=entry?.node.querySelector('[data-style-details]');
+    if (details) {
+      details.open=true;
+      entry.node.querySelector('h2').focus({preventScroll:true});
+      entry.node.scrollIntoView({block:'start'});
     }
   }
   function restore() {
-    const state=readFilter(location.search,groups);query.value=state.query;select.value=state.group;render();followAnchor();
+    const state=readFilter(location.search,groups,kinds);query.value=state.query;select.value=state.group;if(kind) kind.value=state.kind;render();followAnchor();
   }
   form.hidden=false;restore();
+  // Native fragment navigation can reset focus after the module first renders.
+  if (document.readyState !== 'complete') window.addEventListener('load',followAnchor,{once:true});
   form.addEventListener('submit',event=>{event.preventDefault();render();updateURL(true);});
   query.addEventListener('input',()=>{render();updateURL();});
   select.addEventListener('change',()=>{render();updateURL(true);});
+  kind?.addEventListener('change',()=>{render();updateURL(true);});
   form.addEventListener('reset',event=>{event.preventDefault();reset();query.focus();});
   document.querySelector('[data-clear-filter]').addEventListener('click',()=>{reset();query.focus();});
   window.addEventListener('popstate',restore);

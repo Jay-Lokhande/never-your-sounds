@@ -14,6 +14,9 @@ async function context(options={}) {
   ctx.on('page',page=>{page.setDefaultTimeout(10000);page.on('pageerror',error=>errors.push(error.message));});return ctx;
 }
 const sections=['history','styles','scenes','listening','rap','dictionary'];
+const content=JSON.parse(await readFile(new URL('../data/hiphop.json',import.meta.url),'utf8'));
+const styleCount=content.styles.length;
+const writingCount=content.styles.filter(entry=>entry.group==='Writing & delivery').length;
 async function visit(page,section) {await page.goto(`${base}hiphop/${section}.html`);}
 async function ready(page) {await page.locator('#hiphop-notebook').waitFor({state:'visible'});}
 try {
@@ -28,18 +31,50 @@ try {
     check(await page.locator('.hh-nav a[aria-current]').count()===1,`${section} has one current subsection`);
   }
   await visit(page,'styles');await page.locator('[data-filter]').waitFor();
-  await page.locator('#hh-group').selectOption('Voice & writing');
-  check(await page.locator('[data-entry]:visible').count()===2,'style category works');
+  await page.locator('#hh-group').selectOption('Writing & delivery');
+  check(await page.locator('[data-entry]:visible').count()===writingCount,'style category works');
   await page.reload();await page.locator('[data-filter]').waitFor();
-  check(await page.locator('#hh-group').inputValue()==='Voice & writing','category survives reload');
+  check(await page.locator('#hh-group').inputValue()==='Writing & delivery','category survives reload');
   await page.getByRole('button',{name:'Clear filters',exact:true}).click();
-  check(await page.locator('[data-entry]:visible').count()===10,'clear restores all styles');
-  await page.goBack();await page.waitForFunction(()=>document.querySelector('#hh-group').value==='Voice & writing');
-  check(await page.locator('[data-entry]:visible').count()===2,'back restores category state');
-  await page.goto(`${base}hiphop/styles.html?group=Voice%20%26%20writing#boom-bap`);
+  check(await page.locator('[data-entry]:visible').count()===styleCount,'clear restores all styles');
+  await page.goBack();await page.waitForFunction(()=>document.querySelector('#hh-group').value==='Writing & delivery');
+  check(await page.locator('[data-entry]:visible').count()===writingCount,'back restores category state');
+  await page.goto(`${base}hiphop/styles.html?group=Writing%20%26%20delivery#boom-bap`);
   await page.locator('[data-filter]').waitFor();
   check(await page.locator('#boom-bap').isVisible(),'deep link reveals a filtered entry');
   check(!new URL(page.url()).searchParams.has('group'),'deep-link restoration updates URL');
+  check(await page.locator('#boom-bap [data-style-details]').getAttribute('open')!==null,'style anchor opens its details');
+  check(await page.locator('#boom-bap h2').evaluate(node=>node===document.activeElement),'style anchor moves keyboard focus to its heading');
+  await page.getByRole('button',{name:'Clear filters',exact:true}).click();
+  await page.locator('#hh-kind').selectOption('Regional umbrella');
+  check(await page.locator('[data-entry]:visible').count()===content.styles.filter(entry=>entry.kind==='Regional umbrella').length,'entry type filter works');
+  await page.locator('#hh-group').selectOption('Foundations');
+  check(await page.locator('#hh-empty').isVisible(),'family and type filters combine');
+  await page.getByRole('button',{name:'Show everything',exact:true}).click();
+  check(await page.locator('#hh-kind').inputValue()==='','reset also clears entry type');
+  await page.locator('#hh-q').fill('DJ Premier');
+  check(await page.locator('#boom-bap').isVisible(),'artist search finds a matching style');
+  check(await page.locator('[data-entry]:visible').count()<styleCount,'artist search narrows the directory');
+  await page.getByRole('button',{name:'Clear filters',exact:true}).click();
+  await page.locator('#hh-q').fill('gfunk');
+  check(await page.locator('#g-funk').isVisible(),'alias search works without displaying aliases as genre names');
+  await page.locator('#g-funk summary').focus();await page.keyboard.press('Enter');
+  check(await page.locator('#g-funk .hh-style-listening').isVisible(),'style details work with the keyboard');
+  check((await page.locator('#g-funk .hh-style-listening a').getAttribute('href')).startsWith('https://music.apple.com/'),'listening route uses a verified provider URL');
+  await page.locator('#g-funk [data-related-style][href="#melodic"]').click();
+  check(await page.locator('#melodic').isVisible(),'related style reveals an entry excluded by search');
+  check(await page.locator('#melodic [data-style-details]').getAttribute('open')!==null,'related style opens its learning details');
+  check(await page.locator('#hh-q').inputValue()==='','related style clears conflicting search');
+  await page.getByRole('button',{name:'Clear filters',exact:true}).click();
+  await page.locator('#hh-kind').selectOption('Era');await page.reload();await page.locator('[data-filter]').waitFor();
+  check(await page.locator('#hh-kind').inputValue()==='Era','entry type survives reload');
+  await page.locator('#hh-kind').selectOption('Technique');await page.goBack();
+  await page.waitForFunction(()=>document.querySelector('#hh-kind').value==='Era');
+  check(await page.locator('[data-entry]:visible').count()===2,'back navigation restores the previous entry type');
+  await page.goto(`${base}hiphop/styles.html?kind=not-a-type&q=none#hyphy`);await page.locator('[data-filter]').waitFor();
+  check(await page.locator('#hyphy .hh-style-listening').isVisible(),'direct anchor takes priority over invalid or conflicting filters');
+  check(await page.locator('.hh-style-details .hh-sources a').count()>=styleCount,'each style includes sources');
+  await page.screenshot({path:`${output}/styles-desktop.png`,fullPage:false});
   await visit(page,'scenes');await page.locator('[data-filter]').waitFor();
   await page.locator('#hh-q').fill('sao paulo');
   check(await page.locator('[data-entry]:visible').count()===1,'accent-insensitive scene search');
@@ -135,11 +170,14 @@ try {
     }
   }
   const noJS=await context({javaScriptEnabled:false});const plain=await noJS.newPage();
-  for(const [section,count] of [['history',8],['styles',10],['scenes',8],['listening',10],['rap',8],['dictionary',38]]) {
+  for(const [section,count] of [['history',8],['styles',styleCount],['scenes',8],['listening',10],['rap',8],['dictionary',38]]) {
     await visit(plain,section);
     const selector=section==='history'?'.hh-timeline>li':section==='rap'?'.hh-lesson':'[data-entry]';
     check(await plain.locator(selector+':visible').count()===count,`${section} editorial content works without JS`);
   }
+  await visit(plain,'styles');await plain.locator('#g-funk summary').click();
+  check(await plain.locator('#g-funk .hh-style-listening').isVisible(),'genre details and listening routes work without JavaScript');
+  check(await plain.locator('#g-funk [data-related-style]').count()>=2,'related styles remain ordinary links without JavaScript');
   await visit(plain,'listening');await plain.locator('#bayaan summary').click();
   check(await plain.locator('#bayaan details ol').isVisible(),'listening prompts expand without JavaScript');
   check(!await plain.locator('[data-filter]').isVisible(),'nonfunctional filters stay hidden without JS');

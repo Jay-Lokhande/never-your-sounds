@@ -1,9 +1,35 @@
 ---
 layout: hiphop
 title: Styles & sounds — Hip-Hop Hub
-description: Explore ten ways of hearing hip-hop through drums, arrangement, voice and regional perspectives.
+description: Explore 36 hip-hop styles, eras and approaches, with origins, artists, production traits, listening routes and related styles.
 section: styles
 ---
-<p class="hh-context">Styles overlap and change. These are listening lenses, not fixed tempo rules or a definitive genre tree. Artist interviews and production breakdowns help put the sound in context.</p>
-{% include hiphop-filter.html items=site.data.hiphop.styles label='Search styles and sounds' placeholder='Try bass, jazz, or melody…' noun='styles' %}
-<div class="hh-card-grid" data-results>{% for entry in site.data.hiphop.styles %}<article class="hh-card" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}"><p class="hh-kicker">{{ entry.group | escape }}</p><h2><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2><p>{{ entry.body | escape }}</p><h3 class="hh-small-heading">Listen for</h3><ul class="hh-cues">{% for cue in entry.cues %}<li>{{ cue | escape }}</li>{% endfor %}</ul><div class="hh-prompt"><span class="eyebrow">TRY THIS</span><p>{{ entry.exercise | escape }}</p></div>{% if entry.album != '' %}{% assign album = site.data.hiphop.albums | where: 'id', entry.album | first %}<a class="text-link" href="{{ site.baseurl }}/hiphop/listening.html#{{ album.id }}">Listening guide: {{ album.title | escape }} →</a>{% endif %}{% include hiphop-sources.html ids=entry.sources %}</article>{% endfor %}</div>
+<section class="hh-directory-intro panel" aria-labelledby="directory-title">
+  <div><p class="eyebrow">THE GENRE EXPLORER</p><h2 id="directory-title">Find the sound. <br>Follow its connections.</h2><p>A growing directory of major styles and subgenres, with eras, techniques, and regional traditions clearly labelled. Families help you navigate; they are not a fixed family tree.</p></div>
+  <dl class="hh-directory-stats"><div><dt>Entries to explore</dt><dd>{{ site.data.hiphop.styles.size }}</dd></div><div><dt>Listening families</dt><dd>06</dd></div></dl>
+</section>
+<div class="hh-directory-start"><span class="eyebrow">NEW HERE?</span><a href="#boom-bap">Start with the drums →</a><a href="#g-funk">Follow the bass →</a><a href="#cloud-rap">Explore atmosphere →</a><a href="{{ site.baseurl }}/hiphop/scenes.html">Explore global scenes ↗</a></div>
+<p class="hh-context hh-directory-context">Artists cross boundaries; an example is a way in, not a label for their entire catalogue. Origins are context, not single-inventor claims. Listening links open tracks, albums, or clearly labelled guides in a new tab. Playback access varies by provider and region; some recordings contain explicit language or mature themes.</p>
+{% include hiphop-filter.html items=site.data.hiphop.styles label='Search genres, artists, or sounds' placeholder='Try G-funk, DJ Premier, or bass…' group_label='Style family' noun='families' kinds=true %}
+<details class="hh-style-index"><summary>Jump to a style <span class="muted">/ A–Z</span></summary><nav class="hh-alphabet" aria-label="Styles A to Z">{% for entry in site.data.hiphop.styles %}<a href="#{{ entry.id }}" data-term-index="{{ entry.id }}">{{ entry.title | escape }}</a>{% endfor %}</nav></details>
+<div class="hh-card-grid hh-style-grid" data-results>
+{% for entry in site.data.hiphop.styles %}
+  <article class="hh-card hh-style-card" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}" data-kind="{{ entry.kind | escape }}" data-search="{{ entry.aliases | join: ' ' | escape }}">
+    <div class="hh-style-meta"><span class="hh-kicker">{{ entry.group | escape }}</span><span class="badge">{{ entry.kind | escape }}</span></div>
+    <h2 tabindex="-1"><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2>
+    <p>{{ entry.body | escape }}</p>
+    <p class="hh-style-origin"><strong>Roots & context</strong>{{ entry.origin | escape }}</p>
+    <details class="hh-style-details" data-style-details>
+      <summary>Sound, artists & listening <span aria-hidden="true">+</span><span class="sr-only">: {{ entry.title | escape }}</span></summary>
+      <h3 class="hh-small-heading">Listen for</h3><ul class="hh-cues">{% for cue in entry.cues %}<li>{{ cue | escape }}</li>{% endfor %}</ul>
+      <h3 class="hh-small-heading">Artists to explore</h3><p class="hh-style-artists">{{ entry.artists | join: ' · ' | escape }}</p>
+      {% assign recording = entry.listening %}{% assign recording_source = site.data.hiphop.sources[recording.source] %}
+      <div class="hh-style-listening"><p class="eyebrow">YOUR LISTENING ROUTE / {{ recording.format | escape }}</p><h3>{{ recording.title | escape }}</h3><p class="hh-artist">{{ recording.artist | escape }}</p><p>{{ recording.prompt | escape }}</p><a href="{{ recording_source.url | escape }}" target="_blank" rel="noopener noreferrer">Open listening route ↗<span class="sr-only">: {{ recording.title | escape }} (opens a new tab)</span></a></div>
+      <div class="hh-prompt"><span class="eyebrow">TRY THIS</span><p>{{ entry.exercise | escape }}</p></div>
+      {% if entry.album != '' %}{% assign album = site.data.hiphop.albums | where: 'id', entry.album | first %}<a class="text-link" href="{{ site.baseurl }}/hiphop/listening.html#{{ album.id }}">Full album guide: {{ album.title | escape }} →</a>{% endif %}
+      <h3 class="hh-small-heading">Follow a connection</h3><div class="hh-term-links">{% for related_id in entry.related %}{% assign related = site.data.hiphop.styles | where: 'id', related_id | first %}<a href="#{{ related.id }}" data-related-style>{{ related.title | escape }} →</a>{% endfor %}</div>
+      {% include hiphop-sources.html ids=entry.sources %}
+    </details>
+  </article>
+{% endfor %}
+</div>

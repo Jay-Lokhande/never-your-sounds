@@ -25,13 +25,13 @@ Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` toge
 ## Hip-Hop Hub
 
 - [Culture & history](https://jay-lokhande.github.io/never-your-sounds/hiphop/history.html): connected practices, a starting timeline, and archival sources.
-- [Styles & sounds](https://jay-lokhande.github.io/never-your-sounds/hiphop/styles.html): drums, textures, voice, and regional perspectives.
+- [Styles & sounds](https://jay-lokhande.github.io/never-your-sounds/hiphop/styles.html): 36 styles, eras, and approaches with roots, artists, listening routes, exercises, and related entries. Browse the A–Z index or filter by family and entry type.
 - [Scenes around the world](https://jay-lokhande.github.io/never-your-sounds/hiphop/scenes.html): eight local entry points across four continents.
 - [Albums & guided listening](https://jay-lokhande.github.io/never-your-sounds/hiphop/listening.html): focused questions, release links, and personal notes.
 - [Learn to rap](https://jay-lokhande.github.io/never-your-sounds/hiphop/rap.html): original exercises, optional progress, and a verse notebook.
 - [Hip-hop dictionary](https://jay-lokhande.github.io/never-your-sounds/hiphop/dictionary.html): searchable definitions and examples with shareable term anchors.
 
-Styles, scenes, listening, and dictionary pages support `?q=` and `?group=` together. Entries have stable anchors. An anchor takes priority over filters so a shared entry stays visible. The notebook is temporary until device saving is enabled; download it before leaving the page if saving is off or unavailable.
+Styles, scenes, listening, and dictionary pages support `?q=` and `?group=` together. Styles also supports `?kind=` for eras, subgenres, techniques, and other entry types. Entries have stable anchors. An anchor takes priority over filters so a shared entry stays visible; style anchors open its listening details. The notebook is temporary until device saving is enabled; download it before leaving the page if saving is off or unavailable.
 
 ## Topic guides
 

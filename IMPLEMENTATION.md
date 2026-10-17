@@ -1,5 +1,15 @@
 # Implementation and verification report
 
+## Styles & sounds expansion — 17 October 2026
+
+Expanded the ten introductory style guides into a 36-entry directory across six browsing families. Each entry includes roots and context, three listening cues, example artists, a labelled listening route, an original exercise, related styles, and source links. The directory distinguishes subgenres, eras, regional umbrellas, writing and production approaches, techniques, and neighbouring traditions. It remains a growing introduction rather than a claim to cover every genre. All original style anchors and guided-album links remain valid.
+
+Added artist/sound/alias search, combined family and entry-type filters, an A–Z index, starter routes, and native expandable cards. Filter URLs survive reload and browser navigation. Related links and direct anchors reveal a filtered entry, expand its details, and move keyboard focus to its heading. Browser testing caught native fragment navigation resetting that focus during initial loading; the final implementation reapplies the anchor after load. The editorial content and native disclosures remain usable without JavaScript.
+
+Verification passed: 26 Node test groups, 22 Python validator cases, and 244 browser assertions (77 platform, 54 Studio/Compare, and 113 Hip-Hop Hub). The Hub checks include combined filters, invalid URL values, artist and alias search, keyboard disclosures, related links, deep links, no-JavaScript content, and responsive overflow at 320/390/768/1024px. Desktop and mobile directory screenshots were visually reviewed. Project-path and domain-root Jekyll builds each passed checks for 38 HTML pages and 1,685 local links/assets. Browser validation used Microsoft Edge; external provider playback and continuous external-link availability are not guaranteed.
+
+The canonical data and its Jekyll mirror are updated together. SCHEMA.md documents the new fields and DEVELOPMENT.md describes the checks. Historical implementation reports below retain their original counts.
+
 ## Hip-Hop Hub follow-up — 17 October 2026
 
 Added a landing page and six connected sections: culture/history, styles/sounds, global scenes, guided album listening, rap practice, and a dictionary. The starter collection includes eight timeline entries, five connected practices, ten style guides, eight scene introductions, ten albums with three listening questions each, eight original rap exercises, and 38 terms. Twenty-seven source records link to archives, museums, artist/producer interviews, universities, labels, venues, and release pages. Entries distinguish editorial listening prompts from historical and release context; the collection is explicitly introductory rather than exhaustive or ranked. No recordings, album covers, or song lyrics are bundled.

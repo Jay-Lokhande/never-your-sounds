@@ -11,14 +11,15 @@ export function normalizeSearch(value) {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('en').trim();
 }
 
-export function matchesEntry(text, group, query, selected) {
-  return (!selected || group === selected) && normalizeSearch(query).split(/\s+/).every(word => normalizeSearch(text).includes(word));
+export function matchesEntry(text, group, query, selected, kind='', selectedKind='') {
+  return (!selected || group === selected) && (!selectedKind || kind === selectedKind) && normalizeSearch(query).split(/\s+/).every(word => normalizeSearch(text).includes(word));
 }
 
-export function readFilter(search, groups) {
+export function readFilter(search, groups, kinds=[]) {
   const params = new URLSearchParams(search);
   const group = params.get('group') || '';
-  return {query:(params.get('q') || '').slice(0,120),group:groups.includes(group) ? group : ''};
+  const kind=params.get('kind') || '';
+  return {query:(params.get('q') || '').slice(0,120),group:groups.includes(group) ? group : '',...(kinds.length ? {kind:kinds.includes(kind) ? kind : ''}:{})};
 }
 
 function object(value) { return value !== null && typeof value === 'object' && !Array.isArray(value); }

@@ -12,7 +12,7 @@
       "id": "styles",
       "title": "Styles & sounds",
       "headline": "Hear the differences.",
-      "description": "Follow the drums, the voice, the textures, and the space between them.",
+      "description": "Explore 36 styles, eras, and approaches through their roots, artists, production, and listening routes.",
       "number": "02"
     },
     {
@@ -152,6 +152,194 @@
     "simz": {
       "title": "Little Simz · Sometimes I Might Be Introvert on Apple Music",
       "url": "https://music.apple.com/us/album/sometimes-i-might-be-introvert/1561184260"
+    },
+    "old-school-guide": {
+      "title": "AllMusic · Old-School Rap",
+      "url": "https://www.allmusic.com/subgenre/old-school-rap-ma0000002762"
+    },
+    "golden-guide": {
+      "title": "AllMusic · Golden Age",
+      "url": "https://www.allmusic.com/style/golden-age-ma0000012011"
+    },
+    "g-funk-guide": {
+      "title": "AllMusic · G-Funk",
+      "url": "https://www.allmusic.com/style/g-funk-ma0000011824"
+    },
+    "bass-guide": {
+      "title": "AllMusic · Bass Music",
+      "url": "https://www.allmusic.com/genre/bass-music-ma0000011923/albums"
+    },
+    "east-guide": {
+      "title": "AllMusic · East Coast Rap",
+      "url": "https://www.allmusic.com/genre/east-coast-rap-ma0000002563"
+    },
+    "gangsta-guide": {
+      "title": "AllMusic · Gangsta Rap",
+      "url": "https://www.allmusic.com/subgenre/gangsta-rap-ma0000002611"
+    },
+    "hardcore-guide": {
+      "title": "AllMusic · Hardcore Rap",
+      "url": "https://www.allmusic.com/style/hardcore-rap-ma0000011937"
+    },
+    "political-guide": {
+      "title": "AllMusic · Political Rap",
+      "url": "https://www.allmusic.com/subgenre/political-rap-ma0000012322"
+    },
+    "horror-guide": {
+      "title": "AllMusic · Horror Rap",
+      "url": "https://www.allmusic.com/style/horror-rap-ma0000013531"
+    },
+    "alternative-guide": {
+      "title": "AllMusic · Alternative Rap",
+      "url": "https://www.allmusic.com/subgenre/alternative-rap-ma0000012203"
+    },
+    "instrumental-guide": {
+      "title": "AllMusic · Instrumental Hip-Hop",
+      "url": "https://www.allmusic.com/style/instrumental-hip-hop-ma0000013592"
+    },
+    "pop-guide": {
+      "title": "AllMusic · Pop-Rap",
+      "url": "https://www.allmusic.com/subgenre/pop-rap-ma0000005012"
+    },
+    "rock-guide": {
+      "title": "AllMusic · Rap-Metal and its rap-rock precursors",
+      "url": "https://www.allmusic.com/style/rap-metal-ma0000002817"
+    },
+    "crunk-guide": {
+      "title": "RBMA · Lil Jon and the evolution of crunk",
+      "url": "https://daily.redbullmusicacademy.com/2019/09/lil-jon-usher-ludacris-yeah/"
+    },
+    "hyphy-guide": {
+      "title": "Red Bull · TURF dancing and the hyphy movement",
+      "url": "https://www.redbull.com/us-en/theredbulletin/podcast-episodes/turf-dancing-taking-up-room-on-the-floor-hyphy"
+    },
+    "screw-guide": {
+      "title": "RBMA · DJ Screw: A Fast Life in Slow Motion",
+      "url": "https://daily.redbullmusicacademy.com/2015/05/dj-screw-feature/"
+    },
+    "bounce-guide": {
+      "title": "Big Freedia · A Brief History of Bounce",
+      "url": "https://oxfordamerican.org/magazine/issue-115-winter-2021/a-brief-history-of-bounce"
+    },
+    "snap-guide": {
+      "title": "AllMusic · Dem Franchize Boyz and snap music",
+      "url": "https://www.allmusic.com/artist/dem-franchize-boyz-mn0000226714"
+    },
+    "cloud-guide": {
+      "title": "Bandcamp Daily · The DJ Smokey Guide to Cloud Rap",
+      "url": "https://daily.bandcamp.com/lists/the-dj-smokey-guide-to-cloud-rap"
+    },
+    "blog-guide": {
+      "title": "Bandcamp Daily · The Ephemeral Life of Blog Rap",
+      "url": "https://daily.bandcamp.com/lists/blog-cloud-rap-list"
+    },
+    "lofi-guide": {
+      "title": "Bandcamp Daily · Jonathan Cloud on beatmaking and texture",
+      "url": "https://daily.bandcamp.com/lists/jonathan-cloud-artist-profile"
+    },
+    "phonk-guide": {
+      "title": "Spotify · Dxrk on phonk and its different sounds",
+      "url": "https://newsroom.spotify.com/2023-02-14/get-to-know-dxrk-%E3%83%80%E3%83%BC%E3%82%AF-the-phonk-artist-taking-electronic-music-by-storm/"
+    },
+    "house-guide": {
+      "title": "RBMA · Hip House: An Oral History",
+      "url": "https://daily.redbullmusicacademy.com/2016/05/hip-house-oral-history/"
+    },
+    "emo-guide": {
+      "title": "AllMusic · Lil Peep: Crybaby",
+      "url": "https://www.allmusic.com/album/crybaby-mw0003394601"
+    },
+    "peep-credits": {
+      "title": "Lil Peep Estate · Crybaby credits",
+      "url": "https://lilpeep.com/pages/crybaby-credits"
+    },
+    "clipping-release": {
+      "title": "Sub Pop · There Existed an Addiction to Blood",
+      "url": "https://www.subpop.com/releases/clipping/there_existed_an_addiction_to_blood"
+    },
+    "donuts-release": {
+      "title": "Stones Throw · J Dilla: Donuts",
+      "url": "https://www.stonesthrow.com/store/donuts/"
+    },
+    "clams-release": {
+      "title": "Clams Casino · I’m God (with Imogen Heap)",
+      "url": "https://clamscasinoofficial.bandcamp.com/track/im-god-with-imogen-heap"
+    },
+    "breaks-track": {
+      "title": "Kurtis Blow · The Breaks on Apple Music",
+      "url": "https://music.apple.com/us/song/309789866"
+    },
+    "regulate-track": {
+      "title": "Warren G · Regulate (feat. Nate Dogg) on Apple Music",
+      "url": "https://music.apple.com/us/song/1628452610"
+    },
+    "magic-track": {
+      "title": "DJ Magic Mike · Drop the Bass on Apple Music",
+      "url": "https://music.apple.com/us/song/62427069"
+    },
+    "get-low-track": {
+      "title": "Lil Jon & The East Side Boyz and Ying Yang Twins · Get Low",
+      "url": "https://music.apple.com/us/song/311384494"
+    },
+    "hyphy-track": {
+      "title": "E-40 · Tell Me When to Go (feat. Keak da Sneak)",
+      "url": "https://music.apple.com/us/song/129020711"
+    },
+    "snap-track": {
+      "title": "Dem Franchize Boyz · Lean Wit It, Rock Wit It",
+      "url": "https://music.apple.com/us/song/1440829373"
+    },
+    "fight-track": {
+      "title": "Public Enemy · Fight the Power on Apple Music",
+      "url": "https://music.apple.com/us/song/1440751885"
+    },
+    "nwa-track": {
+      "title": "N.W.A · Straight Outta Compton on Apple Music",
+      "url": "https://music.apple.com/us/song/1440835797"
+    },
+    "de-la-track": {
+      "title": "De La Soul · Me Myself and I on Apple Music",
+      "url": "https://music.apple.com/us/song/1673854199"
+    },
+    "walk-track": {
+      "title": "Run-DMC · Walk This Way (feat. Aerosmith)",
+      "url": "https://music.apple.com/us/song/255636423"
+    },
+    "house-track": {
+      "title": "Fast Eddie · Yo Yo Get Funky (Funky Music)",
+      "url": "https://music.apple.com/us/song/1844607427"
+    },
+    "bounce-track": {
+      "title": "Big Freedia · Explode on Apple Music",
+      "url": "https://music.apple.com/us/song/868127476"
+    },
+    "memphis-release": {
+      "title": "Three 6 Mafia · Mystic Stylez on Apple Music",
+      "url": "https://music.apple.com/us/album/mystic-stylez/332165657"
+    },
+    "ti-track": {
+      "title": "T.I. · What You Know on Apple Music",
+      "url": "https://music.apple.com/us/song/1258980494"
+    },
+    "phonk-track": {
+      "title": "DJ Smokey · Smoke Gang Phonk on Spotify",
+      "url": "https://open.spotify.com/track/3VYg4YfzQWjTw6mLnntmws"
+    },
+    "shutdown-track": {
+      "title": "Skepta · Shutdown on Apple Music",
+      "url": "https://music.apple.com/us/song/1168849332"
+    },
+    "planet-track": {
+      "title": "Afrika Bambaataa & The Soulsonic Force · Planet Rock",
+      "url": "https://music.apple.com/us/song/1604623228"
+    },
+    "drill-history": {
+      "title": "GRAMMY.com · How Pop Smoke Shaped New York’s Drill Rap Scene",
+      "url": "https://www.grammy.com/news/how-pop-smoke-shaped-new-yorks-drill-rap-scene-well-afterlife/"
+    },
+    "crybaby-release": {
+      "title": "Lil Peep · Crybaby on Apple Music",
+      "url": "https://music.apple.com/us/album/crybaby/6774739099"
     }
   },
   "history": [
@@ -272,171 +460,1403 @@
   ],
   "styles": [
     {
-      "id": "boom-bap",
-      "title": "Boom bap",
-      "group": "Drums & groove",
-      "body": "A useful starting point is the conversation between a weighty kick, a clear snare, and a repeated musical phrase. Listen to the placement of the hits rather than assuming a particular tempo defines the style.",
+      "id": "abstract",
+      "title": "Abstract hip-hop",
+      "group": "Alternative & production",
+      "kind": "Lyrical approach",
+      "origin": "An approach found across independent and experimental rap; no single birthplace defines it.",
+      "body": "Dense imagery, associative leaps, wordplay, and shifting narrators can make meaning unfold over repeated listening. Abstract writing may sit over an ordinary loop or an unusual arrangement. Follow connections without assuming there is only one correct reading.",
       "cues": [
-        "Kick and snare relationship",
-        "Loop changes and sample texture",
-        "Vocal space between drum hits"
+        "Images linked by sound or association",
+        "Internal rhyme and layered meanings",
+        "A narrator whose position changes"
       ],
-      "exercise": "Tap the pulse through one verse, then mark only the snare hits.",
+      "artists": [
+        "MF DOOM",
+        "Madvillain"
+      ],
+      "listening": {
+        "title": "Madvillainy",
+        "artist": "Madvillain",
+        "source": "madvillain-release",
+        "format": "Album",
+        "prompt": "Choose a short track and trace its images separately from its rhyme patterns."
+      },
       "sources": [
-        "premier"
+        "madvillain"
       ],
-      "album": "low-end-theory"
+      "related": [
+        "experimental",
+        "alternative",
+        "horrorcore"
+      ],
+      "exercise": "Write four connected images without explaining every connection.",
+      "album": "madvillainy",
+      "aliases": [
+        "abstract rap"
+      ]
     },
     {
-      "id": "jazz-rap",
-      "title": "Jazz-influenced rap",
-      "group": "Texture & arrangement",
-      "body": "Jazz-related timbres, harmony, samples, or instrumental playing can shape a rap record. The Low End Theory and Modal Soul are two listening routes; they do not sound identical.",
+      "id": "alternative",
+      "title": "Alternative hip-hop",
+      "group": "Alternative & production",
+      "kind": "Style / subgenre",
+      "origin": "Late-1980s and 1990s alternatives to dominant rap conventions, with continuing reinvention.",
+      "body": "An open label for artists who take unexpected routes through subjects, instrumentation, and presentation. It does not require one shared beat or an absence of popularity. Humour, personal identity, and unusual musical combinations can all matter.",
       "cues": [
-        "Bass movement",
-        "Acoustic and sampled textures",
-        "How the voice sits in the groove"
+        "Unexpected samples or instruments",
+        "Distinctive personality and humour",
+        "Song structures that vary from expectations"
       ],
-      "exercise": "Compare a bass part with the vocal rhythm. Do they answer each other or move independently?",
+      "artists": [
+        "De La Soul",
+        "A Tribe Called Quest"
+      ],
+      "listening": {
+        "title": "Me Myself and I",
+        "artist": "De La Soul",
+        "source": "de-la-track",
+        "format": "Track",
+        "prompt": "Listen to how personality and a recurring groove work together."
+      },
       "sources": [
-        "tribe",
-        "nujabes"
+        "alternative-guide"
       ],
-      "album": "low-end-theory"
+      "related": [
+        "jazz-rap",
+        "abstract",
+        "experimental"
+      ],
+      "exercise": "Describe one choice that makes a recording distinctive without calling it better than another style.",
+      "album": "",
+      "aliases": [
+        "alternative rap",
+        "alt rap",
+        "alt hip-hop"
+      ]
+    },
+    {
+      "id": "boom-bap",
+      "title": "Boom bap",
+      "group": "Foundations",
+      "kind": "Style / subgenre",
+      "origin": "Strongly associated with New York sample-based production and 1990s rap.",
+      "body": "A weighty kick and a clear snare anchor the groove, often alongside chopped or looped recordings. Swing, texture, and drum placement matter as much as tempo. Artists have continually reworked this vocabulary.",
+      "cues": [
+        "Kick and snare conversation",
+        "Sample chops and repeated phrases",
+        "The voice’s position against the drums"
+      ],
+      "artists": [
+        "DJ Premier",
+        "Gang Starr"
+      ],
+      "listening": {
+        "title": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "source": "tribe",
+        "format": "Album",
+        "prompt": "Compare the kick and snare placement across two tracks; this is one listening route, not the whole style."
+      },
+      "sources": [
+        "premier",
+        "tribe"
+      ],
+      "related": [
+        "golden-age",
+        "east-coast",
+        "lo-fi"
+      ],
+      "exercise": "Tap a steady pulse, then mark the snare without losing your count.",
+      "album": "low-end-theory",
+      "aliases": [
+        "boom-bap"
+      ]
+    },
+    {
+      "id": "chopped-screwed",
+      "title": "Chopped & screwed",
+      "group": "Regional traditions",
+      "kind": "Technique",
+      "origin": "DJ Screw and Houston’s mixtape culture, especially the 1990s.",
+      "body": "Slowing recordings changes pitch, duration, and mood; repeated or cut-back phrases reshape their flow. It is a DJ and production approach that can transform many kinds of music, rather than a requirement for all Houston rap.",
+      "cues": [
+        "Lowered pitch and stretched time",
+        "Repeated fragments and transitions",
+        "A different emotional weight in familiar sounds"
+      ],
+      "artists": [
+        "DJ Screw",
+        "Screwed Up Click"
+      ],
+      "listening": {
+        "title": "DJ Screw: A Fast Life in Slow Motion",
+        "artist": "DJ Screw and collaborators",
+        "source": "screw-guide",
+        "format": "Listening article",
+        "prompt": "Use the recordings discussed in the article to follow a slowed groove and its repeated phrases."
+      },
+      "sources": [
+        "screw-guide"
+      ],
+      "related": [
+        "southern",
+        "cloud-rap",
+        "phonk"
+      ],
+      "exercise": "With audio you own, compare an original and a slower version; describe the changed texture.",
+      "album": "",
+      "aliases": [
+        "chopped and screwed",
+        "screwed",
+        "houston rap"
+      ]
+    },
+    {
+      "id": "cloud-rap",
+      "title": "Cloud rap",
+      "group": "Modern branches",
+      "kind": "Style / subgenre",
+      "origin": "Online mixtape and blog networks around the early 2010s, with varied regional connections.",
+      "body": "Hazy pads, spacious samples, and drifting melodies give the beat an atmospheric role. Rapping may float with the texture or cut across it. The label links several approaches rather than one precise set of equipment or tempos.",
+      "cues": [
+        "Reverb and blurred edges",
+        "Pitched or fragmented vocal samples",
+        "Space between drum hits"
+      ],
+      "artists": [
+        "Clams Casino",
+        "A$AP Rocky"
+      ],
+      "listening": {
+        "title": "I’m God (with Imogen Heap)",
+        "artist": "Clams Casino",
+        "source": "clams-release",
+        "format": "Instrumental track",
+        "prompt": "Follow the sampled voice as a texture and melody before focusing on the drums."
+      },
+      "sources": [
+        "blog-guide",
+        "clams-release"
+      ],
+      "related": [
+        "trap",
+        "chopped-screwed",
+        "emo-rap"
+      ],
+      "exercise": "Describe a beat’s sense of distance using three concrete sound observations.",
+      "album": "",
+      "aliases": [
+        "cloud rap",
+        "blog rap"
+      ]
+    },
+    {
+      "id": "conscious",
+      "title": "Conscious rap",
+      "group": "Writing & delivery",
+      "kind": "Lyrical approach",
+      "origin": "A broad label for reflection and social awareness across many eras and scenes.",
+      "body": "Identity, community, everyday pressures, and social questions can shape a record without fixing its drum sound. The label overlaps with political rap and storytelling; a single artist can move through all of these approaches.",
+      "cues": [
+        "Perspective and self-questioning",
+        "Details connecting personal and public life",
+        "How an arrangement supports a story"
+      ],
+      "artists": [
+        "Little Simz",
+        "Queen Latifah"
+      ],
+      "listening": {
+        "title": "Sometimes I Might Be Introvert",
+        "artist": "Little Simz",
+        "source": "simz",
+        "format": "Album",
+        "prompt": "Follow how a personal perspective changes across the album rather than reducing it to a message."
+      },
+      "sources": [
+        "simz",
+        "queen"
+      ],
+      "related": [
+        "political",
+        "alternative",
+        "jazz-rap"
+      ],
+      "exercise": "Write four lines about a local issue using one specific observed detail.",
+      "album": "introvert",
+      "aliases": [
+        "social reflection",
+        "storytelling rap",
+        "conscious hip-hop"
+      ]
+    },
+    {
+      "id": "crunk",
+      "title": "Crunk",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "Southern club scenes, with Atlanta and Memphis among its important contexts.",
+      "body": "Forceful group chants and repeated rhythmic hooks make participation central. Lil Jon’s production offers a clear route into the way percussion, synthesizers, and vocal shouts build collective energy.",
+      "cues": [
+        "Shouted group responses",
+        "Repeated synth figures",
+        "Arrangements that build and release tension"
+      ],
+      "artists": [
+        "Lil Jon & The East Side Boyz",
+        "Ying Yang Twins"
+      ],
+      "listening": {
+        "title": "Get Low",
+        "artist": "Lil Jon & The East Side Boyz and Ying Yang Twins",
+        "source": "get-low-track",
+        "format": "Track",
+        "prompt": "Follow the contrast between the lead call and the answering voices."
+      },
+      "sources": [
+        "crunk-guide"
+      ],
+      "related": [
+        "southern",
+        "snap",
+        "hyphy"
+      ],
+      "exercise": "Write a short original chant, then try it quietly and loudly without changing the rhythm.",
+      "album": "",
+      "aliases": []
+    },
+    {
+      "id": "drill",
+      "title": "Drill",
+      "group": "Modern branches",
+      "kind": "Style / subgenre",
+      "origin": "Chicago in the early 2010s, followed by distinct UK, Brooklyn, and other local developments.",
+      "body": "Drill changes between places and generations. Start with the exact recording: 808 Melo’s breakdown of “Dior” offers a way to follow bass movement, recurring figures, and room for the voice. Do not use one production recipe to describe every scene.",
+      "cues": [
+        "Bass movement and articulation",
+        "Percussion placement",
+        "The relationship between vocal weight and empty space"
+      ],
+      "artists": [
+        "Chief Keef",
+        "Pop Smoke",
+        "808 Melo"
+      ],
+      "listening": {
+        "title": "Making “Dior”",
+        "artist": "808 Melo / Pop Smoke",
+        "source": "drill",
+        "format": "Producer breakdown",
+        "prompt": "Watch the producer identify a choice, then listen for its effect in the arrangement."
+      },
+      "sources": [
+        "drill-history",
+        "drill"
+      ],
+      "related": [
+        "trap",
+        "hardcore",
+        "grime"
+      ],
+      "exercise": "Describe the production choices in one drill recording before comparing a second scene.",
+      "album": "",
+      "aliases": [
+        "chicago drill",
+        "uk drill",
+        "brooklyn drill",
+        "new york drill"
+      ]
+    },
+    {
+      "id": "east-coast",
+      "title": "East Coast rap",
+      "group": "Regional traditions",
+      "kind": "Regional umbrella",
+      "origin": "New York and other eastern US scenes; much wider than one production style.",
+      "body": "The label describes geography, not a compulsory sound. Sample collages and technically detailed rhyming are important listening routes, alongside party music, experimental work, and many other approaches.",
+      "cues": [
+        "How a loop changes beneath a verse",
+        "Rhyme density and phrasing",
+        "Different voices within a group"
+      ],
+      "artists": [
+        "A Tribe Called Quest",
+        "Public Enemy"
+      ],
+      "listening": {
+        "title": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "source": "tribe",
+        "format": "Album",
+        "prompt": "Follow the group’s vocal exchanges, then compare them with Public Enemy’s delivery."
+      },
+      "sources": [
+        "east-guide",
+        "tribe"
+      ],
+      "related": [
+        "boom-bap",
+        "golden-age",
+        "political"
+      ],
+      "exercise": "Find two East Coast recordings that differ strongly in texture.",
+      "album": "low-end-theory",
+      "aliases": [
+        "east coast",
+        "new york rap"
+      ]
     },
     {
       "id": "electro",
       "title": "Electro & early machine rhythms",
-      "group": "Drums & groove",
-      "body": "Electronic drum sounds can be the centre of the arrangement. Explore the 808’s contribution to hip-hop and related dance music without treating every 808-based record as the same genre.",
+      "group": "Foundations",
+      "kind": "Crossover / neighbour",
+      "origin": "Early-1980s electronic dance music intersecting with hip-hop and breaking.",
+      "body": "Synthetic percussion, sequenced patterns, and electronic melodies make the machine itself audible. Electro has its own dance-music history and includes instrumental records as well as rap performances.",
       "cues": [
-        "Synthetic percussion",
-        "Repeated machine patterns",
-        "Rhythmic space"
+        "Electronic kick and clap timbres",
+        "Repeating sequenced figures",
+        "Rhythmic space for dancers"
       ],
-      "exercise": "Describe three drum sounds using texture words rather than brand names.",
+      "artists": [
+        "Afrika Bambaataa & The Soulsonic Force",
+        "Arthur Baker"
+      ],
+      "listening": {
+        "title": "Planet Rock",
+        "artist": "Afrika Bambaataa & The Soulsonic Force",
+        "source": "planet-track",
+        "format": "Track",
+        "prompt": "Follow the electronic percussion separately from the repeating melodic figure."
+      },
       "sources": [
         "roland",
-        "808"
+        "old-school-guide"
       ],
-      "album": ""
+      "related": [
+        "miami-bass",
+        "old-school",
+        "hip-house"
+      ],
+      "exercise": "Describe three percussion sounds without using an instrument brand name.",
+      "album": "",
+      "aliases": [
+        "electro-funk",
+        "electro hip-hop"
+      ]
     },
     {
-      "id": "southern",
-      "title": "Southern rap: multiple approaches",
-      "group": "Scene & perspective",
-      "body": "Southern rap is a broad regional description, not one drum pattern. Compare Outkast’s album arrangements with DJ Toomp’s account of production to hear how varied approaches can coexist.",
+      "id": "emo-rap",
+      "title": "Emo rap",
+      "group": "Modern branches",
+      "kind": "Crossover / neighbour",
+      "origin": "Internet rap communities of the 2010s, in dialogue with emo and rock songwriting.",
+      "body": "Melodic vulnerability, intimate delivery, and guitar-based or sampled textures meet rap percussion. Different artists draw differently from emo, pop-punk, and hip-hop. Follow the actual songwriting and production rather than assigning a mood to every track.",
       "cues": [
-        "Changes within an arrangement",
-        "Bass and vocal interaction",
-        "Regional language and phrasing"
+        "Sung and rapped phrases",
+        "Guitar or rock-derived textures",
+        "Intimate vocal tone and recurring hooks"
       ],
-      "exercise": "List two differences between the examples before looking for similarities.",
+      "artists": [
+        "Lil Peep"
+      ],
+      "listening": {
+        "title": "Crybaby",
+        "artist": "Lil Peep",
+        "source": "crybaby-release",
+        "format": "Album",
+        "prompt": "Compare the hooks and backing textures, then use the estate’s credits to explore the contributors."
+      },
       "sources": [
-        "outkast",
-        "toomp"
+        "emo-guide",
+        "peep-credits"
       ],
-      "album": "aquemini"
-    },
-    {
-      "id": "trap",
-      "title": "Trap",
-      "group": "Drums & groove",
-      "body": "Start with DJ Toomp’s first-person account of crafting trap music. Explore the relationship between the low end, percussion, and vocal phrasing. A fast subdivision can sit inside a much slower-feeling pulse.",
-      "cues": [
-        "Low-end weight",
-        "Hi-hat subdivisions",
-        "Sparse and dense moments"
+      "related": [
+        "melodic",
+        "cloud-rap",
+        "rap-rock"
       ],
-      "exercise": "Count a comfortable pulse, then try counting twice as fast without changing the recording.",
-      "sources": [
-        "toomp",
-        "berklee"
-      ],
-      "album": ""
-    },
-    {
-      "id": "drill",
-      "title": "Drill: listen to the particular scene",
-      "group": "Drums & groove",
-      "body": "Use 808 Melo’s breakdown of “Dior” as one production case study. Follow the bass, the recurring musical figure, and the space left for Pop Smoke’s voice. One record is a starting point, not a template for every drill scene.",
-      "cues": [
-        "Bass movement",
-        "Placement of percussion",
-        "Room for the lead voice"
-      ],
-      "exercise": "Watch the producer explain a decision, then listen for that choice in the full recording.",
-      "sources": [
-        "drill"
-      ],
-      "album": ""
+      "exercise": "Write about a feeling using a concrete image rather than naming the emotion.",
+      "album": "",
+      "aliases": [
+        "emo rap",
+        "emo trap"
+      ]
     },
     {
       "id": "experimental",
-      "title": "Experimental & abstract approaches",
-      "group": "Texture & arrangement",
-      "body": "Madvillainy offers a route into short forms, unusual transitions, and dense vocal writing. “Experimental” describes a willingness to change conventions rather than a single, fixed sound.",
+      "title": "Experimental hip-hop",
+      "group": "Alternative & production",
+      "kind": "Production approach",
+      "origin": "Ongoing experimentation across rap; independent recording networks provide many entry points.",
+      "body": "Artists can rethink song form, sound sources, rhythm, or the role of the voice. Noise, unusual edits, and abrupt changes are possibilities rather than requirements. Listen for the specific convention a recording changes.",
       "cues": [
-        "How sections begin and end",
-        "Changes of texture",
-        "Rhymes inside the line"
+        "Unexpected transitions",
+        "Unfamiliar sound sources",
+        "Unusual relationships between voice and beat"
       ],
-      "exercise": "Sketch the order of sections in one track. Notice anything a verse–chorus template misses.",
+      "artists": [
+        "Madvillain",
+        "clipping."
+      ],
+      "listening": {
+        "title": "There Existed an Addiction to Blood",
+        "artist": "clipping.",
+        "source": "clipping-release",
+        "format": "Album",
+        "prompt": "Compare a song’s pulse with the noises and textures that surround it."
+      },
       "sources": [
-        "madvillain"
+        "madvillain",
+        "clipping-release"
       ],
-      "album": "madvillainy"
+      "related": [
+        "abstract",
+        "instrumental",
+        "horrorcore"
+      ],
+      "exercise": "Draw a track’s sequence of sections without forcing it into a verse–chorus template.",
+      "album": "madvillainy",
+      "aliases": [
+        "experimental rap",
+        "left-field rap",
+        "avant-garde hip-hop"
+      ]
+    },
+    {
+      "id": "g-funk",
+      "title": "G-funk",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "Early-1990s West Coast rap drawing strongly on funk, including Parliament-Funkadelic.",
+      "body": "Elastic bass, prominent synthesizer lines, and relaxed grooves create room for conversational rapping and sung hooks. The funk influence can come through samples, replayed parts, and new performances.",
+      "cues": [
+        "High melodic synth lines",
+        "Rounded, moving bass parts",
+        "Space between vocal phrases"
+      ],
+      "artists": [
+        "Dr. Dre",
+        "Warren G",
+        "Nate Dogg"
+      ],
+      "listening": {
+        "title": "Regulate (feat. Nate Dogg)",
+        "artist": "Warren G",
+        "source": "regulate-track",
+        "format": "Track",
+        "prompt": "Track the handoffs between the rapped and sung parts."
+      },
+      "sources": [
+        "g-funk-guide"
+      ],
+      "related": [
+        "west-coast",
+        "gangsta",
+        "melodic"
+      ],
+      "exercise": "Sketch the bass rhythm separately from the lead melody.",
+      "album": "",
+      "aliases": [
+        "g funk",
+        "gfunk"
+      ]
+    },
+    {
+      "id": "gangsta",
+      "title": "Gangsta rap",
+      "group": "Writing & delivery",
+      "kind": "Lyrical approach",
+      "origin": "Street narratives associated with late-1980s rap, especially influential West Coast recordings.",
+      "body": "The label concerns subject matter, perspective, and persona as much as production. Reportage, exaggeration, criticism, and fictional performance can coexist. Do not assume a narrator’s claims are a literal biography of the performer.",
+      "cues": [
+        "Narrator and point of view",
+        "Concrete places and social settings",
+        "Contrasts between a voice and its backing"
+      ],
+      "artists": [
+        "N.W.A",
+        "Ice Cube"
+      ],
+      "listening": {
+        "title": "Straight Outta Compton",
+        "artist": "N.W.A",
+        "source": "nwa-track",
+        "format": "Track",
+        "prompt": "Compare the different voices and their introductions of a place and perspective."
+      },
+      "sources": [
+        "gangsta-guide",
+        "hardcore-guide"
+      ],
+      "related": [
+        "g-funk",
+        "hardcore",
+        "west-coast"
+      ],
+      "exercise": "Describe a narrator’s viewpoint without treating the character as a factual identity.",
+      "album": "",
+      "aliases": [
+        "gangster rap",
+        "reality rap"
+      ]
+    },
+    {
+      "id": "golden-age",
+      "title": "Golden-age hip-hop",
+      "group": "Foundations",
+      "kind": "Era",
+      "origin": "A retrospective label often applied to the late 1980s and early 1990s; its boundaries vary.",
+      "body": "This name gathers a period of rapid experimentation in sampling, rhyme, and independent labels. It includes contrasting approaches rather than one signature beat. Treat the term as historical framing, not a claim that later music is less valuable.",
+      "cues": [
+        "Layered samples",
+        "Changes in rhyme placement",
+        "Distinctive group and producer identities"
+      ],
+      "artists": [
+        "Public Enemy",
+        "A Tribe Called Quest"
+      ],
+      "listening": {
+        "title": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "source": "tribe",
+        "format": "Album",
+        "prompt": "Use “Excursions” to follow the exchange between the bass figure and vocal phrasing."
+      },
+      "sources": [
+        "golden-guide",
+        "tribe"
+      ],
+      "related": [
+        "boom-bap",
+        "political",
+        "jazz-rap"
+      ],
+      "exercise": "Compare two records from the period and describe their differences without ranking them.",
+      "album": "low-end-theory",
+      "aliases": [
+        "golden age"
+      ]
+    },
+    {
+      "id": "grime",
+      "title": "Grime",
+      "group": "Crossovers & neighbours",
+      "kind": "Crossover / neighbour",
+      "origin": "A distinct UK tradition rooted in local garage, electronic music, MC crews, and radio culture.",
+      "body": "Jagged electronic figures, forceful MC exchanges, and spare or unstable-feeling rhythms offer a way in. Grime connects with hip-hop while retaining its own history. Skepta’s account helps keep that local context audible.",
+      "cues": [
+        "Electronic motifs and sharp accents",
+        "Space for the MC",
+        "The energy of repeated phrases and exchanges"
+      ],
+      "artists": [
+        "Skepta"
+      ],
+      "listening": {
+        "title": "Shutdown",
+        "artist": "Skepta",
+        "source": "shutdown-track",
+        "format": "Track",
+        "prompt": "Notice the relationship between the repeated backing figure and the MC’s phrasing."
+      },
+      "sources": [
+        "skepta",
+        "shutdown-track"
+      ],
+      "related": [
+        "drill",
+        "electro",
+        "hardcore"
+      ],
+      "exercise": "Compare an MC performance context with an album-track arrangement.",
+      "album": "",
+      "aliases": [
+        "uk grime",
+        "garage rap"
+      ]
+    },
+    {
+      "id": "hardcore",
+      "title": "Hardcore rap",
+      "group": "Writing & delivery",
+      "kind": "Style / subgenre",
+      "origin": "Late-1980s rap and later regional developments; an aggressive musical approach.",
+      "body": "Confrontational delivery, forceful beats, and dense or abrasive textures can create intensity. Hardcore describes an approach to performance and sound; its subject matter can range from social criticism to competition and storytelling.",
+      "cues": [
+        "Hard drum attacks",
+        "Vocal force and rhythmic insistence",
+        "Dense or abrasive arrangements"
+      ],
+      "artists": [
+        "Public Enemy",
+        "N.W.A"
+      ],
+      "listening": {
+        "title": "Fight the Power",
+        "artist": "Public Enemy",
+        "source": "fight-track",
+        "format": "Track",
+        "prompt": "Notice how the layers of sound support the vocal urgency."
+      },
+      "sources": [
+        "hardcore-guide",
+        "political-guide"
+      ],
+      "related": [
+        "political",
+        "gangsta",
+        "rap-rock"
+      ],
+      "exercise": "Describe intensity through rhythm and timbre, without relying on volume alone.",
+      "album": "",
+      "aliases": [
+        "hardcore hip-hop"
+      ]
+    },
+    {
+      "id": "hip-house",
+      "title": "Hip house",
+      "group": "Crossovers & neighbours",
+      "kind": "Crossover / neighbour",
+      "origin": "Late-1980s house and rap collaborations; Chicago’s scene is central to the linked oral history.",
+      "body": "MC delivery meets a house pulse, often with repeated dance-floor hooks and extended mixes. Its house lineage matters alongside rap. Follow how a vocal phrase travels across the regular kick pattern.",
+      "cues": [
+        "Four-on-the-floor kick patterns",
+        "Dance-floor refrains",
+        "Rapped phrases crossing the pulse"
+      ],
+      "artists": [
+        "Fast Eddie",
+        "Tyree Cooper"
+      ],
+      "listening": {
+        "title": "Yo Yo Get Funky (Funky Music)",
+        "artist": "Fast Eddie",
+        "source": "house-track",
+        "format": "Track",
+        "prompt": "Keep a steady four-count while tracking the changing vocal accents."
+      },
+      "sources": [
+        "house-guide"
+      ],
+      "related": [
+        "electro",
+        "pop-rap",
+        "miami-bass"
+      ],
+      "exercise": "Speak an original phrase over a steady four-beat pulse and move its first accent.",
+      "album": "",
+      "aliases": [
+        "hip house",
+        "house rap"
+      ]
+    },
+    {
+      "id": "horrorcore",
+      "title": "Horrorcore / horror rap",
+      "group": "Writing & delivery",
+      "kind": "Lyrical approach",
+      "origin": "Horror imagery and theatrical storytelling recur across different rap scenes and periods.",
+      "body": "Fear, unsettling characters, and cinematic atmosphere become writing and production material. Some work is graphic; other work uses suspense or allegory. The label does not specify a single region or drum pattern.",
+      "cues": [
+        "Narrative suspense",
+        "Sound effects and dissonant textures",
+        "Changes in the listener’s sense of perspective"
+      ],
+      "artists": [
+        "clipping.",
+        "Three 6 Mafia"
+      ],
+      "listening": {
+        "title": "Nothing Is Safe",
+        "artist": "clipping.",
+        "source": "clipping-release",
+        "format": "Track on a label release page",
+        "prompt": "Follow how the arrangement increases tension while the story unfolds."
+      },
+      "sources": [
+        "horror-guide",
+        "clipping-release"
+      ],
+      "related": [
+        "memphis",
+        "experimental",
+        "abstract"
+      ],
+      "exercise": "Create suspense in an original scene using an ordinary sound and an unanswered question.",
+      "album": "",
+      "aliases": [
+        "horror rap"
+      ]
+    },
+    {
+      "id": "hyphy",
+      "title": "Hyphy",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "San Francisco Bay Area music, dance, and local culture; prominent in the 2000s.",
+      "body": "Hyphy connects animated vocal delivery, hard rhythmic accents, and an energetic dance culture. The movement includes producers, dancers, and independent networks as well as nationally visible records.",
+      "cues": [
+        "Clipped rhythmic accents",
+        "Changes in vocal emphasis",
+        "Space for dancing and crowd response"
+      ],
+      "artists": [
+        "E-40",
+        "Keak da Sneak",
+        "Mac Dre"
+      ],
+      "listening": {
+        "title": "Tell Me When to Go (feat. Keak da Sneak)",
+        "artist": "E-40",
+        "source": "hyphy-track",
+        "format": "Track",
+        "prompt": "Notice how vocal timing creates movement over a relatively spare arrangement."
+      },
+      "sources": [
+        "hyphy-guide"
+      ],
+      "related": [
+        "west-coast",
+        "crunk",
+        "snap"
+      ],
+      "exercise": "Tap the main pulse while speaking one original phrase with two different accents.",
+      "album": "",
+      "aliases": []
+    },
+    {
+      "id": "instrumental",
+      "title": "Instrumental hip-hop",
+      "group": "Alternative & production",
+      "kind": "Production approach",
+      "origin": "Beatmaking, sampling, and DJ traditions developed into records that foreground the instrumental.",
+      "body": "The beat and arrangement carry the main journey. Vocal samples can still appear, so instrumental does not always mean complete silence from human voices. Small edits, texture changes, and sequencing can act like storytelling.",
+      "cues": [
+        "Changes inside repeated loops",
+        "Transitions between short pieces",
+        "Vocal fragments used as instruments"
+      ],
+      "artists": [
+        "J Dilla",
+        "DJ Shadow"
+      ],
+      "listening": {
+        "title": "Donuts",
+        "artist": "J Dilla",
+        "source": "donuts-release",
+        "format": "Album",
+        "prompt": "Listen for the point where one short piece hands an idea to the next."
+      },
+      "sources": [
+        "instrumental-guide",
+        "donuts-release"
+      ],
+      "related": [
+        "jazz-rap",
+        "lo-fi",
+        "experimental"
+      ],
+      "exercise": "Describe the beginning, middle, and end of an instrumental using only musical events.",
+      "album": "",
+      "aliases": [
+        "instrumental rap",
+        "beat tape",
+        "beats"
+      ]
+    },
+    {
+      "id": "jazz-rap",
+      "title": "Jazz rap",
+      "group": "Foundations",
+      "kind": "Style / subgenre",
+      "origin": "Rap’s continuing dialogue with jazz; 1990s recordings offer useful landmarks.",
+      "body": "Jazz timbres, samples, harmony, or live playing enter the beat and arrangement. The relationship can be a tiny loop or a sustained collaboration. Listen for what the musicians do with the material, rather than just identifying its source.",
+      "cues": [
+        "Bass movement and harmony",
+        "Acoustic and sampled timbres",
+        "Space around vocal phrases"
+      ],
+      "artists": [
+        "A Tribe Called Quest",
+        "Nujabes"
+      ],
+      "listening": {
+        "title": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "source": "tribe",
+        "format": "Album",
+        "prompt": "Start with “Jazz (We’ve Got)” and follow one repeating instrumental figure."
+      },
+      "sources": [
+        "tribe",
+        "nujabes"
+      ],
+      "related": [
+        "boom-bap",
+        "instrumental",
+        "alternative"
+      ],
+      "exercise": "Describe how a bass phrase and a vocal phrase interact.",
+      "album": "low-end-theory",
+      "aliases": [
+        "jazz-influenced rap",
+        "jazz hop"
+      ]
+    },
+    {
+      "id": "lo-fi",
+      "title": "Lo-fi hip-hop",
+      "group": "Alternative & production",
+      "kind": "Production approach",
+      "origin": "Beat-tape aesthetics and online instrumental listening communities, especially in the 2010s.",
+      "body": "Softened high frequencies, grain, understated loops, and relaxed-feeling drums can create intimacy. Earlier beatmakers influenced later playlists without belonging to one fixed internet genre. A mellow mood and low recording fidelity are different things to listen for.",
+      "cues": [
+        "Grain or softened edges",
+        "Small changes within a loop",
+        "Drum placement that feels loose or restrained"
+      ],
+      "artists": [
+        "Nujabes",
+        "J Dilla"
+      ],
+      "listening": {
+        "title": "Modal Soul",
+        "artist": "Nujabes",
+        "source": "nujabes",
+        "format": "Influence / comparison album",
+        "prompt": "Explore this earlier influence, then distinguish its instrumentation from any lo-fi textures you hear."
+      },
+      "sources": [
+        "lofi-guide",
+        "nujabes"
+      ],
+      "related": [
+        "instrumental",
+        "jazz-rap",
+        "boom-bap"
+      ],
+      "exercise": "Compare a clean recording with a deliberately softened texture; describe the difference without changing volume.",
+      "album": "modal-soul",
+      "aliases": [
+        "lofi",
+        "lo fi",
+        "chillhop",
+        "lo-fi beats"
+      ]
     },
     {
       "id": "melodic",
-      "title": "Rap, melody & singing",
-      "group": "Voice & writing",
-      "body": "The boundary between rapping and singing is a creative space. Listen to how spoken rhythm, pitched phrases, and recurring hooks interact, rather than sorting every phrase into a strict category.",
+      "title": "Melodic rap & rap-singing",
+      "group": "Modern branches",
+      "kind": "Lyrical approach",
+      "origin": "A continuing relationship between rap, melody, and singing across several generations.",
+      "body": "Pitch and rhythm can share the work of shaping a phrase. Artists may alternate singing and rapping or move between them within one line. The presence of melody does not establish one scene, era, or commercial aim.",
       "cues": [
-        "Changes in pitch",
-        "The hook’s role",
-        "Transitions between delivery styles"
+        "Sustained pitch within rhythmic speech",
+        "Changes in delivery between sections",
+        "The musical role of a recurring hook"
       ],
-      "exercise": "Speak an original line, then give one word a sustained pitch. What changes in its emphasis?",
+      "artists": [
+        "Lauryn Hill",
+        "Missy Elliott"
+      ],
+      "listening": {
+        "title": "The Miseducation of Lauryn Hill",
+        "artist": "Lauryn Hill",
+        "source": "lauryn",
+        "format": "Album",
+        "prompt": "Compare the role of pitch in a verse with its role in a sung section."
+      },
       "sources": [
         "lauryn",
         "missy"
       ],
-      "album": "miseducation"
+      "related": [
+        "pop-rap",
+        "emo-rap",
+        "g-funk"
+      ],
+      "exercise": "Speak an original line, then sustain one word on a pitch and compare its emphasis.",
+      "album": "miseducation",
+      "aliases": [
+        "melodic rap",
+        "rap singing",
+        "sing rap"
+      ]
     },
     {
-      "id": "conscious",
-      "title": "Social reflection & storytelling",
-      "group": "Voice & writing",
-      "body": "“Conscious” is often a thematic label. Social commentary and personal storytelling can appear across many sounds, and artists can address several subjects on the same record.",
+      "id": "memphis",
+      "title": "Memphis rap",
+      "group": "Regional traditions",
+      "kind": "Regional umbrella",
+      "origin": "Memphis’s independent tape networks, particularly the 1990s underground.",
+      "body": "Dark loops, prominent low end, recurring vocal fragments, and rapid rhythmic flows are one influential strand. The city’s music extends beyond those traits; later internet movements adapted parts of this vocabulary.",
       "cues": [
-        "Who is speaking",
-        "Specific places and details",
-        "How the perspective changes"
+        "Short, persistent loops",
+        "Percussive vocal rhythms",
+        "The texture of drums and recordings"
       ],
-      "exercise": "Summarise a verse in your own words, then note which details made it feel specific.",
+      "artists": [
+        "Three 6 Mafia",
+        "DJ Zirk",
+        "Tommy Wright III"
+      ],
+      "listening": {
+        "title": "Mystic Stylez",
+        "artist": "Three 6 Mafia",
+        "source": "memphis-release",
+        "format": "Album",
+        "prompt": "Follow one loop across a verse and note what the voices add to its repetition."
+      },
       "sources": [
-        "simz",
-        "bayaan",
-        "amarelo"
+        "cloud-guide",
+        "memphis-release"
       ],
-      "album": "introvert"
+      "related": [
+        "southern",
+        "phonk",
+        "horrorcore"
+      ],
+      "exercise": "Compare repetition in the instrumental with variation in the delivery.",
+      "album": "",
+      "aliases": [
+        "memphis horror rap",
+        "memphis underground"
+      ]
     },
     {
-      "id": "grime",
-      "title": "Grime: a connected UK tradition",
-      "group": "Scene & perspective",
-      "body": "Grime belongs in this exploration with its own context. Skepta describes a London environment shaped by dancehall, dance music, crews, and pirate radio. Follow those connections while keeping its history distinct.",
+      "id": "miami-bass",
+      "title": "Miami bass",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "South Florida’s 1980s dance and rap scenes, in dialogue with electro.",
+      "body": "Low-frequency drum-machine sounds, quick percussion patterns, and dance-floor vocal prompts drive the arrangement. Bass is an active musical part, not simply a playback-volume setting.",
       "cues": [
-        "MC exchanges",
-        "Electronic rhythmic patterns",
-        "Live and radio performance settings"
+        "Long electronic kick tails",
+        "Busy hats against a firm pulse",
+        "Short calls and repeated vocal cues"
       ],
-      "exercise": "Compare an interview account of a live set with an album track. What changes for the performer?",
+      "artists": [
+        "DJ Magic Mike",
+        "2 Live Crew"
+      ],
+      "listening": {
+        "title": "Drop the Bass",
+        "artist": "DJ Magic Mike",
+        "source": "magic-track",
+        "format": "Track",
+        "prompt": "Listen at a comfortable volume and identify where the low end starts and stops."
+      },
       "sources": [
-        "skepta"
+        "bass-guide"
       ],
-      "album": ""
+      "related": [
+        "electro",
+        "bounce",
+        "southern"
+      ],
+      "exercise": "Draw the length of four bass notes; distinguish duration from loudness.",
+      "album": "",
+      "aliases": [
+        "bass music",
+        "miami bass"
+      ]
+    },
+    {
+      "id": "bounce",
+      "title": "New Orleans bounce",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "New Orleans dance and community traditions, taking shape in the early 1990s.",
+      "body": "Call and response, insistent percussion, and repeating vocal fragments connect the performer to the room. Big Freedia’s own history highlights local predecessors and the community behind the music, including queer performers.",
+      "cues": [
+        "Lead calls and crowd responses",
+        "Repeated rhythmic breaks",
+        "Voices used as rhythmic material"
+      ],
+      "artists": [
+        "Big Freedia",
+        "Katey Red"
+      ],
+      "listening": {
+        "title": "Explode",
+        "artist": "Big Freedia",
+        "source": "bounce-track",
+        "format": "Track",
+        "prompt": "Listen for how repetition turns a short phrase into a rhythmic event."
+      },
+      "sources": [
+        "bounce-guide"
+      ],
+      "related": [
+        "southern",
+        "miami-bass",
+        "crunk"
+      ],
+      "exercise": "Invent a short call and an answering rhythm without borrowing a lyric.",
+      "album": "",
+      "aliases": [
+        "bounce music",
+        "new orleans rap"
+      ]
+    },
+    {
+      "id": "old-school",
+      "title": "Old-school rap",
+      "group": "Foundations",
+      "kind": "Era",
+      "origin": "New York party culture; early commercial records in the late 1970s and early 1980s.",
+      "body": "An era label for rap’s early recorded forms: extended grooves, direct crowd address, and voices trading lines. Disco, funk, and electronic backing all appear. Social observation belongs to this history alongside celebration.",
+      "cues": [
+        "Long grooves that leave room for the MC",
+        "Repeated phrases and audience responses",
+        "Connections between DJ, dancers, and voices"
+      ],
+      "artists": [
+        "Kurtis Blow",
+        "The Sugarhill Gang"
+      ],
+      "listening": {
+        "title": "The Breaks",
+        "artist": "Kurtis Blow",
+        "source": "breaks-track",
+        "format": "Track",
+        "prompt": "Notice how the voice cues a response while the groove keeps moving."
+      },
+      "sources": [
+        "old-school-guide",
+        "cornell"
+      ],
+      "related": [
+        "electro",
+        "golden-age",
+        "boom-bap"
+      ],
+      "exercise": "Write an original two-line call and response that a room could repeat.",
+      "album": "",
+      "aliases": [
+        "old school",
+        "disco rap",
+        "party rap"
+      ]
+    },
+    {
+      "id": "phonk",
+      "title": "Phonk",
+      "group": "Modern branches",
+      "kind": "Style / subgenre",
+      "origin": "Internet production linked to Memphis rap influences; later electronic branches broadened the term.",
+      "body": "Memphis-inspired vocal material, dark textures, and forceful low end are useful reference points. Contemporary phonk also includes dance-oriented branches. Cowbells and a fast four-on-the-floor beat describe some versions, not the whole history.",
+      "cues": [
+        "The source and treatment of vocal fragments",
+        "Bass texture",
+        "Whether the pulse follows rap or dance conventions"
+      ],
+      "artists": [
+        "DJ Smokey",
+        "Dxrk"
+      ],
+      "listening": {
+        "title": "Smoke Gang Phonk",
+        "artist": "DJ Smokey",
+        "source": "phonk-track",
+        "format": "Track",
+        "prompt": "Compare the vocal fragments and drum feel with the Memphis entry before exploring newer dance branches."
+      },
+      "sources": [
+        "phonk-guide",
+        "cloud-guide"
+      ],
+      "related": [
+        "memphis",
+        "cloud-rap",
+        "chopped-screwed"
+      ],
+      "exercise": "Compare two recordings labelled phonk and name one important rhythmic difference.",
+      "album": "",
+      "aliases": [
+        "drift phonk",
+        "phonk house"
+      ]
+    },
+    {
+      "id": "political",
+      "title": "Political rap",
+      "group": "Writing & delivery",
+      "kind": "Lyrical approach",
+      "origin": "Rap’s social commentary, with prominent 1980s voices and earlier spoken-word influences.",
+      "body": "Political rap addresses institutions, power, collective action, and social conditions directly. It can sound confrontational, reflective, or celebratory. Understanding the time and place helps explain what a record is responding to.",
+      "cues": [
+        "Who is being addressed",
+        "References to events and institutions",
+        "The relationship between argument and chorus"
+      ],
+      "artists": [
+        "Public Enemy",
+        "KRS-One"
+      ],
+      "listening": {
+        "title": "Fight the Power",
+        "artist": "Public Enemy",
+        "source": "fight-track",
+        "format": "Track",
+        "prompt": "Identify the intended audience and one way repetition reinforces the central argument."
+      },
+      "sources": [
+        "political-guide"
+      ],
+      "related": [
+        "conscious",
+        "hardcore",
+        "golden-age"
+      ],
+      "exercise": "Research one reference from a song before interpreting its argument.",
+      "album": "",
+      "aliases": [
+        "political hip-hop",
+        "protest rap"
+      ]
+    },
+    {
+      "id": "pop-rap",
+      "title": "Pop rap",
+      "group": "Crossovers & neighbours",
+      "kind": "Crossover / neighbour",
+      "origin": "Rap’s crossover with pop songcraft, established through several waves of chart-facing records.",
+      "body": "A memorable hook and a clear song shape give listeners an immediate point of return. Rapped verses, singing, and dance-oriented arrangements can coexist. Popularity alone does not tell you how a song was written.",
+      "cues": [
+        "An easily recognisable refrain",
+        "Contrast between verse and hook",
+        "Concise, returning sections"
+      ],
+      "artists": [
+        "De La Soul",
+        "Run-DMC"
+      ],
+      "listening": {
+        "title": "Me Myself and I",
+        "artist": "De La Soul",
+        "source": "de-la-track",
+        "format": "Track",
+        "prompt": "Notice how an individual vocal identity fits a recurring, accessible hook."
+      },
+      "sources": [
+        "pop-guide",
+        "alternative-guide"
+      ],
+      "related": [
+        "melodic",
+        "alternative",
+        "rap-rock"
+      ],
+      "exercise": "Map a song’s returning sections, then identify what makes the hook memorable.",
+      "album": "",
+      "aliases": [
+        "pop rap",
+        "hip pop"
+      ]
+    },
+    {
+      "id": "rap-rock",
+      "title": "Rap rock",
+      "group": "Crossovers & neighbours",
+      "kind": "Crossover / neighbour",
+      "origin": "Rock instrumentation and rapped delivery met in prominent 1980s collaborations and many later forms.",
+      "body": "Guitar riffs, live-band dynamics, and rapped verses can share an arrangement. Rap metal is a related heavier branch, not a synonym for every rap-rock recording. Listen for how the rhythm section supports the MC.",
+      "cues": [
+        "Repeated guitar riffs",
+        "Rapped delivery against a rock backbeat",
+        "Changes between band and vocal emphasis"
+      ],
+      "artists": [
+        "Run-DMC",
+        "Aerosmith"
+      ],
+      "listening": {
+        "title": "Walk This Way (feat. Aerosmith)",
+        "artist": "Run-DMC",
+        "source": "walk-track",
+        "format": "Track",
+        "prompt": "Follow the handoff between the guitar riff, rapping, and the sung refrain."
+      },
+      "sources": [
+        "rock-guide",
+        "walk-track"
+      ],
+      "related": [
+        "hardcore",
+        "pop-rap",
+        "emo-rap"
+      ],
+      "exercise": "Tap the riff’s rhythm separately from the syllables in a vocal phrase.",
+      "album": "",
+      "aliases": [
+        "rap rock",
+        "rap metal",
+        "rapcore"
+      ]
+    },
+    {
+      "id": "snap",
+      "title": "Snap music",
+      "group": "Regional traditions",
+      "kind": "Style / subgenre",
+      "origin": "Atlanta dance-rap records, especially the mid-2000s.",
+      "body": "A lean arrangement leaves room for finger-snap-like accents, simple hooks, and a dance instruction or gesture. The space between sounds is part of the groove, rather than an unfinished backing track.",
+      "cues": [
+        "Dry, sharp backbeat accents",
+        "Sparse percussion and bass",
+        "A repeating dance-oriented hook"
+      ],
+      "artists": [
+        "Dem Franchize Boyz",
+        "D4L"
+      ],
+      "listening": {
+        "title": "Lean Wit It, Rock Wit It (feat. Peanut & Charlay)",
+        "artist": "Dem Franchize Boyz",
+        "source": "snap-track",
+        "format": "Track",
+        "prompt": "Count the pulse and notice how few elements are needed to keep the groove moving."
+      },
+      "sources": [
+        "snap-guide"
+      ],
+      "related": [
+        "crunk",
+        "southern",
+        "hyphy"
+      ],
+      "exercise": "Build a rhythm using only three contrasting sounds.",
+      "album": "",
+      "aliases": [
+        "snap rap"
+      ]
+    },
+    {
+      "id": "southern",
+      "title": "Southern rap",
+      "group": "Regional traditions",
+      "kind": "Regional umbrella",
+      "origin": "Multiple communities across the southern United States, with distinct local histories.",
+      "body": "Southern rap includes contrasting approaches to bass, rhythm, language, and arrangement. Atlanta, Houston, Memphis, and New Orleans offer connected but different entry points. One pattern cannot stand for the whole region.",
+      "cues": [
+        "Local phrasing and vocal character",
+        "Bass and percussion choices",
+        "Changes within a song’s arrangement"
+      ],
+      "artists": [
+        "Outkast",
+        "DJ Toomp"
+      ],
+      "listening": {
+        "title": "Aquemini",
+        "artist": "Outkast",
+        "source": "outkast",
+        "format": "Album",
+        "prompt": "Compare a spacious arrangement with a denser one before looking for a shared regional sound."
+      },
+      "sources": [
+        "outkast",
+        "toomp"
+      ],
+      "related": [
+        "trap",
+        "memphis",
+        "bounce",
+        "chopped-screwed"
+      ],
+      "exercise": "Write down two differences between your chosen Southern records.",
+      "album": "aquemini",
+      "aliases": [
+        "dirty south",
+        "southern hip-hop"
+      ]
+    },
+    {
+      "id": "trap",
+      "title": "Trap",
+      "group": "Modern branches",
+      "kind": "Style / subgenre",
+      "origin": "Southern rap, with Atlanta producers and MCs central to its development and spread.",
+      "body": "Low-end weight, rapid percussion subdivisions, and space around the voice are useful entry points. The sound has changed considerably across producers and periods. Counting a fast subdivision does not mean the main pulse is equally fast.",
+      "cues": [
+        "Bass and kick interaction",
+        "Hi-hat subdivisions",
+        "Contrasts between spare and crowded moments"
+      ],
+      "artists": [
+        "T.I.",
+        "DJ Toomp"
+      ],
+      "listening": {
+        "title": "What You Know",
+        "artist": "T.I.",
+        "source": "ti-track",
+        "format": "Track",
+        "prompt": "Follow the repeating melodic figure and the space around the lead vocal."
+      },
+      "sources": [
+        "toomp",
+        "berklee"
+      ],
+      "related": [
+        "southern",
+        "drill",
+        "cloud-rap"
+      ],
+      "exercise": "Count a comfortable pulse, then double your count without changing the recording.",
+      "album": "",
+      "aliases": [
+        "trap rap",
+        "trap music"
+      ]
+    },
+    {
+      "id": "west-coast",
+      "title": "West Coast rap",
+      "group": "Regional traditions",
+      "kind": "Regional umbrella",
+      "origin": "California and other western US scenes; several local traditions coexist.",
+      "body": "G-funk, Bay Area hyphy, and Los Angeles independent beatmaking are different routes through this broad label. Place matters, but artists from the same region need not use the same instruments, subject matter, or vocal delivery.",
+      "cues": [
+        "Funk-derived bass and melody in some records",
+        "Bay Area rhythmic approaches",
+        "Independent sampling and beat experiments"
+      ],
+      "artists": [
+        "Warren G",
+        "E-40",
+        "Madlib"
+      ],
+      "listening": {
+        "title": "Regulate (feat. Nate Dogg)",
+        "artist": "Warren G",
+        "source": "regulate-track",
+        "format": "Track",
+        "prompt": "Use this G-funk example as one branch, then contrast it with the hyphy entry."
+      },
+      "sources": [
+        "g-funk-guide",
+        "hyphy-guide",
+        "madvillain"
+      ],
+      "related": [
+        "g-funk",
+        "hyphy",
+        "experimental"
+      ],
+      "exercise": "Compare one melodic lead sound with one drum pattern across two different West Coast records.",
+      "album": "",
+      "aliases": [
+        "west coast",
+        "california rap",
+        "bay area rap"
+      ]
     }
   ],
   "scenes": [

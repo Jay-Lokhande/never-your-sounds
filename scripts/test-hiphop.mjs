@@ -5,7 +5,7 @@ import {NOTEBOOK_KEY,LESSON_IDS,ALBUM_IDS,emptyNotebook,parseNotebook,notebookTe
 const data=JSON.parse(readFileSync(new URL('../data/hiphop.json',import.meta.url),'utf8'));
 test('hip-hop content references resolve to real sections, terms, albums, and HTTPS sources',()=>{
   assert.equal(data.version,1);
-  for (const [name,minimum] of Object.entries({sections:6,history:8,elements:5,styles:10,scenes:8,albums:10,lessons:8,dictionary:38})) {
+  for (const [name,minimum] of Object.entries({sections:6,history:8,elements:5,styles:36,scenes:8,albums:10,lessons:8,dictionary:38})) {
     assert.ok(data[name].length>=minimum,name);
     if(name!=='elements') {
       assert.equal(new Set(data[name].map(item=>item.id)).size,data[name].length,name);
@@ -24,6 +24,32 @@ test('hip-hop content references resolve to real sections, terms, albums, and HT
   }
   assert.deepEqual(data.lessons.map(item=>item.id),LESSON_IDS);
   assert.deepEqual(data.albums.map(item=>item.id),ALBUM_IDS);
+});
+test('genre explorer preserves old anchors and supplies grounded listening and connected entries',()=>{
+  const ids=new Set(data.styles.map(item=>item.id));
+  for(const id of ['boom-bap','jazz-rap','electro','southern','trap','drill','experimental','melodic','conscious','grime']) assert.ok(ids.has(id));
+  assert.equal(new Set(data.styles.map(item=>item.group)).size,6);
+  const kinds=['Era','Style / subgenre','Regional umbrella','Lyrical approach','Production approach','Technique','Crossover / neighbour'];
+  for(const entry of data.styles) {
+    assert.ok(kinds.includes(entry.kind),`${entry.id}: entry type`);
+    assert.ok(entry.origin.length>15 && entry.origin.length<250,`${entry.id}: roots/context`);
+    assert.equal(entry.cues.length,3);
+    assert.ok(entry.artists.length>0);
+    assert.ok(entry.listening.title && entry.listening.artist && entry.listening.format && entry.listening.prompt);
+    assert.ok(data.sources[entry.listening.source],`${entry.id}: listening source`);
+    assert.ok(entry.related.length>=2);
+    assert.equal(new Set(entry.related).size,entry.related.length);
+    for(const id of entry.related) assert.ok(ids.has(id) && id!==entry.id,`${entry.id}: related ${id}`);
+    assert.ok(entry.aliases.every(alias=>typeof alias==='string' && alias.length<80));
+  }
+  assert.equal(data.styles.find(item=>item.id==='grime').kind,'Crossover / neighbour');
+  assert.equal(data.styles.find(item=>item.id==='chopped-screwed').kind,'Technique');
+});
+test('genre family and type combine with text; unknown URL filters cannot hide all entries',()=>{
+  assert.ok(matchesEntry('G-funk Warren G bass','Regional traditions','warren bass','Regional traditions','Style / subgenre','Style / subgenre'));
+  assert.ok(!matchesEntry('G-funk Warren G bass','Regional traditions','bass','','Style / subgenre','Era'));
+  assert.deepEqual(readFilter('?q=bass&group=bogus&kind=bogus',['Regional traditions'],['Era']),{query:'bass',group:'',kind:''});
+  assert.deepEqual(readFilter('?kind=Era',['Foundations'],['Era']),{query:'',group:'',kind:'Era'});
 });
 test('search combines case/accent-insensitive terms and exact category; URL state is bounded',()=>{
   assert.ok(matchesEntry('Emicida, São Paulo, Portuguese','Americas','sao portuguese','Americas'));
