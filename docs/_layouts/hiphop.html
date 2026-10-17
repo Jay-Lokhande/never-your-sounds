@@ -1,0 +1,21 @@
+---
+layout: app
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hiphop.css">
+<div class="hh-page">
+  <nav class="hh-nav" aria-label="Hip-hop sections">
+    <a href="{{ site.baseurl }}/hiphop.html"{% if page.hub %} aria-current="page"{% endif %}>The Hub</a>
+    {% for section in site.data.hiphop.sections %}<a href="{{ site.baseurl }}/hiphop/{{ section.id }}.html"{% if page.section == section.id %} aria-current="page"{% endif %}>{{ section.title | escape }}</a>{% endfor %}
+  </nav>
+  {% unless page.hub %}
+  {% assign current = site.data.hiphop.sections | where: 'id', page.section | first %}
+  <header class="hh-heading page-heading">
+    <p class="eyebrow">HIP-HOP HUB / {{ current.number }} / {{ current.title | escape }}</p>
+    <h1>{{ current.headline | escape }}</h1>
+    <p class="hh-deck">{{ current.description | escape }}</p>
+  </header>
+  {% endunless %}
+  {{ content }}
+  <aside class="hh-editorial"><p class="eyebrow">KEEP THE CONVERSATION OPEN</p><p>This is a growing introduction, with original listening prompts and practice exercises. It is not a complete history or a ranked canon. Follow the sources, hear artists in their own words, and bring more perspectives into your listening.</p><a href="https://github.com/Jay-Lokhande/never-your-sounds/issues">Suggest a correction or a new entry ↗</a></aside>
+</div>
+<script type="module" src="{{ site.baseurl }}/assets/js/hiphop.js"></script>

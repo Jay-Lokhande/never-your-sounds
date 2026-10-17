@@ -1,0 +1,1112 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "id": "history",
+      "title": "Culture & history",
+      "headline": "Know the roots.",
+      "description": "People, places, practices, and the records that carry their stories.",
+      "number": "01"
+    },
+    {
+      "id": "styles",
+      "title": "Styles & sounds",
+      "headline": "Hear the differences.",
+      "description": "Follow the drums, the voice, the textures, and the space between them.",
+      "number": "02"
+    },
+    {
+      "id": "scenes",
+      "title": "Scenes around the world",
+      "headline": "Follow the connections.",
+      "description": "Eight starting points across four continents. Every scene has many voices.",
+      "number": "03"
+    },
+    {
+      "id": "listening",
+      "title": "Albums & guided listening",
+      "headline": "Go beyond the first listen.",
+      "description": "Ten records, focused listening questions, and room for your own observations.",
+      "number": "04"
+    },
+    {
+      "id": "rap",
+      "title": "Learn to rap",
+      "headline": "Find your own cadence.",
+      "description": "Eight practical lessons, original exercises, and a notebook for your first verse.",
+      "number": "05"
+    },
+    {
+      "id": "dictionary",
+      "title": "Hip-hop dictionary",
+      "headline": "Get to know the language.",
+      "description": "Plain-language terms for listening, writing, rhythm, production, and culture.",
+      "number": "06"
+    }
+  ],
+  "sources": {
+    "cornell": {
+      "title": "Cornell University · Hip Hop Collection",
+      "url": "https://hiphop.library.cornell.edu/"
+    },
+    "cornell-origins": {
+      "title": "Cornell · From breaking to Beyoncé",
+      "url": "https://news.cornell.edu/stories/2023/08/breaking-beyonce-hip-hop-collection-empowers-students"
+    },
+    "smithsonian": {
+      "title": "Smithsonian · Anthology of Hip-Hop and Rap",
+      "url": "https://nmaahc.si.edu/explore/publications/smithsonian-anthology-hip-hop-and-rap"
+    },
+    "revolutions": {
+      "title": "Smithsonian · Hip-Hop (R)Evolutions",
+      "url": "https://nmaahc.si.edu/explore/initiatives/hip-hop-revolutions"
+    },
+    "roland": {
+      "title": "Roland · Retracing the Roland Sound in Hip-Hop",
+      "url": "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
+    },
+    "808": {
+      "title": "Roland · The TR-808 Story",
+      "url": "https://www.roland.com/us/promos/roland_tr-808/"
+    },
+    "premier": {
+      "title": "DJ Premier · Red Bull Music Academy interview",
+      "url": "https://www.redbullmusicacademy.com/lectures/dj-premier-you-know-my-steez/"
+    },
+    "toomp": {
+      "title": "DJ Toomp · Red Bull Music Academy interview",
+      "url": "https://www.redbullmusicacademy.com/lectures/dj-toomp-there-it-is/"
+    },
+    "skepta": {
+      "title": "Skepta · Red Bull Music Academy interview (2008)",
+      "url": "https://www.redbullmusicacademy.com/lectures/skepta-england-is-grime/"
+    },
+    "drill": {
+      "title": "808 Melo · Making “Dior” with Genius",
+      "url": "https://www.youtube.com/watch?v=Oo1ieawmCzU"
+    },
+    "berklee": {
+      "title": "Berklee · Essential features of hip-hop production",
+      "url": "https://www.berklee.edu/berklee-now/news/essential-features-of-hip-hop-production-tempo-instrumentation-rhythmic-feel-and-sonic-density"
+    },
+    "speech": {
+      "title": "Berklee · Natural music in language",
+      "url": "https://www.berklee.edu/berklee-now/news/berklee-riffs-natural-music-in-language"
+    },
+    "queen": {
+      "title": "Queen Latifah · All Hail the Queen on Apple Music",
+      "url": "https://music.apple.com/us/album/all-hail-the-queen/1604634098"
+    },
+    "tribe": {
+      "title": "A Tribe Called Quest · The Low End Theory on Apple Music",
+      "url": "https://music.apple.com/us/album/the-low-end-theory/278911460"
+    },
+    "missy": {
+      "title": "Missy Elliott · Supa Dupa Fly on Apple Music",
+      "url": "https://music.apple.com/us/album/supa-dupa-fly/302943316"
+    },
+    "lauryn": {
+      "title": "Lauryn Hill · The Miseducation of Lauryn Hill on Apple Music",
+      "url": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743"
+    },
+    "outkast": {
+      "title": "Outkast · Aquemini on Apple Music",
+      "url": "https://music.apple.com/us/album/aquemini/1536669507"
+    },
+    "madvillain": {
+      "title": "Stones Throw · Making Madvillainy",
+      "url": "https://www.stonesthrow.com/news/making-madvillainy-photos/"
+    },
+    "madvillain-release": {
+      "title": "Stones Throw · Madvillainy release page",
+      "url": "https://store.stonesthrow.com/products/madvillainy-ten-year-anniversary-edition"
+    },
+    "nujabes": {
+      "title": "Nujabes · Modal Soul on Apple Music",
+      "url": "https://music.apple.com/us/album/modal-soul/1078914477"
+    },
+    "tokyo": {
+      "title": "Apple Music · Nujabes Essentials",
+      "url": "https://music.apple.com/us/playlist/nujabes-essentials/pl.5f94cf78113748ae902dfe89a0772da3"
+    },
+    "bayaan": {
+      "title": "Azadi Records · Bayaan",
+      "url": "https://azadirecords.com/portfolio/bayaan/"
+    },
+    "delhi": {
+      "title": "Azadi Records · Nayaab",
+      "url": "https://azadirecords.com/portfolio/nayaab/"
+    },
+    "amarelo": {
+      "title": "Emicida · AmarElo on Apple Music",
+      "url": "https://music.apple.com/us/album/amarelo/1484562276"
+    },
+    "brazil": {
+      "title": "Theatro Municipal de São Paulo · AmarElo launch",
+      "url": "https://theatromunicipal.org.br/eventos/emicida-lancamento-de-amarelo/"
+    },
+    "cape-town": {
+      "title": "University of the Western Cape · Research on Prophets of da City",
+      "url": "https://uwcscholar.uwc.ac.za/items/87a3b85c-5c72-4df6-bd15-a9d0d1c64b2e"
+    },
+    "simz": {
+      "title": "Little Simz · Sometimes I Might Be Introvert on Apple Music",
+      "url": "https://music.apple.com/us/album/sometimes-i-might-be-introvert/1561184260"
+    }
+  },
+  "history": [
+    {
+      "id": "community",
+      "era": "1970s",
+      "title": "A culture takes shape in the Bronx",
+      "body": "Hip-hop emerged through Black and Latino communities in the Bronx. Parties, DJs, MCs, dancers, and visual artists built connected forms of expression. Its history lives in local gatherings and shared work as well as famous recordings.",
+      "question": "What can a party flyer tell you that a chart position cannot?",
+      "sources": [
+        "cornell-origins",
+        "cornell"
+      ]
+    },
+    {
+      "id": "party",
+      "era": "1973",
+      "title": "A landmark party, a longer story",
+      "body": "DJ Kool Herc’s 1973 party is a widely commemorated landmark. Extending a record’s percussion breaks gave dancers more room to move. Treat the anniversary as an entry point into an evolving community, rather than a claim that every part of hip-hop appeared on one night.",
+      "question": "Follow the relationship between the DJ’s selection and the dancers’ response. Who is shaping the performance?",
+      "sources": [
+        "cornell-origins"
+      ]
+    },
+    {
+      "id": "records",
+      "era": "1979",
+      "title": "From the party to the record",
+      "body": "Commercial recordings brought rap to new listeners. The Sugarhill Gang’s “Rapper’s Delight” and the Sequence’s “Funk You Up” are useful entry points into 1979. Looking at multiple releases makes room for the women and groups often missed by a single-hit history.",
+      "question": "How might a performance change when it is made for a recording instead of a room full of dancers?",
+      "sources": [
+        "berklee",
+        "revolutions"
+      ]
+    },
+    {
+      "id": "machines",
+      "era": "1980s",
+      "title": "Machines become part of the vocabulary",
+      "body": "Drum machines such as the TR-808 gave artists another palette alongside turntables and live instruments. The 808 used analog synthesis; its electronic percussion became a creative choice in its own right. Technology mattered because of the ways musicians used it.",
+      "question": "Listen for a synthetic kick or clap. What does its texture contribute beyond keeping time?",
+      "sources": [
+        "808",
+        "roland"
+      ]
+    },
+    {
+      "id": "many-voices",
+      "era": "1989–1998",
+      "title": "Different voices, different possibilities",
+      "body": "All Hail the Queen, The Low End Theory, Supa Dupa Fly, and The Miseducation of Lauryn Hill offer different routes through a decade of music. Use their contrasts to explore voice, group interaction, rhythm, and the meeting of rap and singing. These are starting points, not a complete canon.",
+      "question": "Choose two records and describe a difference in delivery without ranking the artists.",
+      "sources": [
+        "queen",
+        "tribe",
+        "missy",
+        "lauryn"
+      ]
+    },
+    {
+      "id": "regional",
+      "era": "1990s–2000s",
+      "title": "Regional identities keep expanding",
+      "body": "Atlanta’s Outkast and producer DJ Toomp offer different perspectives on Southern hip-hop. In London, Skepta’s account describes grime through local dance-music and MC traditions. Scenes exchange ideas without losing their own histories; grime has its own lineage and should not simply be relabelled US rap.",
+      "question": "Which local places, accents, or performance settings appear in an artist’s own account?",
+      "sources": [
+        "outkast",
+        "toomp",
+        "skepta"
+      ]
+    },
+    {
+      "id": "connections",
+      "era": "2000s–2020s",
+      "title": "Many local stories, connected globally",
+      "body": "Try Nujabes, Seedhe Maut, Emicida, and Little Simz as four routes into a wider listening journey. Ask how language, collaboration, and place enter the music. A single artist never stands for an entire country, and this selection is deliberately open to further exploration.",
+      "question": "Keep a note of one connection and one difference across two records from different places.",
+      "sources": [
+        "nujabes",
+        "delhi",
+        "brazil",
+        "simz"
+      ]
+    },
+    {
+      "id": "living-archive",
+      "era": "Keep exploring",
+      "title": "History is also something we preserve",
+      "body": "Cornell’s archive includes recordings, flyers, photographs, magazines, and other materials. The Smithsonian anthology brings recordings into conversation with essays and visual culture. These different kinds of evidence help listeners ask who made the work, how it circulated, and whose story remains missing.",
+      "question": "Find one primary object or artist interview. Record its creator, date, and what it can actually tell you.",
+      "sources": [
+        "cornell",
+        "smithsonian"
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "title": "MCing / rapping",
+      "body": "Rhythmic vocal expression, storytelling, crowd connection, and the craft of shaping words in time."
+    },
+    {
+      "title": "DJing",
+      "body": "Selecting, arranging, and manipulating recordings to build a musical experience and a relationship with a crowd."
+    },
+    {
+      "title": "Breaking",
+      "body": "A dance practice with its own vocabulary, communities, musical relationships, and histories."
+    },
+    {
+      "title": "Graffiti writing",
+      "body": "Lettering, style, identity, and visual communication. Learn from writers’ accounts and the context of their work."
+    },
+    {
+      "title": "Knowledge & community",
+      "body": "Learning the history, crediting contributions, and sharing skills. Accounts of hip-hop’s elements vary; no short list captures the whole culture."
+    }
+  ],
+  "styles": [
+    {
+      "id": "boom-bap",
+      "title": "Boom bap",
+      "group": "Drums & groove",
+      "body": "A useful starting point is the conversation between a weighty kick, a clear snare, and a repeated musical phrase. Listen to the placement of the hits rather than assuming a particular tempo defines the style.",
+      "cues": [
+        "Kick and snare relationship",
+        "Loop changes and sample texture",
+        "Vocal space between drum hits"
+      ],
+      "exercise": "Tap the pulse through one verse, then mark only the snare hits.",
+      "sources": [
+        "premier"
+      ],
+      "album": "low-end-theory"
+    },
+    {
+      "id": "jazz-rap",
+      "title": "Jazz-influenced rap",
+      "group": "Texture & arrangement",
+      "body": "Jazz-related timbres, harmony, samples, or instrumental playing can shape a rap record. The Low End Theory and Modal Soul are two listening routes; they do not sound identical.",
+      "cues": [
+        "Bass movement",
+        "Acoustic and sampled textures",
+        "How the voice sits in the groove"
+      ],
+      "exercise": "Compare a bass part with the vocal rhythm. Do they answer each other or move independently?",
+      "sources": [
+        "tribe",
+        "nujabes"
+      ],
+      "album": "low-end-theory"
+    },
+    {
+      "id": "electro",
+      "title": "Electro & early machine rhythms",
+      "group": "Drums & groove",
+      "body": "Electronic drum sounds can be the centre of the arrangement. Explore the 808’s contribution to hip-hop and related dance music without treating every 808-based record as the same genre.",
+      "cues": [
+        "Synthetic percussion",
+        "Repeated machine patterns",
+        "Rhythmic space"
+      ],
+      "exercise": "Describe three drum sounds using texture words rather than brand names.",
+      "sources": [
+        "roland",
+        "808"
+      ],
+      "album": ""
+    },
+    {
+      "id": "southern",
+      "title": "Southern rap: multiple approaches",
+      "group": "Scene & perspective",
+      "body": "Southern rap is a broad regional description, not one drum pattern. Compare Outkast’s album arrangements with DJ Toomp’s account of production to hear how varied approaches can coexist.",
+      "cues": [
+        "Changes within an arrangement",
+        "Bass and vocal interaction",
+        "Regional language and phrasing"
+      ],
+      "exercise": "List two differences between the examples before looking for similarities.",
+      "sources": [
+        "outkast",
+        "toomp"
+      ],
+      "album": "aquemini"
+    },
+    {
+      "id": "trap",
+      "title": "Trap",
+      "group": "Drums & groove",
+      "body": "Start with DJ Toomp’s first-person account of crafting trap music. Explore the relationship between the low end, percussion, and vocal phrasing. A fast subdivision can sit inside a much slower-feeling pulse.",
+      "cues": [
+        "Low-end weight",
+        "Hi-hat subdivisions",
+        "Sparse and dense moments"
+      ],
+      "exercise": "Count a comfortable pulse, then try counting twice as fast without changing the recording.",
+      "sources": [
+        "toomp",
+        "berklee"
+      ],
+      "album": ""
+    },
+    {
+      "id": "drill",
+      "title": "Drill: listen to the particular scene",
+      "group": "Drums & groove",
+      "body": "Use 808 Melo’s breakdown of “Dior” as one production case study. Follow the bass, the recurring musical figure, and the space left for Pop Smoke’s voice. One record is a starting point, not a template for every drill scene.",
+      "cues": [
+        "Bass movement",
+        "Placement of percussion",
+        "Room for the lead voice"
+      ],
+      "exercise": "Watch the producer explain a decision, then listen for that choice in the full recording.",
+      "sources": [
+        "drill"
+      ],
+      "album": ""
+    },
+    {
+      "id": "experimental",
+      "title": "Experimental & abstract approaches",
+      "group": "Texture & arrangement",
+      "body": "Madvillainy offers a route into short forms, unusual transitions, and dense vocal writing. “Experimental” describes a willingness to change conventions rather than a single, fixed sound.",
+      "cues": [
+        "How sections begin and end",
+        "Changes of texture",
+        "Rhymes inside the line"
+      ],
+      "exercise": "Sketch the order of sections in one track. Notice anything a verse–chorus template misses.",
+      "sources": [
+        "madvillain"
+      ],
+      "album": "madvillainy"
+    },
+    {
+      "id": "melodic",
+      "title": "Rap, melody & singing",
+      "group": "Voice & writing",
+      "body": "The boundary between rapping and singing is a creative space. Listen to how spoken rhythm, pitched phrases, and recurring hooks interact, rather than sorting every phrase into a strict category.",
+      "cues": [
+        "Changes in pitch",
+        "The hook’s role",
+        "Transitions between delivery styles"
+      ],
+      "exercise": "Speak an original line, then give one word a sustained pitch. What changes in its emphasis?",
+      "sources": [
+        "lauryn",
+        "missy"
+      ],
+      "album": "miseducation"
+    },
+    {
+      "id": "conscious",
+      "title": "Social reflection & storytelling",
+      "group": "Voice & writing",
+      "body": "“Conscious” is often a thematic label. Social commentary and personal storytelling can appear across many sounds, and artists can address several subjects on the same record.",
+      "cues": [
+        "Who is speaking",
+        "Specific places and details",
+        "How the perspective changes"
+      ],
+      "exercise": "Summarise a verse in your own words, then note which details made it feel specific.",
+      "sources": [
+        "simz",
+        "bayaan",
+        "amarelo"
+      ],
+      "album": "introvert"
+    },
+    {
+      "id": "grime",
+      "title": "Grime: a connected UK tradition",
+      "group": "Scene & perspective",
+      "body": "Grime belongs in this exploration with its own context. Skepta describes a London environment shaped by dancehall, dance music, crews, and pirate radio. Follow those connections while keeping its history distinct.",
+      "cues": [
+        "MC exchanges",
+        "Electronic rhythmic patterns",
+        "Live and radio performance settings"
+      ],
+      "exercise": "Compare an interview account of a live set with an album track. What changes for the performer?",
+      "sources": [
+        "skepta"
+      ],
+      "album": ""
+    }
+  ],
+  "scenes": [
+    {
+      "id": "new-york",
+      "title": "New York",
+      "country": "United States",
+      "group": "Americas",
+      "languages": "English; many local languages",
+      "body": "Begin with the Bronx’s early communities, then follow DJ Premier’s account of working in New York. Use both archives and artists’ recollections to connect recordings to people and places.",
+      "route": "Explore a historical flyer, hear a producer interview, then try The Low End Theory.",
+      "sources": [
+        "cornell-origins",
+        "premier"
+      ],
+      "album": "low-end-theory"
+    },
+    {
+      "id": "los-angeles",
+      "title": "Los Angeles",
+      "country": "United States",
+      "group": "Americas",
+      "languages": "English; many local languages",
+      "body": "One route into Los Angeles is the independent recording world around Stones Throw. Its account of Madvillainy describes DOOM and Madlib recording vocals at the label’s house. This is one creative network within a much wider city.",
+      "route": "Read the making-of account, then pay attention to the album’s short tracks and transitions.",
+      "sources": [
+        "madvillain"
+      ],
+      "album": "madvillainy"
+    },
+    {
+      "id": "atlanta",
+      "title": "Atlanta",
+      "country": "United States",
+      "group": "Americas",
+      "languages": "English",
+      "body": "Explore Outkast and DJ Toomp as contrasting entry points into Atlanta. Album listening and a producer’s own recollections reveal different working methods; neither example represents the whole scene.",
+      "route": "Listen to Aquemini, then hear Toomp explain his production decisions.",
+      "sources": [
+        "outkast",
+        "toomp"
+      ],
+      "album": "aquemini"
+    },
+    {
+      "id": "london",
+      "title": "London",
+      "country": "United Kingdom",
+      "group": "Europe",
+      "languages": "English; multilingual communities",
+      "body": "Little Simz offers one route through album storytelling, while Skepta’s interview opens a window onto grime’s crews, DJing, and radio culture. Keep these interconnected practices distinct instead of assigning the whole city one sound.",
+      "route": "Compare a carefully sequenced album with an account of collective performance.",
+      "sources": [
+        "simz",
+        "skepta"
+      ],
+      "album": "introvert"
+    },
+    {
+      "id": "delhi",
+      "title": "Delhi",
+      "country": "India",
+      "group": "Asia",
+      "languages": "Hindi and English in these examples",
+      "body": "Seedhe Maut and Sez on the Beat provide a route into Delhi through Bayaan and Nayaab. Their label’s account places personal experience and the city within the music. Treat this as an introduction to one collaboration, not all of Indian hip-hop.",
+      "route": "Follow how the two MCs exchange phrases, then explore the city context in Nayaab’s release notes.",
+      "sources": [
+        "bayaan",
+        "delhi"
+      ],
+      "album": "bayaan"
+    },
+    {
+      "id": "tokyo",
+      "title": "Tokyo",
+      "country": "Japan",
+      "group": "Asia",
+      "languages": "Instrumentals and English-language collaborations in this route",
+      "body": "Nujabes is a starting point for exploring Tokyo’s connections to jazz-influenced hip-hop and international collaboration. Modal Soul moves between vocal and instrumental pieces; follow the collaborators as well as the producer.",
+      "route": "Compare one instrumental passage with a vocal track and note what changes in the arrangement.",
+      "sources": [
+        "tokyo",
+        "nujabes"
+      ],
+      "album": "modal-soul"
+    },
+    {
+      "id": "sao-paulo",
+      "title": "São Paulo",
+      "country": "Brazil",
+      "group": "Americas",
+      "languages": "Portuguese in this example",
+      "body": "Emicida’s AmarElo offers one listening route into Brazilian rap. Its 2019 launch performance at São Paulo’s Theatro Municipal connects the record with a specific civic and cultural space. Explore the artist’s work alongside the venue’s account.",
+      "route": "Listen for shifts between individual and collective voices. Look up an authorised translation if needed.",
+      "sources": [
+        "brazil",
+        "amarelo"
+      ],
+      "album": "amarelo"
+    },
+    {
+      "id": "cape-town",
+      "title": "Cape Town",
+      "country": "South Africa",
+      "group": "Africa",
+      "languages": "Explore local language choices through the source",
+      "body": "Research on Prophets of da City examines how the Cape Town group addressed apartheid and the transition to democratic elections. This historical route shows why local politics and performance context matter when exploring a scene.",
+      "route": "Read the university research abstract, then follow its references to the group’s work and historical setting.",
+      "sources": [
+        "cape-town"
+      ],
+      "album": ""
+    }
+  ],
+  "albums": [
+    {
+      "id": "all-hail",
+      "title": "All Hail the Queen",
+      "artist": "Queen Latifah",
+      "year": 1989,
+      "group": "Voice & delivery",
+      "language": "English",
+      "sources": [
+        "queen"
+      ],
+      "focus": "Listen for confidence, changes of delivery, and the relationship between a lead voice and a recurring refrain.",
+      "questions": [
+        "Where does the delivery become more conversational or more emphatic?",
+        "How do backing voices change the energy?",
+        "Describe one contrast between two tracks without quoting their lyrics."
+      ]
+    },
+    {
+      "id": "low-end-theory",
+      "title": "The Low End Theory",
+      "artist": "A Tribe Called Quest",
+      "year": 1991,
+      "group": "Rhythm & texture",
+      "language": "English",
+      "sources": [
+        "tribe"
+      ],
+      "focus": "Follow the bass, then listen again for the MCs’ phrasing. Try noticing how each layer changes your sense of the groove.",
+      "questions": [
+        "What is the bass doing while a phrase ends?",
+        "Where does the vocal rhythm agree with the drums, and where does it pull away?",
+        "Which sound would you miss most if it disappeared?"
+      ]
+    },
+    {
+      "id": "supa-dupa-fly",
+      "title": "Supa Dupa Fly",
+      "artist": "Missy Elliott",
+      "year": 1997,
+      "group": "Voice & delivery",
+      "language": "English",
+      "sources": [
+        "missy"
+      ],
+      "focus": "Focus on personality in the voice: articulation, playful sounds, changes of tone, and the spaces around phrases.",
+      "questions": [
+        "Which vocal detail catches your ear before you think about meaning?",
+        "How does a pause affect the next phrase?",
+        "Where do singing and rhythmic speech meet?"
+      ]
+    },
+    {
+      "id": "miseducation",
+      "title": "The Miseducation of Lauryn Hill",
+      "artist": "Lauryn Hill",
+      "year": 1998,
+      "group": "Story & perspective",
+      "language": "English",
+      "sources": [
+        "lauryn"
+      ],
+      "focus": "Explore how personal perspective travels between rap, singing, and the album’s framing. Listen for changes in the relationship with the listener.",
+      "questions": [
+        "Who seems to be addressed in a chosen song?",
+        "How does a change in delivery alter the emotional tone?",
+        "What connects two neighbouring tracks beyond their tempo?"
+      ]
+    },
+    {
+      "id": "aquemini",
+      "title": "Aquemini",
+      "artist": "Outkast",
+      "year": 1998,
+      "group": "Structure & collaboration",
+      "language": "English",
+      "sources": [
+        "outkast"
+      ],
+      "focus": "Listen for contrasting voices and changes within arrangements. Keep track of how the performers share a musical space.",
+      "questions": [
+        "How would you distinguish the two lead voices without naming them?",
+        "What changes between the opening and closing of a track?",
+        "Which transition surprised you, and why?"
+      ]
+    },
+    {
+      "id": "madvillainy",
+      "title": "Madvillainy",
+      "artist": "Madvillain",
+      "year": 2004,
+      "group": "Structure & collaboration",
+      "language": "English",
+      "sources": [
+        "madvillain-release"
+      ],
+      "focus": "Try a whole-album pass before isolating a track. Notice how brief pieces, vocal density, and transitions change your expectations.",
+      "questions": [
+        "Where does a track end earlier than you expected?",
+        "How do recurring sound textures connect separate pieces?",
+        "What does a second listen reveal about the placement of rhymes?"
+      ]
+    },
+    {
+      "id": "modal-soul",
+      "title": "Modal Soul",
+      "artist": "Nujabes",
+      "year": 2005,
+      "group": "Rhythm & texture",
+      "language": "English / instrumental",
+      "sources": [
+        "nujabes"
+      ],
+      "focus": "Trace instrumental details across vocal and instrumental pieces. Give the bass and percussion their own listening pass.",
+      "questions": [
+        "What stays in focus when no rapper is present?",
+        "Which instrumental part answers a vocal phrase?",
+        "How does repetition remain interesting across a passage?"
+      ]
+    },
+    {
+      "id": "bayaan",
+      "title": "Bayaan",
+      "artist": "Seedhe Maut",
+      "year": 2018,
+      "group": "Voice & delivery",
+      "language": "Hindi / English",
+      "sources": [
+        "bayaan"
+      ],
+      "focus": "Follow the exchanges between Encore ABJ and Calm. Focus first on timing and contrast, then return to the meaning in a language you understand.",
+      "questions": [
+        "How does one voice hand a phrase or section to the other?",
+        "Where does a change of language or emphasis affect the rhythm?",
+        "Which detail makes the perspective feel specific rather than generic?"
+      ]
+    },
+    {
+      "id": "amarelo",
+      "title": "AmarElo",
+      "artist": "Emicida",
+      "year": 2019,
+      "group": "Story & perspective",
+      "language": "Portuguese",
+      "sources": [
+        "amarelo"
+      ],
+      "focus": "Listen for the relationship between individual storytelling and shared voices. If you use a translation, separate your observations about sound from what you learn about meaning.",
+      "questions": [
+        "When does the arrangement make the voice feel alone or supported?",
+        "How does the title track build its emotional movement?",
+        "What would you ask a listener familiar with the local context?"
+      ]
+    },
+    {
+      "id": "introvert",
+      "title": "Sometimes I Might Be Introvert",
+      "artist": "Little Simz",
+      "year": 2021,
+      "group": "Story & perspective",
+      "language": "English",
+      "sources": [
+        "simz"
+      ],
+      "focus": "Follow shifts in scale: intimate moments, large arrangements, and spoken interludes. The linked release page also contains Simz’s own track-by-track comments.",
+      "questions": [
+        "How does the opening establish a sense of scale?",
+        "What does an interlude change about the tracks beside it?",
+        "Where does the performer’s explanation deepen or differ from your first impression?"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pulse",
+      "title": "Find the pulse and count bars",
+      "minutes": 5,
+      "body": "A beat is the steady pulse you count. A bar groups beats according to the meter. For this exercise, use 4/4: count 1, 2, 3, 4, then begin the next bar. A written line is not automatically one bar.",
+      "exercise": "Set the existing metronome to 80 BPM and 4/4. Count four bars aloud, clap only on beats 2 and 4, then keep counting through two bars of silence.",
+      "example": "Bar 1: 1 · 2 · 3 · 4 | Bar 2: 1 · 2 · 3 · 4",
+      "terms": [
+        "beat",
+        "bar",
+        "bpm"
+      ],
+      "sources": [
+        "berklee"
+      ]
+    },
+    {
+      "id": "speech",
+      "title": "Start with the rhythm of your speech",
+      "minutes": 7,
+      "body": "Say a sentence naturally before trying to rhyme it. Notice which words you stress and where you pause. You can change the rhythm while keeping the meaning; forcing every word into equal spacing can hide your voice.",
+      "exercise": "Describe a familiar place in one sentence. Speak it three ways: calm, excited, and matter-of-fact. Circle the words that keep their emphasis.",
+      "example": "The last bus hums beside the shuttered store.",
+      "terms": [
+        "cadence",
+        "stress",
+        "delivery"
+      ],
+      "sources": [
+        "speech"
+      ]
+    },
+    {
+      "id": "rhyme",
+      "title": "Build a small rhyme family",
+      "minutes": 8,
+      "body": "Rhyme depends on sound, not spelling. Start with two words you would naturally use, then collect exact and near rhymes. Keep the meaning clear before chasing a longer or more complicated pattern.",
+      "exercise": "Choose a subject and list five related words. Build two lines that end with related sounds. Read them aloud and remove any word that exists only to force the rhyme.",
+      "example": "I leave a little room beside the light. / A half-made thought can find its shape tonight.",
+      "terms": [
+        "end-rhyme",
+        "near-rhyme",
+        "multisyllabic-rhyme"
+      ],
+      "sources": []
+    },
+    {
+      "id": "inside",
+      "title": "Move a rhyme inside the line",
+      "minutes": 8,
+      "body": "An internal rhyme happens before the end of a line or phrase. It can add momentum without changing the ending. A rhyme scheme is a way to describe the relationships you hear, not a rule every verse must obey.",
+      "exercise": "Take your two lines and add one internal sound connection. Keep one version without it. Compare which version is clearer when spoken.",
+      "example": "Small sparks start a thought before I write.",
+      "terms": [
+        "internal-rhyme",
+        "assonance",
+        "rhyme-scheme"
+      ],
+      "sources": []
+    },
+    {
+      "id": "pocket",
+      "title": "Try different placements in the groove",
+      "minutes": 8,
+      "body": "Flow describes how your syllables, stresses, pauses, and rhymes move through the music. You can enter on a beat, between beats, or after a deliberate rest. Faster delivery is one option, not the measure of a better flow.",
+      "exercise": "Speak the same original line over a slow click three times: begin on beat 1, begin just after beat 1, then leave the first beat empty. Keep the underlying count steady.",
+      "example": "Use “The last bus hums beside the shuttered store” for all three versions.",
+      "terms": [
+        "flow",
+        "pocket",
+        "syncopation"
+      ],
+      "sources": []
+    },
+    {
+      "id": "story",
+      "title": "Give the verse a place and a turn",
+      "minutes": 10,
+      "body": "Specific details help a listener enter a scene. Choose a place, a point of view, and a small change. You do not need a dramatic life event: a quiet observation can carry a verse.",
+      "exercise": "Draft four lines: show the setting, introduce an action, reveal a detail, then change the listener’s understanding. Use something you can see or hear instead of only naming an emotion.",
+      "example": "A warm cup waits beside an empty chair. / The window shakes; a train goes somewhere.",
+      "terms": [
+        "imagery",
+        "narrator",
+        "punchline"
+      ],
+      "sources": []
+    },
+    {
+      "id": "delivery",
+      "title": "Make space to breathe and be understood",
+      "minutes": 8,
+      "body": "Delivery includes tone, articulation, volume, and breath placement. Practise at a comfortable speaking level. A short pause can make a key word clearer and give you room to continue naturally.",
+      "exercise": "Mark a slash where you comfortably pause in your draft. Perform it slowly. If a phrase feels crowded, shorten it or move words rather than pushing through discomfort.",
+      "example": "The last bus hums / beside the shuttered store.",
+      "terms": [
+        "breath-mark",
+        "delivery",
+        "rest"
+      ],
+      "sources": []
+    },
+    {
+      "id": "revise",
+      "title": "Finish an eight-bar idea and revise it",
+      "minutes": 12,
+      "body": "Bring the previous exercises together. Decide where each bar begins by performing the words against the count; eight typed lines may take more or fewer than eight musical bars. Finish one small idea, then make a focused revision.",
+      "exercise": "Write a short verse in the notebook. Perform it over eight counted bars, adjusting the wording until it fits. On a second pass, improve one image, one awkward phrase, and one pause. Export a copy you can revisit.",
+      "example": "Review: clear subject · deliberate rhythm · understandable words · room to breathe",
+      "terms": [
+        "verse",
+        "bar",
+        "revision"
+      ],
+      "sources": []
+    }
+  ],
+  "dictionary": [
+    {
+      "id": "808",
+      "title": "808",
+      "group": "Production",
+      "body": "Originally the Roland TR-808 drum machine; in contemporary production, “an 808” often means a bass sound derived from or inspired by its kick. Not every low bass sound comes from the original machine.",
+      "example": "Ask whether someone means the drum machine, a drum kit, or a bass sound."
+    },
+    {
+      "id": "ad-lib",
+      "title": "Ad-lib",
+      "group": "Voice & writing",
+      "body": "An additional vocal sound or phrase that supports, answers, or punctuates the main performance.",
+      "example": "Listen for a short response behind the lead vocal."
+    },
+    {
+      "id": "assonance",
+      "title": "Assonance",
+      "group": "Voice & writing",
+      "body": "Repeated vowel sounds, which can create a connection even when the surrounding consonants differ.",
+      "example": "Try saying “slow road” and listen to the vowel sounds."
+    },
+    {
+      "id": "backbeat",
+      "title": "Backbeat",
+      "group": "Rhythm",
+      "body": "An emphasis often placed on beats 2 and 4 in a 4/4 groove. Some patterns shift, omit, or reinterpret it.",
+      "example": "Count 1–2–3–4 and clap on 2 and 4."
+    },
+    {
+      "id": "bar",
+      "title": "Bar / measure",
+      "group": "Rhythm",
+      "body": "A grouping of beats defined by the meter. In 4/4, a bar contains four quarter-note beats. A line of writing is not a reliable bar counter.",
+      "example": "Count four beats, then restart at 1."
+    },
+    {
+      "id": "beat",
+      "title": "Beat",
+      "group": "Rhythm",
+      "body": "The underlying pulse; in another common usage, “a beat” means the instrumental track a rapper performs over. Context tells you which meaning is intended.",
+      "example": "“Stay on the beat” and “send me a beat” use different meanings."
+    },
+    {
+      "id": "bpm",
+      "title": "BPM",
+      "group": "Rhythm",
+      "body": "Beats per minute: a tempo measurement. A recording may invite different half-time or double-time counts.",
+      "example": "At 60 quarter-note BPM, that pulse occurs once per second."
+    },
+    {
+      "id": "break",
+      "title": "Break",
+      "group": "Production",
+      "body": "A passage where the musical texture changes or reduces, often highlighting percussion. DJs can use breaks as material for extended dance passages.",
+      "example": "Notice the part where the percussion comes forward."
+    },
+    {
+      "id": "breaking",
+      "title": "Breaking",
+      "group": "Culture",
+      "body": "A dance form within hip-hop culture, with its own techniques, vocabulary, and communities. Practitioners may use the terms b-boy and b-girl.",
+      "example": "Explore dancers’ accounts alongside DJ and MC histories."
+    },
+    {
+      "id": "breath-mark",
+      "title": "Breath mark",
+      "group": "Voice & writing",
+      "body": "A personal notation showing a planned breathing point or pause. It is a rehearsal aid rather than a universal notation system.",
+      "example": "Put a slash in your draft where you naturally pause."
+    },
+    {
+      "id": "cadence",
+      "title": "Cadence",
+      "group": "Voice & writing",
+      "body": "The pattern and contour of a vocal phrase: its rhythm, emphasis, and the way it resolves. Usage overlaps with flow and delivery.",
+      "example": "Speak one sentence with three different patterns of emphasis."
+    },
+    {
+      "id": "call-response",
+      "title": "Call and response",
+      "group": "Culture",
+      "body": "An exchange in which one voice or musical phrase invites an answering voice, group, or instrument.",
+      "example": "Listen for the audience or backing voice answering the lead."
+    },
+    {
+      "id": "chop",
+      "title": "Chop",
+      "group": "Production",
+      "body": "A segment cut from audio so it can be rearranged or played as part of a new pattern.",
+      "example": "Compare repeating a whole phrase with reordering smaller pieces."
+    },
+    {
+      "id": "cypher",
+      "title": "Cypher / cipher",
+      "group": "Culture",
+      "body": "A gathering or exchange where participants take turns performing, often in a circle. Contexts include rap and dance.",
+      "example": "Pay attention to how participants listen and respond to each other."
+    },
+    {
+      "id": "delivery",
+      "title": "Delivery",
+      "group": "Voice & writing",
+      "body": "How words are performed: tone, articulation, dynamics, timing, and vocal character.",
+      "example": "Use the same words with a calm voice and an urgent voice."
+    },
+    {
+      "id": "dj",
+      "title": "DJ",
+      "group": "Culture",
+      "body": "A performer who selects and combines recorded music; techniques can include mixing, scratching, and manipulating breaks.",
+      "example": "Listen to how one recording is introduced into another."
+    },
+    {
+      "id": "double-time",
+      "title": "Double-time",
+      "group": "Rhythm",
+      "body": "A faster subdivision or perceived count relative to the underlying pulse. A rapper can increase syllable activity without the backing track changing tempo.",
+      "example": "Keep a steady foot tap while doubling the rate of your hand taps."
+    },
+    {
+      "id": "end-rhyme",
+      "title": "End rhyme",
+      "group": "Voice & writing",
+      "body": "A rhyme placed at the ends of lines or musical phrases. Written line endings and musical phrase endings need not match.",
+      "example": "Use an A/A label for two endings that rhyme."
+    },
+    {
+      "id": "flow",
+      "title": "Flow",
+      "group": "Voice & writing",
+      "body": "The movement of syllables, stresses, rhymes, and pauses in relation to the music. Flow includes space as well as speed.",
+      "example": "Try entering after a rest while keeping the same count."
+    },
+    {
+      "id": "freestyle",
+      "title": "Freestyle",
+      "group": "Culture",
+      "body": "A term with more than one use: it can mean improvised rap, or a verse presented outside a fixed song theme or structure. Ask what a particular performer means.",
+      "example": "A video labelled “freestyle” is not proof that every word was invented on the spot."
+    },
+    {
+      "id": "hook",
+      "title": "Hook",
+      "group": "Voice & writing",
+      "body": "A memorable musical or lyrical idea that helps a listener recognise a song. It may recur in a chorus, but the terms are not identical.",
+      "example": "Notice the phrase, rhythm, or melody that stays with you."
+    },
+    {
+      "id": "imagery",
+      "title": "Imagery",
+      "group": "Voice & writing",
+      "body": "Language that evokes a sensory detail instead of only naming an idea or feeling.",
+      "example": "“A chipped cup on the windowsill” gives a listener something specific to picture."
+    },
+    {
+      "id": "internal-rhyme",
+      "title": "Internal rhyme",
+      "group": "Voice & writing",
+      "body": "A rhyme occurring within a line or musical phrase, rather than only at its ending.",
+      "example": "In the original phrase “small sparks start,” listen for repeated sounds."
+    },
+    {
+      "id": "loop",
+      "title": "Loop",
+      "group": "Production",
+      "body": "A passage repeated over time. Changes in other layers can make the same loop feel different on each return.",
+      "example": "Follow a repeating phrase while listening for changes around it."
+    },
+    {
+      "id": "mc",
+      "title": "MC / emcee",
+      "group": "Culture",
+      "body": "A master of ceremonies; in hip-hop, also a performer who raps and works with the energy of a crowd.",
+      "example": "Explore both the recorded verse and the live performance."
+    },
+    {
+      "id": "multisyllabic-rhyme",
+      "title": "Multisyllabic rhyme",
+      "group": "Voice & writing",
+      "body": "A rhyme relationship spanning more than one syllable. The matched sounds may cross word boundaries.",
+      "example": "Judge it by how the phrases sound in the performer’s accent."
+    },
+    {
+      "id": "narrator",
+      "title": "Narrator / perspective",
+      "group": "Voice & writing",
+      "body": "The voice or viewpoint through which a story is told. A lyrical narrator need not be identical to the artist’s biography.",
+      "example": "Ask who is speaking and who they are addressing."
+    },
+    {
+      "id": "near-rhyme",
+      "title": "Near rhyme / slant rhyme",
+      "group": "Voice & writing",
+      "body": "A close but incomplete sound match. Accent, delivery, and musical placement can affect how strongly it connects.",
+      "example": "Say a possible pair aloud rather than judging spelling alone."
+    },
+    {
+      "id": "pocket",
+      "title": "Pocket",
+      "group": "Rhythm",
+      "body": "A performer’s felt relationship to the groove. People use the term to describe how a part sits with the rhythm section, rather than a fixed measurement.",
+      "example": "Listen for whether a phrase feels settled, ahead, or behind."
+    },
+    {
+      "id": "punchline",
+      "title": "Punchline",
+      "group": "Voice & writing",
+      "body": "A line that delivers a payoff, surprise, or sharp turn. It can be humorous, competitive, or reflective.",
+      "example": "Set up an expectation, then change its meaning."
+    },
+    {
+      "id": "rest",
+      "title": "Rest",
+      "group": "Rhythm",
+      "body": "A deliberate span without a note or vocal sound. The underlying pulse can continue through it.",
+      "example": "Count silently for a beat before your next phrase."
+    },
+    {
+      "id": "revision",
+      "title": "Revision",
+      "group": "Voice & writing",
+      "body": "Reworking a draft to improve its meaning, rhythm, or performance. Editing is part of writing, not evidence that the first idea failed.",
+      "example": "Change one vague image and one crowded phrase."
+    },
+    {
+      "id": "rhyme-scheme",
+      "title": "Rhyme scheme",
+      "group": "Voice & writing",
+      "body": "A description of recurring rhyme relationships, often marked with letters such as AABB. Rap can contain several overlapping patterns.",
+      "example": "Mark matching ending sounds with the same letter."
+    },
+    {
+      "id": "sample",
+      "title": "Sample",
+      "group": "Production",
+      "body": "Recorded sound used as material in another recording or performance. Recognising a sample does not establish permission to reuse it.",
+      "example": "Keep source and permission records when working with someone else’s audio."
+    },
+    {
+      "id": "stress",
+      "title": "Stress / accent",
+      "group": "Rhythm",
+      "body": "Emphasis on a syllable or beat, created through timing, loudness, pitch, or articulation.",
+      "example": "Speak “I meant that” while stressing a different word each time."
+    },
+    {
+      "id": "swing",
+      "title": "Swing",
+      "group": "Rhythm",
+      "body": "A rhythmic feel in which paired subdivisions have unequal timing. Swing varies; it is not always one fixed ratio or software percentage.",
+      "example": "Compare evenly spaced taps with a long–short pair."
+    },
+    {
+      "id": "syncopation",
+      "title": "Syncopation",
+      "group": "Rhythm",
+      "body": "An emphasis that works against an expected strong beat or subdivision, creating rhythmic tension.",
+      "example": "Keep counting evenly while placing a spoken accent between counts."
+    },
+    {
+      "id": "verse",
+      "title": "Verse",
+      "group": "Voice & writing",
+      "body": "A section that develops words, images, or a story. Verse lengths vary; sixteen bars is a convention, not a requirement.",
+      "example": "Choose eight musical bars as a manageable practice target."
+    }
+  ]
+}

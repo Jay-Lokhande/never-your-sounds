@@ -1,0 +1,9 @@
+---
+layout: hiphop
+title: Styles & sounds — Hip-Hop Hub
+description: Explore ten ways of hearing hip-hop through drums, arrangement, voice and regional perspectives.
+section: styles
+---
+<p class="hh-context">Styles overlap and change. These are listening lenses, not fixed tempo rules or a definitive genre tree. Artist interviews and production breakdowns help put the sound in context.</p>
+{% include hiphop-filter.html items=site.data.hiphop.styles label='Search styles and sounds' placeholder='Try bass, jazz, or melody…' noun='styles' %}
+<div class="hh-card-grid" data-results>{% for entry in site.data.hiphop.styles %}<article class="hh-card" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}"><p class="hh-kicker">{{ entry.group | escape }}</p><h2><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2><p>{{ entry.body | escape }}</p><h3 class="hh-small-heading">Listen for</h3><ul class="hh-cues">{% for cue in entry.cues %}<li>{{ cue | escape }}</li>{% endfor %}</ul><div class="hh-prompt"><span class="eyebrow">TRY THIS</span><p>{{ entry.exercise | escape }}</p></div>{% if entry.album != '' %}{% assign album = site.data.hiphop.albums | where: 'id', entry.album | first %}<a class="text-link" href="{{ site.baseurl }}/hiphop/listening.html#{{ album.id }}">Listening guide: {{ album.title | escape }} →</a>{% endif %}{% include hiphop-sources.html ids=entry.sources %}</article>{% endfor %}</div>

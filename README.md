@@ -8,6 +8,7 @@
 
 ## What works in the browser
 
+- **[Hip-Hop Hub](https://jay-lokhande.github.io/never-your-sounds/hiphop.html):** culture and history, ten style guides, eight global scene introductions, ten albums with guided listening, eight rap exercises, and a 38-term dictionary. Explore linked sources, search and filter entries, and optionally save a verse draft, listening notes, and practice progress on this device. Download your notebook as text.
 - **Discover:** all 60 catalogue records, text search across metadata, combined category/cost/platform filters, five sort modes, shareable query URLs, and resource details with cost and license caveats. Invalid records are safely omitted; empty or failed loads offer a retry.
 - **[My Studio](https://jay-lokhande.github.io/never-your-sounds/studio.html):** save resources to named collections, keep project and resource notes, and export/import portable JSON backups. Imports preserve existing collections and notes. Saving uses this browser, with recovery exports if storage is unavailable.
 - **[Compare tools](https://jay-lokhande.github.io/never-your-sounds/compare.html):** choose up to three resources from Discover or My Studio and compare their recorded purpose, platforms, cost model, limitations, and sources. Missing information stays explicitly unrecorded.

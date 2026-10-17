@@ -1,0 +1,9 @@
+---
+layout: hiphop
+title: Culture & history — Hip-Hop Hub
+description: An introduction to hip-hop's communities, practices and history, with archival sources and questions to keep exploring.
+section: history
+---
+<section class="hh-intro panel"><p class="eyebrow">MORE THAN A RECORD COLLECTION</p><h2>Start with people and practices.</h2><p>Music, dance, visual expression, and community life are connected. These practices offer several ways into the culture; different participants describe its elements differently.</p><div class="hh-elements">{% for element in site.data.hiphop.elements %}<div><h3>{{ element.title | escape }}</h3><p>{{ element.body | escape }}</p></div>{% endfor %}</div>{% assign refs = 'cornell,revolutions' | split: ',' %}{% include hiphop-sources.html ids=refs %}</section>
+<section class="hh-section" aria-labelledby="timeline"><div class="hh-section-head"><div><p class="eyebrow">A STARTING TIMELINE</p><h2 id="timeline">Trace the connections.</h2></div><p>Eight entry points. Keep the sources close.</p></div><ol class="hh-timeline">{% for entry in site.data.hiphop.history %}<li id="{{ entry.id }}"><span class="hh-era">{{ entry.era | escape }}</span><article><h3><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h3><p>{{ entry.body | escape }}</p><div class="hh-prompt"><span class="eyebrow">ASK AS YOU EXPLORE</span><p>{{ entry.question | escape }}</p></div>{% include hiphop-sources.html ids=entry.sources %}</article></li>{% endfor %}</ol></section>
+<a class="btn btn-primary" href="{{ site.baseurl }}/hiphop/scenes.html">Follow the scenes around the world →</a>

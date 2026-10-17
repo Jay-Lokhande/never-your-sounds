@@ -2,7 +2,17 @@
 
 The source of truth is `data/`. Run `python scripts/validate-catalog.py` before publishing. Validation is local and does not claim that vendor pages are reachable or their current terms verified. `scripts/sync-pages-site.sh` copies public JSON to `docs/site/data/` and Jekyll data to `docs/_data/`; edit the source, then sync.
 
-All three files contain non-empty JSON arrays of objects. Text fields must be non-empty strings without surrounding whitespace. Unknown fields are tolerated for forward compatibility. Duplicate names and titles are compared after Unicode normalization, case folding and whitespace normalization.
+The three catalogue files below contain non-empty JSON arrays of objects. Text fields must be non-empty strings without surrounding whitespace. Unknown fields are tolerated for forward compatibility. Duplicate names and titles are compared after Unicode normalization, case folding and whitespace normalization. The Hip-Hop Hub uses a separate versioned object described below.
+
+## `hiphop.json` and the hip-hop notebook
+
+Canonical editorial content is a version-1 object with `sections`, `sources`, `history`, `elements`, `styles`, `scenes`, `albums`, `lessons`, and `dictionary`. The staging script copies it into `docs/_data/hiphop.json` for Jekyll and `docs/site/data/hiphop.json` for public access. Edit only the canonical file and then sync.
+
+Entries use stable lowercase hyphenated `id` values, titles, original descriptions, and topic-specific fields. Source IDs resolve through the `sources` object to descriptive titles and HTTPS links. Style/scene album references and lesson term references must resolve. Album questions and lesson exercises are original educational prompts, not transcribed lyrics. Style labels are editorial lenses, and city entries do not claim national representation. Retain nearby source links when updating historical or release metadata. `scripts/test-hiphop.mjs` checks these references and the notebook's supported IDs as part of `npm test`.
+
+The optional local notebook uses only `nys-hiphop-v1`, with `{version:1, completed:[], draft:{title:'',text:''}, notes:{}}`. `completed` contains unique supported lesson IDs; `notes` maps supported album IDs to plain text. Bounds are 120 characters for a title, 16,000 for a draft, and 1,500 per listening note. Saved input exceeding 100,000 characters, malformed input, unknown IDs, and unsupported versions are rejected without overwriting the saved value.
+
+There is no device persistence until the visitor opts in. Disabling saving removes this key while retaining current-page edits. Reset requires confirmation and affects only this notebook. Storage failures keep edits in memory and expose a plain-text download; these temporary edits are lost when leaving or reloading. Changes in another tab pause saving and preserve current edits for download; reload reads the latest saved copy. Truly simultaneous writes are not transactional. The text download is a readable personal copy, not an import format or cloud backup.
 
 ## `sound-resources.json`
 

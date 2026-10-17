@@ -1,0 +1,10 @@
+---
+layout: hiphop
+title: Scenes around the world — Hip-Hop Hub
+description: Follow eight local entry points across four continents through artists, releases, interviews and community histories.
+section: scenes
+---
+<div class="hh-route-strip" aria-hidden="true"><span>THE BRONX</span><i>↔</i><span>LONDON</span><i>↔</i><span>DELHI</span><i>↔</i><span>TOKYO</span><i>↔</i><span>SÃO PAULO</span><i>↔</i><span>CAPE TOWN</span></div>
+<p class="hh-context">A city contains many scenes. Each entry offers a place to begin, not an artist who represents a whole country. Follow local voices and the languages, venues, communities, and collaborations around them.</p>
+{% include hiphop-filter.html items=site.data.hiphop.scenes label='Search places, artists, or languages' placeholder='Try Delhi, Portuguese, or Outkast…' group_label='Explore by region' noun='regions' %}
+<div class="hh-card-grid" data-results>{% for entry in site.data.hiphop.scenes %}<article class="hh-card hh-scene" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}"><div class="hh-kicker"><span>{{ entry.group | escape }} / {{ entry.country | escape }}</span><span aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span></div><h2><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2><p class="hh-language">{{ entry.languages | escape }}</p><p>{{ entry.body | escape }}</p><div class="hh-prompt"><span class="eyebrow">YOUR WAY IN</span><p>{{ entry.route | escape }}</p></div>{% if entry.album != '' %}{% assign album = site.data.hiphop.albums | where: 'id', entry.album | first %}<a class="text-link" href="{{ site.baseurl }}/hiphop/listening.html#{{ album.id }}">Explore {{ album.artist | escape }}: {{ album.title | escape }} →</a>{% endif %}{% include hiphop-sources.html ids=entry.sources %}</article>{% endfor %}</div>

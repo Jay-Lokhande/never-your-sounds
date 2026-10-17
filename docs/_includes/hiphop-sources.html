@@ -1,0 +1,7 @@
+{% if include.ids.size > 0 %}
+<ul class="hh-sources" aria-label="Sources and further exploration">
+{% for key in include.ids %}{% assign source = site.data.hiphop.sources[key] %}
+  <li><a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }} <span aria-hidden="true">↗</span><span class="sr-only"> (opens a new tab)</span></a></li>
+{% endfor %}
+</ul>
+{% endif %}

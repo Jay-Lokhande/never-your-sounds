@@ -1,0 +1,10 @@
+---
+layout: hiphop
+title: Hip-hop dictionary — Hip-Hop Hub
+description: Explore 38 plain-language terms for rhythm, writing, production and hip-hop culture, with practical examples.
+section: dictionary
+---
+<p class="hh-context">Words can mean different things across scenes and conversations. These definitions are practical starting points. Every term has a direct link you can bookmark or share.</p>
+{% include hiphop-filter.html items=site.data.hiphop.dictionary label='Search the hip-hop dictionary' placeholder='Try pocket, bar, or sample…' group_label='Explore by topic' noun='topics' %}
+<nav class="hh-alphabet" aria-label="Dictionary term index">{% assign terms = site.data.hiphop.dictionary | sort_natural: 'title' %}{% for term in terms %}<a href="#{{ term.id }}" data-term-index="{{ term.id }}">{{ term.title | escape }}</a>{% endfor %}</nav>
+<div class="hh-dictionary" data-results>{% for entry in terms %}<article class="hh-definition" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}"><div><p class="hh-kicker">{{ entry.group | escape }}</p><h2><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2></div><div><p>{{ entry.body | escape }}</p><p class="hh-definition-example"><strong>Try it:</strong> {{ entry.example | escape }}</p></div></article>{% endfor %}</div>

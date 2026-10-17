@@ -10,6 +10,7 @@
 | Compare | [Compare tools](https://jay-lokhande.github.io/never-your-sounds/compare.html) | Up to three resources side by side using recorded catalogue details |
 | Create | [Creator toolkit](https://jay-lokhande.github.io/never-your-sounds/create.html) | Tap tempo, metronome, time math, scales, references and checklists |
 | Learn | [Learning pathways](https://jay-lokhande.github.io/never-your-sounds/learn.html) | Eight practical journeys with optional saved progress |
+| Hip-Hop Hub | [Explore hip-hop](https://jay-lokhande.github.io/never-your-sounds/hiphop.html) | Culture, styles, scenes, listening, rap lessons and dictionary |
 | Trust | [Trust & licensing](https://jay-lokhande.github.io/never-your-sounds/trust.html) | Source verification, cost labels, permissions and privacy |
 
 Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` together. Learning links use anchors: `#first-beat`, `#produce`, `#artist`, `#sample-workflow`, `#game-audio`, `#podcast`, `#film`, `#release`. Existing guide URLs remain under `/never-your-sounds/site/guides/`; existing resource URLs remain under `/never-your-sounds/site/resources/`.
@@ -20,6 +21,17 @@ Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` toge
 | **Hub (all dev catalogs)** | [student-dev-catalogs](https://jay-lokhande.github.io/student-dev-catalogs/) |
 | Sister catalogs | [resources/sister-repos.md](resources/sister-repos.md) |
 | **Pages** | [student-dev-catalogs](https://jay-lokhande.github.io/student-dev-catalogs/) · [oss-programs-and-hackathons](https://jay-lokhande.github.io/oss-programs-and-hackathons/) · [build-grants](https://jay-lokhande.github.io/build-grants/) · [hack-safe](https://jay-lokhande.github.io/hack-safe/) · [ai-catalog](https://jay-lokhande.github.io/ai-catalog/) · [coding-platforms](https://jay-lokhande.github.io/coding-platforms/) · [public-apis](https://jay-lokhande.github.io/public-apis/) · [design-for-devs](https://jay-lokhande.github.io/design-for-devs/) · [cloud-student](https://jay-lokhande.github.io/cloud-student/) · [maker-student](https://jay-lokhande.github.io/maker-student/) · [game-dev-student](https://jay-lokhande.github.io/game-dev-student/) · [never-your-sounds](https://jay-lokhande.github.io/never-your-sounds/) |
+
+## Hip-Hop Hub
+
+- [Culture & history](https://jay-lokhande.github.io/never-your-sounds/hiphop/history.html): connected practices, a starting timeline, and archival sources.
+- [Styles & sounds](https://jay-lokhande.github.io/never-your-sounds/hiphop/styles.html): drums, textures, voice, and regional perspectives.
+- [Scenes around the world](https://jay-lokhande.github.io/never-your-sounds/hiphop/scenes.html): eight local entry points across four continents.
+- [Albums & guided listening](https://jay-lokhande.github.io/never-your-sounds/hiphop/listening.html): focused questions, release links, and personal notes.
+- [Learn to rap](https://jay-lokhande.github.io/never-your-sounds/hiphop/rap.html): original exercises, optional progress, and a verse notebook.
+- [Hip-hop dictionary](https://jay-lokhande.github.io/never-your-sounds/hiphop/dictionary.html): searchable definitions and examples with shareable term anchors.
+
+Styles, scenes, listening, and dictionary pages support `?q=` and `?group=` together. Entries have stable anchors. An anchor takes priority over filters so a shared entry stays visible. The notebook is temporary until device saving is enabled; download it before leaving the page if saving is off or unavailable.
 
 ## Topic guides
 
