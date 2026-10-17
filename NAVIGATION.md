@@ -6,6 +6,8 @@
 | --- | --- | --- |
 | Home | [Start](https://jay-lokhande.github.io/never-your-sounds/) | Search, goals, toolkit, and all topic guides |
 | Discover | [Resource explorer](https://jay-lokhande.github.io/never-your-sounds/browse.html) | Real catalogue search, filters, sorting and resource details |
+| My Studio | [Collections](https://jay-lokhande.github.io/never-your-sounds/studio.html) | Saved resources, project notes and portable backups |
+| Compare | [Compare tools](https://jay-lokhande.github.io/never-your-sounds/compare.html) | Up to three resources side by side using recorded catalogue details |
 | Create | [Creator toolkit](https://jay-lokhande.github.io/never-your-sounds/create.html) | Tap tempo, metronome, time math, scales, references and checklists |
 | Learn | [Learning pathways](https://jay-lokhande.github.io/never-your-sounds/learn.html) | Eight practical journeys with optional saved progress |
 | Trust | [Trust & licensing](https://jay-lokhande.github.io/never-your-sounds/trust.html) | Source verification, cost labels, permissions and privacy |

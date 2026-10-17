@@ -1,0 +1,16 @@
+---
+layout: app
+title: Compare audio tools
+description: Compare up to three audio resources by their listed platforms, cost model, purpose, and recorded limitations.
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/studio.css">
+<header class="page-heading studio-heading"><div><p class="eyebrow">COMPARE / MAKE ROOM FOR THE RIGHT TOOLS</p><h1>A closer look.<br><span class="accent-text">A clearer choice.</span></h1><p class="muted">Put up to three resources side by side. Find what fits your workflow using the catalogue’s recorded details.</p></div><a class="btn btn-primary" href="{{ site.baseurl }}/browse.html">Choose tools <span aria-hidden="true">+</span></a></header>
+<div id="compare-app" data-source="{{ site.baseurl }}/site/data/sound-resources.json" hidden>
+  <div class="studio-toolbar studio-overview"><p id="comparison-count" class="studio-count"></p><div class="studio-toolbar"><a class="text-link" href="{{ site.baseurl }}/studio.html">My Studio →</a><button id="comparison-clear" class="btn btn-ghost" type="button">Clear comparison</button></div></div>
+  <p class="studio-message" data-studio-warning role="status" hidden></p><p id="studio-status" class="studio-message" role="status" aria-live="polite" aria-atomic="true"></p>
+  <p id="compare-load-message" class="muted" role="status">Loading catalogue details…</p><button type="button" id="compare-retry" class="btn btn-ghost" hidden>Retry loading details</button>
+  <div id="comparison-content"></div>
+  <p class="small muted comparison-footnote">Comparisons use recorded catalogue metadata, not live product testing. Platform labels do not establish offline support. Unrecorded details remain unknown; check the current edition and terms at the official source.</p>
+</div>
+<noscript><section class="panel studio-empty"><h2>Comparison needs JavaScript.</h2><p>Enable JavaScript to select tools. The <a href="{{ site.baseurl }}/site/data/sound-resources.json">catalogue data</a> and <a href="{{ site.baseurl }}/site/guides/production.html">production guide</a> are still available.</p></section></noscript>
+<script type="module" src="{{ site.baseurl }}/assets/js/studio.js"></script>

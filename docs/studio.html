@@ -1,0 +1,29 @@
+---
+layout: app
+title: My Studio
+description: Keep your audio tools together in personal collections, add project notes, and take a portable backup with you.
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/studio.css">
+<header class="page-heading studio-heading">
+  <div><p class="eyebrow">MY STUDIO / YOUR CREATIVE SHORTLIST</p><h1>Good finds.<br><span class="accent-text">All together.</span></h1><p class="muted">A home for the tools behind your next idea. Collect your favourites, keep a few notes, and pick up where you left off.</p></div>
+  <a class="btn btn-primary" href="{{ site.baseurl }}/browse.html">Find more tools <span aria-hidden="true">↗</span></a>
+</header>
+<div id="studio-app" data-source="{{ site.baseurl }}/site/data/sound-resources.json" hidden>
+  <div class="studio-toolbar studio-overview"><p id="studio-count" class="studio-count"></p><a class="text-link" href="{{ site.baseurl }}/compare.html">Compare your shortlist →</a></div>
+  <p class="studio-message" data-studio-warning role="status" hidden></p>
+  <p id="studio-status" class="studio-message" role="status" aria-live="polite" aria-atomic="true"></p>
+  <div class="studio-layout">
+    <aside class="studio-sidebar" aria-label="Your collections">
+      <h2>Collections</h2><ul id="collection-list" class="collection-list"></ul>
+      <form id="collection-create" class="studio-field"><label for="collection-new-name">New collection</label><input id="collection-new-name" required maxlength="80" placeholder="e.g. Podcast setup"><button class="btn btn-ghost" type="submit">Create collection <span aria-hidden="true">+</span></button></form>
+      <p class="small muted">Up to 30 collections, with 150 tools in each.</p>
+    </aside>
+    <section id="collection-detail" class="collection-detail" aria-label="Selected collection"></section>
+  </div>
+  <section class="studio-backup panel" aria-labelledby="backup-title">
+    <div><p class="eyebrow">YOUR BROWSER. YOUR COLLECTION.</p><h2 id="backup-title">Take your studio with you.</h2><p class="muted">Collections, notes, and comparisons save on this device when you change them. Export a JSON backup before clearing browser data or switching devices.</p></div>
+    <div class="studio-backup-controls"><button id="studio-export" class="btn btn-primary" type="button">Export backup ↓</button><label for="studio-import">Import a My Studio backup</label><input type="file" id="studio-import" accept=".json,application/json" aria-describedby="import-help"><p id="import-help" class="small muted">JSON, up to 1 MB. Imports add collections without replacing yours. Identical collections are skipped. Your current comparison is kept if you have one.</p><button id="studio-reset" class="studio-danger" type="button">Reset My Studio</button></div>
+  </section>
+</div>
+<noscript><section class="panel studio-empty"><h2>Your collections need JavaScript.</h2><p>Enable JavaScript to save and compare tools in this browser. You can still explore the <a href="{{ site.baseurl }}/site/README.html">resource guides</a>.</p></section></noscript>
+<script type="module" src="{{ site.baseurl }}/assets/js/studio.js"></script>

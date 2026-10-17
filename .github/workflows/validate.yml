@@ -21,5 +21,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Test audio math and resource filtering
+      - name: Test audio math, resource filtering, and Studio storage
         run: npm test

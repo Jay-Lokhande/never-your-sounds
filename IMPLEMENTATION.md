@@ -1,5 +1,15 @@
 # Implementation and verification report
 
+## My Studio and Compare follow-up — 17 October 2026
+
+Added `studio.html` and `compare.html` within the existing static Jekyll app. Discover cards now save to named collections and select up to three resources for comparison. The navigation and footer expose the new pages. Collections support creation, renaming, deletion, project notes, individual resource notes, and removal without affecting other collections. Comparison presents actual catalogue metadata and source links; missing information and offline support remain explicitly unrecorded.
+
+Personal data is versioned under `nys-studio-v1`. Backup imports are validated and bounded before mutation, add collections without overwriting notes, skip identical content, and preserve an existing comparison. Corrupt storage is not overwritten; failed writes keep changes in memory and provide a download on the current page. Confirmed reset affects Studio only. Cross-tab changes update views, and passive refreshes retain unsaved note drafts. This remains a local browser feature with manual backup transfer, without accounts, uploads, or a backend.
+
+Verification for this addition: all 20 Node test groups passed (including 11 new storage/schema/merge cases); the 77 existing browser assertions and 54 new Studio/comparison assertions passed in real Edge. The new checks cover end-to-end saving, duplicate handling, comparison limits, notes, import/export downloads, text injection, blocked/corrupt storage, cross-tab drafts, keyboard focus, widths from 320 to 1024 pixels, catalogue failure/retry, and no-JavaScript fallbacks. Desktop and mobile screenshots were visually inspected. The initial browser test setup attempted to seed local storage on an opaque blank-page origin; restricting the test seeding to HTTP pages resolved those harness errors. No application errors remained in the successful run.
+
+Jekyll builds and rendered-link checks passed at both the project path and domain root: 31 HTML pages and 1,028 local links/assets in each. The original implementation report follows as a historical baseline. No new vendor claims or catalogue records were added in this follow-up. Safari/Firefox and truly simultaneous cross-tab writes remain unverified; local storage does not provide transactional merging.
+
 ## Baseline and constraints
 
 Started from upstream commit `bafad82` (Rename project to Never Your Sounds), cloned into the delivery workspace because no checkout was present. Read the full repository tree, README, navigation, guides, resources, license, contribution/maintainer files, JSON, layouts/includes, assets, scripts and both Actions workflows before implementation. The baseline validator passed for 60 resources and five pathways. There were no existing frontend tests or dependency manifests.

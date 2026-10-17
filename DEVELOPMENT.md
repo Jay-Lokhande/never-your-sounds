@@ -33,6 +33,8 @@ PowerShell equivalent: set `$env:BASE_URL = 'http://127.0.0.1:4000/never-your-so
 
 The suite checks home-to-catalogue search, combined filters/sorting/URL restoration, keyboard details, empty/error/retry states, safe untrusted text, learning persistence/reset/opt-out, blocked/corrupt storage, tap tempo, metronome scheduling against the real Web Audio API, calculator input, scale spelling, checklist persistence/printing, mobile layout/menu, and no-JavaScript fallbacks. Scheduled audio is inspected programmatically; this does not establish perceived loudness, physical audio-device output, or precise hardware latency.
 
+`npm run test:browser` also runs `test-studio-browser.mjs`: real collection creation, duplicate saves, project and resource notes, comparison limits, keyboard focus, cross-tab changes and unsaved drafts, backup downloads/imports, malformed and malicious import data, failed catalogue loads/retry, blocked storage recovery, and responsive Studio/comparison pages. `npm test` includes pure storage/schema/merge tests in `test-studio.mjs`.
+
 ## Build and base-path checks
 
 `check-built-site.py` checks rendered HTML landmarks, IDs, local links, fragments, asset existence, and the project base path. It makes no network requests. To verify a deployment at a domain root:
@@ -54,6 +56,7 @@ No backend, environment secrets, API keys, or paid services are needed. For a fo
 
 - `data/` remains authoritative; see [SCHEMA.md](SCHEMA.md). Retain original records and historical review metadata unless there is a supported correction.
 - Learning uses opt-in `nys-learning-v1`. Creator checklists use `nys.creator.checklists.v1` and save when changed. Storage failures leave the current session usable. There is no cloud synchronization.
+- My Studio uses `nys-studio-v1` and saves on explicit edits. The versioned backup contract is in SCHEMA.md. Reset affects only Studio collections, notes, and comparison choices. Failed reads/writes leave this page's changes exportable, and do not overwrite an unreadable saved value. There is no persistence guarantee during storage failures; navigating away or reloading loses temporary changes. Tabs refresh on storage events and read the latest stored data before an edit; truly simultaneous writes are not transactional.
 - The metronome is foreground only. It closes its audio context when stopped, hidden, interrupted, or navigated away from. Browser timing and audio permissions vary.
 - Loudness/export content is educational. There is no LUFS measurement, audio-file processing, mastering, DAW, or audio generation.
 - Vendor links are not monitored for live uptime; labels and descriptions are not guarantees of current pricing or permissions. Network checks are not required for local development.

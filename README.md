@@ -9,11 +9,13 @@
 ## What works in the browser
 
 - **Discover:** all 60 catalogue records, text search across metadata, combined category/cost/platform filters, five sort modes, shareable query URLs, and resource details with cost and license caveats. Invalid records are safely omitted; empty or failed loads offer a retry.
+- **[My Studio](https://jay-lokhande.github.io/never-your-sounds/studio.html):** save resources to named collections, keep project and resource notes, and export/import portable JSON backups. Imports preserve existing collections and notes. Saving uses this browser, with recovery exports if storage is unavailable.
+- **[Compare tools](https://jay-lokhande.github.io/never-your-sounds/compare.html):** choose up to three resources from Discover or My Studio and compare their recorded purpose, platforms, cost model, limitations, and sources. Missing information stays explicitly unrecorded.
 - **Create:** tap tempo, a Web Audio metronome with accents and time signatures, bars/beats/seconds conversion, six scales with correct note spelling, production vocabulary, signal flow, and loudness/export references. The metronome starts on a button press and stops when the page is hidden.
 - **Prepare a release:** browser-local licensing and release checklists with project names, progress, reset, and print layouts. These are personal checklists, not legal clearance or audio measurement.
 - **Learn:** eight self-guided pathways for a first beat, production/mixing, recording artists, responsible sampling, games, podcasts/streams, video/dialogue, and release. Guide links remain available without JavaScript. Progress is saved only when the visitor opts in.
 
-There is no account, backend, API key, analytics, microphone access, or audio upload. Checklist storage stays on the current browser; it does not sync across devices. Read [development and verification instructions](DEVELOPMENT.md), the [data schema](SCHEMA.md), and the [implementation report](IMPLEMENTATION.md).
+There is no account, backend, API key, analytics, microphone access, or audio upload. Personal storage stays in the current browser; it does not automatically sync across devices. My Studio backups can be exported and imported manually. Read [development and verification instructions](DEVELOPMENT.md), the [data schema](SCHEMA.md), and the [implementation report](IMPLEMENTATION.md).
 
 > **Disclaimer:** Student pricing and license terms change on vendor sites only.
 

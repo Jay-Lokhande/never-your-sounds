@@ -1,4 +1,5 @@
 /* Small, dependency-free catalogue. Pure functions are exported for validation. */
+import {resourceActions, mountStudioUI, syncResourceActions} from './studio-ui.js';
 export const categoryLabels = Object.freeze({
   daw: 'DAWs & recording', edu: 'Education offers', notation: 'Notation',
   samples: 'Samples & sound effects', plugin: 'Instruments & effects', utility: 'Audio utilities',
@@ -123,7 +124,7 @@ function resourceCard(item) {
   const arrow = element('span', '', '↗');
   arrow.setAttribute('aria-hidden', 'true');
   link.append(arrow);
-  card.append(link);
+  card.append(link, resourceActions(item));
   const details = element('details', 'resource-details');
   const summary = element('summary', '', 'Details & things to check');
   summary.setAttribute('aria-label', `${item.name}: details and things to check`);
@@ -194,6 +195,7 @@ function mountCatalogue(root) {
     if (!ready) return;
     const filtered = filterResources(items, state());
     list.replaceChildren(...filtered.map(resourceCard));
+    syncResourceActions();
     meta.textContent = `${filtered.length} of ${items.length} resources`;
     if (filtered.length) stateBox.hidden = true;
     else showState('No matches yet', 'Try a broader search, choose another platform, or clear your filters to explore the whole library.', 'empty');
@@ -267,6 +269,7 @@ function mountCatalogue(root) {
   emptyReset.addEventListener('click', reset);
   retry.addEventListener('click', load);
   window.addEventListener('popstate', () => { restoreUrl(); render(false); });
+  mountStudioUI();
   load();
 }
 
