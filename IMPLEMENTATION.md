@@ -1,5 +1,17 @@
 # Implementation and verification report
 
+## Song breakdowns — 18 October 2026
+
+Added a seventh Hip-Hop Hub section with six guides: Eminem’s Lose Yourself and Stan, Kendrick Lamar’s DNA. and DUCKWORTH., and Tupac’s Dear Mama and Changes. Each guide includes release context, selected credits, a named recording route, five listening landmarks, expandable writing/flow/production analysis, an original teaching diagram and exercise, reflection questions, and links to styles, lessons, and other songs. Rap lessons and relevant style entries link back into the guides. The Hub and subsection navigation expose the new page.
+
+Official recording pages, creator interviews, and the Library of Congress support release and production context. Interpretive analysis is identified as editorial. Maps use section landmarks rather than unverified timestamps; no claims of second-accurate seeking or embedded playback are made. The DUCKWORTH. listening route opens the original DAMN. album and identifies track 14. Diagrams and exercises are original, with no song lyrics, artwork, or audio bundled.
+
+Artist and learning-focus filters combine with text search and shareable URLs. Deep links reveal and open filtered guides, move keyboard focus, and preserve ordinary links without JavaScript. Song notes extend the existing version-1 notebook with six disjoint IDs. Existing album notes, verse drafts, and progress are retained across all three notebook pages. Temporary notes remain downloadable; saving stays opt-in. Current edits survive opt-out, while confirmed reset clears the full hip-hop notebook.
+
+Verification: 28 Node test groups passed, including source/reference checks and existing-notebook compatibility. All 313 real-Edge browser assertions passed: 77 platform, 54 Studio/Compare, 120 Hub, and 62 song checks. Tests cover combined filters, back/reload/deep links, keyboard analysis, source routes, old-notebook preservation across song/album/rap pages, downloads, opt-out/reset, blocked storage, reverse links, no-JavaScript guides, and expanded layouts at 320/390/768/1024/1440px. Desktop and mobile screenshots were visually reviewed. Project-path and domain-root Jekyll builds each passed checks for 39 HTML pages and 1,804 local links/assets.
+
+Browser checks do not establish continuous provider availability or verify audio playback, exact timestamps, or every external credit. Safari/Firefox and physical-device testing remain outside this update. Earlier reports below retain their historical counts.
+
 ## Styles & sounds expansion — 17 October 2026
 
 Expanded the ten introductory style guides into a 36-entry directory across six browsing families. Each entry includes roots and context, three listening cues, example artists, a labelled listening route, an original exercise, related styles, and source links. The directory distinguishes subgenres, eras, regional umbrellas, writing and production approaches, techniques, and neighbouring traditions. It remains a growing introduction rather than a claim to cover every genre. All original style anchors and guided-album links remain valid.

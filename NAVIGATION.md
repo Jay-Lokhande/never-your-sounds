@@ -10,7 +10,7 @@
 | Compare | [Compare tools](https://jay-lokhande.github.io/never-your-sounds/compare.html) | Up to three resources side by side using recorded catalogue details |
 | Create | [Creator toolkit](https://jay-lokhande.github.io/never-your-sounds/create.html) | Tap tempo, metronome, time math, scales, references and checklists |
 | Learn | [Learning pathways](https://jay-lokhande.github.io/never-your-sounds/learn.html) | Eight practical journeys with optional saved progress |
-| Hip-Hop Hub | [Explore hip-hop](https://jay-lokhande.github.io/never-your-sounds/hiphop.html) | Culture, styles, scenes, listening, rap lessons and dictionary |
+| Hip-Hop Hub | [Explore hip-hop](https://jay-lokhande.github.io/never-your-sounds/hiphop.html) | Culture, styles, scenes, albums, song breakdowns, rap lessons and dictionary |
 | Trust | [Trust & licensing](https://jay-lokhande.github.io/never-your-sounds/trust.html) | Source verification, cost labels, permissions and privacy |
 
 Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` together. Learning links use anchors: `#first-beat`, `#produce`, `#artist`, `#sample-workflow`, `#game-audio`, `#podcast`, `#film`, `#release`. Existing guide URLs remain under `/never-your-sounds/site/guides/`; existing resource URLs remain under `/never-your-sounds/site/resources/`.
@@ -31,7 +31,9 @@ Discovery links support `?q=`, `?cat=`, `?cost=`, `?platform=` and `?sort=` toge
 - [Learn to rap](https://jay-lokhande.github.io/never-your-sounds/hiphop/rap.html): original exercises, optional progress, and a verse notebook.
 - [Hip-hop dictionary](https://jay-lokhande.github.io/never-your-sounds/hiphop/dictionary.html): searchable definitions and examples with shareable term anchors.
 
-Styles, scenes, listening, and dictionary pages support `?q=` and `?group=` together. Styles also supports `?kind=` for eras, subgenres, techniques, and other entry types. Entries have stable anchors. An anchor takes priority over filters so a shared entry stays visible; style anchors open its listening details. The notebook is temporary until device saving is enabled; download it before leaving the page if saving is off or unavailable.
+- [Song breakdowns](https://jay-lokhande.github.io/never-your-sounds/hiphop/breakdowns.html): Lose Yourself, Stan, DNA., DUCKWORTH., Dear Mama and Changes, with song maps, three analysis lenses, original exercises and optional notebook notes.
+
+Styles, scenes, listening, song breakdowns, and dictionary pages support `?q=` and `?group=` together. Styles also supports `?kind=` for entry types; song breakdowns uses it for learning focuses and `?group=` for artists. Entries have stable anchors. An anchor takes priority over filters so a shared entry stays visible; style and song anchors open their details. The notebook is temporary until device saving is enabled; download it before leaving the page if saving is off or unavailable.
 
 ## Topic guides
 

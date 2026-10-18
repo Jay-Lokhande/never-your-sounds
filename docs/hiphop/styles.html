@@ -28,6 +28,7 @@ section: styles
       <div class="hh-prompt"><span class="eyebrow">TRY THIS</span><p>{{ entry.exercise | escape }}</p></div>
       {% if entry.album != '' %}{% assign album = site.data.hiphop.albums | where: 'id', entry.album | first %}<a class="text-link" href="{{ site.baseurl }}/hiphop/listening.html#{{ album.id }}">Full album guide: {{ album.title | escape }} →</a>{% endif %}
       <h3 class="hh-small-heading">Follow a connection</h3><div class="hh-term-links">{% for related_id in entry.related %}{% assign related = site.data.hiphop.styles | where: 'id', related_id | first %}<a href="#{{ related.id }}" data-related-style>{{ related.title | escape }} →</a>{% endfor %}</div>
+      {% include hiphop-song-links.html field='styles' id=entry.id %}
       {% include hiphop-sources.html ids=entry.sources %}
     </details>
   </article>

@@ -42,6 +42,13 @@
       "headline": "Get to know the language.",
       "description": "Plain-language terms for listening, writing, rhythm, production, and culture.",
       "number": "06"
+    },
+    {
+      "id": "breakdowns",
+      "title": "Song breakdowns",
+      "headline": "Hear how a song works.",
+      "description": "Six close listens: Eminem, Kendrick Lamar, and Tupac. Follow the writing, voice, and production, then try a technique yourself.",
+      "number": "07"
     }
   ],
   "sources": {
@@ -340,6 +347,54 @@
     "crybaby-release": {
       "title": "Lil Peep · Crybaby on Apple Music",
       "url": "https://music.apple.com/us/album/crybaby/6774739099"
+    },
+    "lose-recording": {
+      "title": "Eminem · Lose Yourself, official 8 Mile audio and credits",
+      "url": "https://www.youtube.com/watch?v=zlJ0Aj9y67c"
+    },
+    "stan-recording": {
+      "title": "Eminem & Dido · Stan, official album audio and credits",
+      "url": "https://www.youtube.com/watch?v=HIqQ0PfuPo8"
+    },
+    "dna-recording": {
+      "title": "Kendrick Lamar · DNA. on Apple Music",
+      "url": "https://music.apple.com/us/song/1440881990"
+    },
+    "damn-release": {
+      "title": "Kendrick Lamar · DAMN. on Apple Music",
+      "url": "https://music.apple.com/us/album/damn/1440881047"
+    },
+    "dna-producer": {
+      "title": "NYLON · Mike WiLL Made-It on making DNA.",
+      "url": "https://www.nylon.com/articles/nylon-guys-mike-will-made-it-june-july-2017"
+    },
+    "duckworth-producer": {
+      "title": "NPR Music · 9th Wonder on sampling for DUCKWORTH.",
+      "url": "https://www.youtube.com/watch?v=23vumiogTQk"
+    },
+    "damn-history": {
+      "title": "Recording Academy · The creators on making DAMN.",
+      "url": "https://www.grammy.com/news/feature-kendrick-lamar-pluss-terrace-martin-more-making-damn-album-year/"
+    },
+    "mama-recording": {
+      "title": "2Pac · Dear Mama, Me Against the World recording",
+      "url": "https://music.apple.com/us/song/1440509869"
+    },
+    "mama-history": {
+      "title": "Library of Congress · Dear Mama essay by Cary O’Dell",
+      "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/DearMama.pdf"
+    },
+    "mama-credits": {
+      "title": "2Pac · Dear Mama, edited album recording and credits",
+      "url": "https://www.youtube.com/watch?v=i2aqxtAETJs"
+    },
+    "changes-recording": {
+      "title": "2Pac featuring Talent · Changes on Apple Music",
+      "url": "https://music.apple.com/us/song/1440764593"
+    },
+    "changes-credits": {
+      "title": "2Pac featuring Talent · Changes, official audio and credits",
+      "url": "https://www.youtube.com/watch?v=oCLsRpyEa1c"
     }
   },
   "history": [
@@ -2527,6 +2582,564 @@
       "group": "Voice & writing",
       "body": "A section that develops words, images, or a story. Verse lengths vary; sixteen bars is a convention, not a requirement.",
       "example": "Choose eight musical bars as a manageable practice target."
+    }
+  ],
+  "songs": [
+    {
+      "id": "lose-yourself",
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "group": "Eminem",
+      "year": 2002,
+      "album": "8 Mile",
+      "kind": "Rhyme & momentum",
+      "focus": "Hear how repeated sounds, a persistent musical figure, and changing stakes can make a verse feel urgent.",
+      "context": "Written for the 8 Mile soundtrack. The performance connects a rapper’s immediate pressure with a larger struggle for opportunity. Read it in the film’s narrative context; the voice in a song is not automatically a literal account of every event in an artist’s life.",
+      "credits": [
+        "Eminem — performance, production and drum programming",
+        "Jeff Bass — additional production and co-writing",
+        "Luis Resto — co-writing"
+      ],
+      "recording": "lose-recording",
+      "edition": "8 Mile · official album audio on Eminem’s artist channel",
+      "listen_label": "Listen to the album recording",
+      "sources": [
+        "lose-recording"
+      ],
+      "map": [
+        {
+          "title": "Opening / scene before the verse",
+          "body": "Notice how the instrumental establishes tension before the main rapping arrives. Keep following the pulse as the voice enters."
+        },
+        {
+          "title": "First verse / pressure becomes physical",
+          "body": "Listen for concrete details and repeated vowel sounds inside phrases. The rhythm keeps moving while the situation becomes clearer."
+        },
+        {
+          "title": "Hook / a recurring point of return",
+          "body": "Hear the difference between detailed narration and the broader central idea. The repeated hook gathers the verse’s tension into a recognisable shape."
+        },
+        {
+          "title": "Later verses / widening stakes",
+          "body": "Track the movement from immediate performance pressure toward the costs and demands surrounding ambition. Compare the phrase lengths across verses."
+        },
+        {
+          "title": "Final return / release",
+          "body": "Listen for how the final hook and instrumental ending change your sense of the recurring musical figure."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "Internal rhyme can connect words before a line ends. Listen for vowel families continuing through several phrases, then notice where a new family changes the colour. The useful lesson is to carry a thought across those echoes while keeping the situation understandable."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "A dense passage need not feel rushed. Follow the stressed syllables, the short gaps between phrases, and the way the hook gives the ear a clearer repeating pattern. Tap the underlying pulse separately from the syllables to hear both layers."
+        },
+        {
+          "title": "Production",
+          "body": "The recurring riff gives the voice a stable surface. Compare what stays in the accompaniment with what changes in the delivery: a repeating backing can make a vocal shift more noticeable. This is an arrangement observation, not a reconstruction of the studio session."
+        }
+      ],
+      "diagram": {
+        "title": "Rhyme inside a phrase",
+        "steps": [
+          "A · streetlight",
+          "A · midnight",
+          "A · feet slide",
+          "B · a new sound"
+        ],
+        "caption": "Original sound-family examples, not song lyrics or a transcription. The first three share a prominent long “i” sound; stress and pronunciation affect how closely they rhyme."
+      },
+      "exercise": "Choose a small moment of pressure: missing a bus, presenting an idea, or stepping onto a stage. Write four lines with concrete details and one repeated vowel family. Speak them slowly enough that every thought remains clear.",
+      "questions": [
+        "Where does an internal rhyme connect two ideas rather than merely decorate them?",
+        "What changes when the hook arrives: detail, phrasing, or vocal emphasis?"
+      ],
+      "styles": [
+        "hardcore",
+        "rap-rock"
+      ],
+      "lessons": [
+        "inside",
+        "pocket"
+      ],
+      "related": [
+        "dna",
+        "stan"
+      ],
+      "themes": "Explicit language; pressure and hardship.",
+      "aliases": [
+        "8 mile",
+        "internal rhyme",
+        "multisyllabic"
+      ]
+    },
+    {
+      "id": "stan",
+      "title": "Stan",
+      "artist": "Eminem",
+      "group": "Eminem",
+      "year": 2000,
+      "album": "The Marshall Mathers LP",
+      "kind": "Storytelling",
+      "focus": "Follow a fictional character through changing messages, then hear how a new perspective transforms the story.",
+      "context": "Eminem performs the fictional fan Stan and the later reply. Dido’s sampled vocal supplies a recurring sung frame. Keep narrator and artist separate: the story works by showing a character’s interpretation and the gaps in what each person knows.",
+      "credits": [
+        "Eminem — rap performance and co-production",
+        "The 45 King — production",
+        "Dido — sampled vocal; co-writing credit"
+      ],
+      "recording": "stan-recording",
+      "edition": "The Marshall Mathers LP · official album audio, not the extended music video",
+      "listen_label": "Listen to the album recording",
+      "sources": [
+        "stan-recording"
+      ],
+      "map": [
+        {
+          "title": "Opening / a recurring sung frame",
+          "body": "Listen to the sampled vocal and the surrounding atmosphere. Notice what this recurring material feels like before you know the story."
+        },
+        {
+          "title": "First message / establish a relationship",
+          "body": "Identify who is speaking, who is being addressed, and what the speaker expects. Small details make the imagined relationship feel specific."
+        },
+        {
+          "title": "Later messages / expectation hardens",
+          "body": "Compare the speaker’s patience, accusations, and delivery. Repeated concerns acquire a different meaning as the situation escalates."
+        },
+        {
+          "title": "Recorded message / a changed setting",
+          "body": "The mode of communication and environmental sounds alter the scene. Listen for how sound design and vocal acting carry narrative information."
+        },
+        {
+          "title": "Reply / a new viewpoint",
+          "body": "The final voice has different knowledge and a different pace. Revisit the earlier messages after hearing how the reply ends."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "Letters let a writer reveal character through what someone chooses to mention. Track assumptions, repeated requests, and unanswered information. The ending makes earlier details matter again; that is different from introducing a surprise with no preparation."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "Character is audible in phrasing as well as words. Compare the pressure of the later messages with the steadier reply. Notice the changes in emphasis and sentence shape before trying to measure speed."
+        },
+        {
+          "title": "Production",
+          "body": "The recurring Dido sample gives the changing scenes a familiar frame. Environmental sounds help locate the listener, while the relatively consistent musical bed lets the vocal performance carry much of the escalation."
+        }
+      ],
+      "diagram": {
+        "title": "Who knows what?",
+        "steps": [
+          "Message · expectation",
+          "Message · escalation",
+          "Recording · crisis",
+          "Reply · new knowledge"
+        ],
+        "caption": "A perspective map. Follow the information available to each speaker, not just the order in which events happen."
+      },
+      "exercise": "Write two brief messages from the same fictional character about an ordinary misunderstanding. Make the second more urgent through details and sentence length. Add a reply that changes how the first message reads.",
+      "questions": [
+        "Which repeated detail changes meaning as the speaker becomes more urgent?",
+        "What does the final speaker know that the earlier speaker did not?"
+      ],
+      "styles": [
+        "conscious",
+        "melodic"
+      ],
+      "lessons": [
+        "story",
+        "delivery"
+      ],
+      "related": [
+        "duckworth",
+        "dear-mama"
+      ],
+      "themes": "Explicit language; domestic violence, suicide, and death. The guide discusses the ending.",
+      "aliases": [
+        "dido",
+        "letters",
+        "narrator"
+      ]
+    },
+    {
+      "id": "dna",
+      "title": "DNA.",
+      "artist": "Kendrick Lamar",
+      "group": "Kendrick Lamar",
+      "year": 2017,
+      "album": "DAMN.",
+      "kind": "Flow & delivery",
+      "focus": "Separate pulse, syllable density, and vocal accents while following a dramatic production change.",
+      "context": "A track from DAMN. produced by Mike WiLL Made-It. In his NYLON interview, the producer distinguishes the first beat from the second half made in Kendrick’s studio. The guide uses that documented contrast as a starting point for listening, not a claim that every fast phrase was improvised.",
+      "credits": [
+        "Kendrick Lamar — vocals and writing",
+        "Mike WiLL Made-It — production"
+      ],
+      "recording": "dna-recording",
+      "edition": "DAMN. · album recording on Apple Music, not the narrative music-video edit",
+      "listen_label": "Listen to the album recording",
+      "sources": [
+        "dna-recording",
+        "dna-producer"
+      ],
+      "map": [
+        {
+          "title": "Opening / establish the pattern",
+          "body": "Follow the recurring verbal shape and its accents. Tap the pulse even when the voice places several syllables between taps."
+        },
+        {
+          "title": "First passage / variations inside repetition",
+          "body": "Listen for changing phrase endings and shifts of emphasis. A repeated construction can support different rhythmic shapes."
+        },
+        {
+          "title": "Spoken interruption / a change of frame",
+          "body": "The inserted broadcast voice interrupts the self-description. Consider how another speaker changes the stakes before the beat changes."
+        },
+        {
+          "title": "Second beat / a sharper confrontation",
+          "body": "Compare the low end, space, and attack with the earlier backing. Hear which vocal accents meet the drums and which cut across them."
+        },
+        {
+          "title": "Closing passage / sustain the argument",
+          "body": "Keep track of complete phrases rather than chasing every syllable. Notice how short gaps help separate bursts of delivery."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "Repeated sentence shapes turn contrasting qualities into a continuing argument about identity. Ask how the outside voice interrupts that argument. This is a reading of the song’s construction, not a claim about a single intended meaning."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "Speed, emphasis, and syllable density are different variables. A passage can feel more intense because its stresses move or its gaps shrink. Keep a comfortable count and listen for where the voice compresses or stretches a phrase against it."
+        },
+        {
+          "title": "Production",
+          "body": "Treat the second backing as a structural event. Mike WiLL’s account establishes that the halves were created in different moments; your task is to identify what changes audibly and how the vocal responds, rather than infer equipment or a precise studio workflow."
+        }
+      ],
+      "diagram": {
+        "title": "One pulse, two densities",
+        "steps": [
+          "Beat 1 · ta",
+          "Beat 2 · ta-ka",
+          "Beat 3 · rest",
+          "Beat 4 · ta-ka"
+        ],
+        "caption": "An original four-beat speaking exercise, not Kendrick’s rhythm. Keep taps equally spaced while fitting one syllable, two syllables, silence, and two syllables between them."
+      },
+      "exercise": "Tap four evenly spaced beats. Speak one short original sentence with a few syllables, then another with more syllables in the same four beats. Keep the tapping speed unchanged and leave a deliberate gap.",
+      "questions": [
+        "Which accents stay memorable when you stop following the words?",
+        "How does the production switch change the relationship between voice and drums?"
+      ],
+      "styles": [
+        "trap",
+        "hardcore"
+      ],
+      "lessons": [
+        "pulse",
+        "pocket",
+        "delivery"
+      ],
+      "related": [
+        "lose-yourself",
+        "duckworth"
+      ],
+      "themes": "Explicit language; violence and racial stereotyping in a sampled broadcast.",
+      "aliases": [
+        "dna",
+        "mike will",
+        "beat switch",
+        "cadence"
+      ]
+    },
+    {
+      "id": "duckworth",
+      "title": "DUCKWORTH.",
+      "artist": "Kendrick Lamar",
+      "group": "Kendrick Lamar",
+      "year": 2017,
+      "album": "DAMN.",
+      "kind": "Storytelling",
+      "focus": "Trace two lives toward an encounter, then examine how the ending makes the whole album feel different.",
+      "context": "The closing track of the original DAMN. sequence draws together a story about Kendrick’s father and Anthony “Top Dawg” Tiffith. In the Recording Academy’s oral history, the creators discuss its personal basis. NPR’s interview with 9th Wonder explains the three beats and their different samples.",
+      "credits": [
+        "Kendrick Lamar — vocals and writing",
+        "9th Wonder — production"
+      ],
+      "recording": "damn-release",
+      "edition": "DAMN. · original album sequence, track 14; the Collector’s Edition reverses the album order",
+      "listen_label": "Open DAMN. · choose track 14",
+      "sources": [
+        "damn-release",
+        "duckworth-producer",
+        "damn-history"
+      ],
+      "map": [
+        {
+          "title": "Opening / set the frame",
+          "body": "Listen for how the opening establishes a reflective distance before the detailed narrative begins."
+        },
+        {
+          "title": "First life / build a person through detail",
+          "body": "Collect the actions and circumstances that define the first character. Separate information you are told from conclusions you draw."
+        },
+        {
+          "title": "Second life / prepare the intersection",
+          "body": "Follow the shift to the other character. Ask which ordinary details might become consequential when their paths meet."
+        },
+        {
+          "title": "Encounter / a choice changes the route",
+          "body": "Notice the relation between the unfolding decision and changes in the backing. A production change need not line up with every narrative boundary."
+        },
+        {
+          "title": "Ending / return and reconsider",
+          "body": "The reversal and return toward the album’s opening invite a second listen. Compare the order of the telling with the order of the events."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "A connected narrative gives each person enough detail to exist before the meeting. Track which details prepare the later consequence. The ending also considers an alternative outcome, so distinguish what the narrator says happened from what might have happened."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "Storytelling needs orientation. Listen for names, transitions, and changes in sentence length that help you follow the people involved. A rhythmically detailed performance can still make an unfamiliar listener understand where the story is going."
+        },
+        {
+          "title": "Production",
+          "body": "9th Wonder describes three sample-based beats assembled into the song. Listen to their different textures and how transitions divide or connect the account. The final sound sequence also links an individual track to the larger album structure."
+        }
+      ],
+      "diagram": {
+        "title": "Two paths, one consequence",
+        "steps": [
+          "Person A · circumstances",
+          "Person B · circumstances",
+          "Their paths meet",
+          "A choice reshapes the future"
+        ],
+        "caption": "A narrative planning diagram. Build each character separately before deciding where their actions affect one another."
+      },
+      "exercise": "Outline two fictional people going through an ordinary day. Let a small generous act connect them. Write the encounter first, then add two earlier details that make its consequence feel earned.",
+      "questions": [
+        "Which early detail becomes more significant after the encounter?",
+        "What does the ending change about your understanding of the opening?"
+      ],
+      "styles": [
+        "boom-bap",
+        "conscious"
+      ],
+      "lessons": [
+        "story",
+        "revise"
+      ],
+      "related": [
+        "stan",
+        "changes"
+      ],
+      "themes": "Explicit language; robbery, violence, and a gunshot effect. The guide discusses the ending.",
+      "aliases": [
+        "duckworth",
+        "9th wonder",
+        "narrative",
+        "top dawg"
+      ]
+    },
+    {
+      "id": "dear-mama",
+      "title": "Dear Mama",
+      "artist": "Tupac / 2Pac",
+      "group": "Tupac / 2Pac",
+      "year": 1995,
+      "album": "Me Against the World",
+      "kind": "Emotion & perspective",
+      "focus": "Study how specific memories and direct address can hold gratitude and painful experience in the same song.",
+      "context": "A tribute to Afeni Shakur from Me Against the World. The Library of Congress essay places the record in its family and social context. The emotional complexity is central: appreciation does not require the narrator to erase hardship or conflicting memories.",
+      "credits": [
+        "2Pac — vocals and writing",
+        "Tony Pizarro — credited production",
+        "DF Master Tee and Moses — credited co-production"
+      ],
+      "recording": "mama-recording",
+      "edition": "Me Against the World · album recording on Apple Music",
+      "listen_label": "Listen to the album recording",
+      "sources": [
+        "mama-recording",
+        "mama-history",
+        "mama-credits"
+      ],
+      "map": [
+        {
+          "title": "Opening / name the relationship",
+          "body": "Notice how quickly the direct address establishes whom the performance is for. Listen to the tone before concentrating on rhyme."
+        },
+        {
+          "title": "Early memories / concrete experience",
+          "body": "Track everyday details that make the relationship specific. Ask what each memory shows that a general statement could not."
+        },
+        {
+          "title": "Refrain / return to appreciation",
+          "body": "The recurring sung material gives the detailed memories a shared emotional destination. Compare the vocal textures."
+        },
+        {
+          "title": "Later verses / hold competing feelings",
+          "body": "Listen for shifts between hardship, responsibility, and gratitude. Let the contradictions remain rather than reducing the song to a single emotion."
+        },
+        {
+          "title": "Closing return / leave an impression",
+          "body": "Notice which feeling the ending asks you to carry away and how the repeated musical material supports it."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "Direct address makes a public performance feel like a conversation with one person. The memories carry the argument: a specific action or object can communicate care more convincingly than several abstract compliments. Complicated memories make the gratitude more particular."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "Listen to the weight given to key words and the spaces around them. Emotional intensity does not require constant speed or shouting. Compare the more conversational phrases with the sustained sung refrain."
+        },
+        {
+          "title": "Production",
+          "body": "The melodic backing and sung material make a contrasting frame for the spoken detail of the verses. Follow one instrumental figure through a verse-to-refrain transition and ask whether its emotional role changes when the delivery changes."
+        }
+      ],
+      "diagram": {
+        "title": "From detail to feeling",
+        "steps": [
+          "An observed action",
+          "What it cost someone",
+          "How you understood it then",
+          "How you understand it now"
+        ],
+        "caption": "An original reflection structure. A change in perspective can create an emotional arc without inventing a dramatic event."
+      },
+      "exercise": "Choose someone you appreciate. Describe one ordinary thing they did, what you noticed at the time, and what you understand differently now. Use a specific action instead of a general compliment.",
+      "questions": [
+        "Which detail makes the relationship feel particular rather than generic?",
+        "Where do gratitude and discomfort coexist in the delivery?"
+      ],
+      "styles": [
+        "conscious",
+        "west-coast"
+      ],
+      "lessons": [
+        "speech",
+        "delivery"
+      ],
+      "related": [
+        "stan",
+        "changes"
+      ],
+      "themes": "Explicit language; family hardship and addiction.",
+      "aliases": [
+        "tupac",
+        "2pac",
+        "afeni",
+        "tribute"
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "Changes",
+      "artist": "Tupac / 2Pac",
+      "group": "Tupac / 2Pac",
+      "year": 1998,
+      "album": "Greatest Hits",
+      "kind": "Social commentary",
+      "focus": "Follow a move between personal observation, social criticism, and a recurring sung refrain.",
+      "context": "Released posthumously on Greatest Hits in 1998, with a sung contribution from Talent. The official recording credits Big D The Impossible as producer and Track Masters for mixing. Bruce Hornsby is credited as a writer; his song The Way It Is provides a musical reference point for comparison.",
+      "credits": [
+        "2Pac — rap vocals and writing",
+        "Talent — featured sung vocals",
+        "Big D The Impossible — production; Track Masters — mixing"
+      ],
+      "recording": "changes-recording",
+      "edition": "Greatest Hits · album recording on Apple Music; other releases and video edits differ",
+      "listen_label": "Listen to the album recording",
+      "sources": [
+        "changes-recording",
+        "changes-credits"
+      ],
+      "map": [
+        {
+          "title": "Opening / establish the recurring figure",
+          "body": "Follow the piano and sung material before the detailed verses take over. Notice the expectations created by a familiar repeating motif."
+        },
+        {
+          "title": "First verse / connect personal and public",
+          "body": "Track how individual experience opens onto wider conditions. Identify changes in the person or group being addressed."
+        },
+        {
+          "title": "Refrain / test the central tension",
+          "body": "Listen to the relation between the sung refrain and the surrounding demands for change. Repetition can sound reassuring, resigned, or unresolved."
+        },
+        {
+          "title": "Later passages / shift the address",
+          "body": "Notice movement between describing a problem, questioning it, and calling on other people. Follow those changes even when the backing remains familiar."
+        },
+        {
+          "title": "Closing return / what remains unresolved?",
+          "body": "Revisit the refrain after the final verse. Ask whether the added context changes the way you hear the same recurring material."
+        }
+      ],
+      "analysis": [
+        {
+          "title": "Writing",
+          "body": "Social commentary becomes more concrete when it connects a larger condition to an observed experience. Separate description, criticism, and a proposed response. You can also examine tensions within an argument without assuming every line resolves into a single consistent position."
+        },
+        {
+          "title": "Flow & delivery",
+          "body": "Listen for changes in address and emphasis: speaking about people feels different from speaking to them. Compare the force and pacing of the rap with the sung refrain, and notice how that contrast makes each return recognisable."
+        },
+        {
+          "title": "Production",
+          "body": "The recurring piano figure and sung hook provide continuity while the subject matter moves. Compare what the accompaniment repeats with what each verse adds. The official credits document contributors; the emotional effect of that repetition is a listening interpretation."
+        }
+      ],
+      "diagram": {
+        "title": "Build an argument",
+        "steps": [
+          "Observe one situation",
+          "Connect it to a wider pattern",
+          "Question the pattern",
+          "Offer a concrete response"
+        ],
+        "caption": "An original writing framework, not a summary of every verse. Keep the observation specific enough that another person could picture it."
+      },
+      "exercise": "Choose a local issue you have observed. Write one concrete scene, one question about its cause, and one practical change you would like to see. Read it aloud and remove any claim you cannot support.",
+      "questions": [
+        "When does the speaker shift from describing a problem to addressing someone?",
+        "Does the refrain feel different after each verse, even when it repeats?"
+      ],
+      "styles": [
+        "political",
+        "conscious"
+      ],
+      "lessons": [
+        "speech",
+        "revise"
+      ],
+      "related": [
+        "dear-mama",
+        "duckworth"
+      ],
+      "themes": "Explicit language; racism, poverty, drugs, and violence.",
+      "aliases": [
+        "tupac",
+        "2pac",
+        "talent",
+        "protest",
+        "the way it is"
+      ]
     }
   ]
 }

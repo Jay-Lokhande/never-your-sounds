@@ -1,7 +1,7 @@
 <form class="hh-filter panel{% if include.kinds %} hh-filter-types{% endif %}" role="search" data-filter hidden>
   <div><label for="hh-q">{{ include.label }}</label><input type="search" id="hh-q" name="q" maxlength="120" placeholder="{{ include.placeholder }}" autocomplete="off"></div>
   <div><label for="hh-group">{{ include.group_label | default: 'Explore by focus' }}</label><select id="hh-group" name="group"><option value="">All {{ include.noun }}</option>{% assign groups = include.items | map: 'group' | uniq | sort %}{% for group in groups %}<option value="{{ group | escape }}">{{ group | escape }}</option>{% endfor %}</select></div>
-  {% if include.kinds %}<div><label for="hh-kind">Entry type</label><select id="hh-kind" name="kind"><option value="">All entry types</option>{% assign kinds = include.items | map: 'kind' | uniq | sort %}{% for kind in kinds %}<option value="{{ kind | escape }}">{{ kind | escape }}</option>{% endfor %}</select></div>{% endif %}
+  {% if include.kinds %}<div><label for="hh-kind">{{ include.kind_label | default: 'Entry type' }}</label><select id="hh-kind" name="kind"><option value="">All {{ include.kind_noun | default: 'entry types' }}</option>{% assign kinds = include.items | map: 'kind' | uniq | sort %}{% for kind in kinds %}<option value="{{ kind | escape }}">{{ kind | escape }}</option>{% endfor %}</select></div>{% endif %}
   <button class="btn btn-ghost" type="reset">Clear filters</button>
   <p id="hh-count" class="small muted" role="status" aria-live="polite"></p>
 </form>

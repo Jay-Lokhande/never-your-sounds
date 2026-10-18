@@ -1,6 +1,8 @@
 export const NOTEBOOK_KEY = 'nys-hiphop-v1';
 export const LESSON_IDS = ['pulse','speech','rhyme','inside','pocket','story','delivery','revise'];
 export const ALBUM_IDS = ['all-hail','low-end-theory','supa-dupa-fly','miseducation','aquemini','madvillainy','modal-soul','bayaan','amarelo','introvert'];
+export const SONG_IDS = ['lose-yourself','stan','dna','duckworth','dear-mama','changes'];
+const NOTE_IDS = [...ALBUM_IDS,...SONG_IDS];
 export const LIMITS = {title:120, draft:16000, note:1500};
 
 export function emptyNotebook() {
@@ -32,7 +34,7 @@ export function parseNotebook(raw) {
   if (!object(data) || data.version !== 1 || !Array.isArray(data.completed) ||
       data.completed.some(id => !LESSON_IDS.includes(id)) || new Set(data.completed).size !== data.completed.length ||
       !object(data.draft) || !bounded(data.draft.title,LIMITS.title) || !bounded(data.draft.text,LIMITS.draft) ||
-      !object(data.notes) || Object.entries(data.notes).some(([id,note]) => !ALBUM_IDS.includes(id) || !bounded(note,LIMITS.note))) {
+      !object(data.notes) || Object.entries(data.notes).some(([id,note]) => !NOTE_IDS.includes(id) || !bounded(note,LIMITS.note))) {
     throw new Error('Invalid notebook');
   }
   return {version:1,completed:[...data.completed],draft:{title:data.draft.title,text:data.draft.text},notes:{...data.notes}};

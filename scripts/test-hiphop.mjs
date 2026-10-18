@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {NOTEBOOK_KEY,LESSON_IDS,ALBUM_IDS,emptyNotebook,parseNotebook,notebookText,nonEmptyLines,matchesEntry,readFilter} from '../docs/assets/js/hiphop-core.js';
+import {NOTEBOOK_KEY,LESSON_IDS,ALBUM_IDS,SONG_IDS,emptyNotebook,parseNotebook,notebookText,nonEmptyLines,matchesEntry,readFilter} from '../docs/assets/js/hiphop-core.js';
 const data=JSON.parse(readFileSync(new URL('../data/hiphop.json',import.meta.url),'utf8'));
 test('hip-hop content references resolve to real sections, terms, albums, and HTTPS sources',()=>{
   assert.equal(data.version,1);
-  for (const [name,minimum] of Object.entries({sections:6,history:8,elements:5,styles:36,scenes:8,albums:10,lessons:8,dictionary:38})) {
+  for (const [name,minimum] of Object.entries({sections:7,songs:6,history:8,elements:5,styles:36,scenes:8,albums:10,lessons:8,dictionary:38})) {
     assert.ok(data[name].length>=minimum,name);
     if(name!=='elements') {
       assert.equal(new Set(data[name].map(item=>item.id)).size,data[name].length,name);
@@ -25,6 +25,37 @@ test('hip-hop content references resolve to real sections, terms, albums, and HT
   assert.deepEqual(data.lessons.map(item=>item.id),LESSON_IDS);
   assert.deepEqual(data.albums.map(item=>item.id),ALBUM_IDS);
 });
+test('song breakdowns resolve recordings, lessons, styles and compatible notebook IDs',()=>{
+  assert.deepEqual(data.songs.map(song=>song.id),SONG_IDS);
+  assert.equal(new Set([...ALBUM_IDS,...SONG_IDS]).size,ALBUM_IDS.length+SONG_IDS.length);
+  assert.equal(new Set(data.songs.map(song=>song.artist)).size,3);
+  for(const song of data.songs) {
+    assert.ok(data.sources[song.recording]);
+    assert.ok(song.sources.length && song.sources.every(id=>data.sources[id]));
+    assert.ok(song.context && song.edition && song.listen_label && song.credits.length);
+    assert.ok(song.map.length>=4 && song.map.every(step=>step.title && step.body));
+    assert.deepEqual(song.analysis.map(lens=>lens.title),['Writing','Flow & delivery','Production']);
+    assert.ok(song.analysis.every(lens=>lens.body.length>80));
+    assert.ok(song.diagram.steps.length>=3 && song.diagram.caption);
+    assert.ok(song.questions.length>=2 && song.exercise && song.themes);
+    assert.ok(song.styles.length && song.styles.every(id=>data.styles.some(style=>style.id===id)));
+    assert.ok(song.lessons.length && song.lessons.every(id=>LESSON_IDS.includes(id)));
+    assert.ok(song.related.length && song.related.every(id=>SONG_IDS.includes(id) && id!==song.id));
+    assert.equal(song.group,song.artist);
+  }
+});
+
+test('existing notebooks accept song notes without losing album notes, drafts or progress',()=>{
+  const legacy={version:1,completed:['story'],draft:{title:'Keep my title',text:'Keep my verse'},notes:{bayaan:'Keep my album note'}};
+  const next=parseNotebook(JSON.stringify(legacy));
+  next.notes.stan='Narrator changes. <script> remains text.';
+  const saved=parseNotebook(JSON.stringify(next));
+  assert.deepEqual(saved,{...legacy,notes:{...legacy.notes,stan:next.notes.stan}});
+  for(const text of ['Keep my verse','Keep my album note','Narrator changes.']) assert.ok(notebookText(saved).includes(text));
+  assert.throws(()=>parseNotebook(JSON.stringify({...next,notes:{...next.notes,stan:'x'.repeat(1501)}})));
+  assert.throws(()=>parseNotebook(JSON.stringify({...next,notes:{...next.notes,'unknown-song':'unrecognised'}})));
+});
+
 test('genre explorer preserves old anchors and supplies grounded listening and connected entries',()=>{
   const ids=new Set(data.styles.map(item=>item.id));
   for(const id of ['boom-bap','jazz-rap','electro','southern','trap','drill','experimental','melodic','conscious','grime']) assert.ok(ids.has(id));

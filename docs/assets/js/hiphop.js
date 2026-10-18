@@ -40,7 +40,7 @@ function mountFilters() {
       const url=new URL(location.href);url.searchParams.delete('q');url.searchParams.delete('group');if(kind) url.searchParams.delete('kind');history.replaceState(null,'',url);
       entry.node.scrollIntoView();
     }
-    const details=entry?.node.querySelector('[data-style-details]');
+    const details=entry?.node.querySelector('[data-style-details],[data-song-details]');
     if (details) {
       details.open=true;
       entry.node.querySelector('h2').focus({preventScroll:true});
@@ -61,6 +61,15 @@ function mountFilters() {
   document.querySelector('[data-clear-filter]').addEventListener('click',()=>{reset();query.focus();});
   window.addEventListener('popstate',restore);
   window.addEventListener('hashchange',followAnchor);
+  // Reopening the current entry does not trigger a native hashchange event.
+  document.addEventListener('click',event=>{
+    if (event.defaultPrevented || event.button!==0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const link=event.target.closest('a[href^="#"]');
+    if (!link || !location.hash || link.hash!==location.hash) return;
+    let id;try{id=decodeURIComponent(link.hash.slice(1));}catch{return;}
+    const entry=entries.find(item=>item.node.id===id);
+    if (entry?.node.querySelector('[data-style-details],[data-song-details]')) {event.preventDefault();followAnchor();}
+  });
 }
 
 function mountNotebook() {
@@ -68,7 +77,8 @@ function mountNotebook() {
   if (!panel) return;
   const save=document.querySelector('#hh-save'), status=document.querySelector('#hh-status'), note=document.querySelector('#hh-storage-note');
   const draftTitle=document.querySelector('#hh-draft-title'), draft=document.querySelector('#hh-draft');
-  const completions=[...document.querySelectorAll('[data-lesson]')], notes=[...document.querySelectorAll('[data-album-note]')];
+  const completions=[...document.querySelectorAll('[data-lesson]')], notes=[...document.querySelectorAll('[data-album-note],[data-song-note]')];
+  const noteId=textarea=>textarea.dataset.albumNote || textarea.dataset.songNote;
   let state=emptyNotebook(), saving=false, fault=false;
   function say(message, warning=false) {status.textContent=message;panel.toggleAttribute('data-warning',warning);}
   function preferences() {
@@ -90,7 +100,7 @@ function mountNotebook() {
   }
   function render() {
     for (const checkbox of completions) checkbox.checked=state.completed.includes(checkbox.dataset.lesson);
-    for (const textarea of notes) textarea.value=state.notes[textarea.dataset.albumNote] || '';
+    for (const textarea of notes) textarea.value=state.notes[noteId(textarea)] || '';
     if (draft) {draft.value=state.draft.text;draftTitle.value=state.draft.title;}
     progress();preferences();
   }
@@ -103,7 +113,7 @@ function mountNotebook() {
   for (const checkbox of completions) checkbox.addEventListener('change',()=>{
     state.completed=LESSON_IDS.filter(id=>id===checkbox.dataset.lesson ? checkbox.checked : state.completed.includes(id));persist();
   });
-  for (const textarea of notes) textarea.addEventListener('input',()=>{state.notes[textarea.dataset.albumNote]=textarea.value;persist();});
+  for (const textarea of notes) textarea.addEventListener('input',()=>{state.notes[noteId(textarea)]=textarea.value;persist();});
   if (draft) {
     draft.addEventListener('input',()=>{state.draft.text=draft.value;persist();});
     draftTitle.addEventListener('input',()=>{state.draft.title=draftTitle.value;persist();});

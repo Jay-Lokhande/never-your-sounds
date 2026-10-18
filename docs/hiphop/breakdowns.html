@@ -1,0 +1,38 @@
+---
+layout: hiphop
+title: Song breakdowns — Eminem, Kendrick Lamar & Tupac
+description: Six hip-hop song breakdowns with listening maps, writing and flow analysis, production context, original exercises, and optional personal notes.
+section: breakdowns
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hiphop-breakdowns.css">
+<section class="hh-song-intro panel" aria-labelledby="song-intro-title">
+  <div><p class="eyebrow">THE CLOSE LISTEN / VOL. 01</p><h2 id="song-intro-title">One song. <br>More ways to hear it.</h2><p>Follow a story, catch a rhythmic change, or hear what a repeated sound makes possible. Take one useful idea into your own writing.</p></div>
+  <dl class="hh-directory-stats"><div><dt>Songs to unpack</dt><dd>{{ site.data.hiphop.songs.size }}</dd></div><div><dt>Artists to explore</dt><dd>03</dd></div></dl>
+</section>
+<ol class="hh-listening-passes"><li><strong>01 / Listen</strong><span>Open the named recording and hear it once.</span></li><li><strong>02 / Notice</strong><span>Follow the map, then choose a question.</span></li><li><strong>03 / Make</strong><span>Try the exercise with your own words.</span></li></ol>
+<p class="hh-context">These are original teaching interpretations, with linked sources for release details and production accounts. Maps use named listening landmarks, not verified timestamps. Check the recording edition: album tracks, clean edits, and videos can differ. Listening opens a new tab; provider access varies. Each guide names its mature themes and story spoilers.</p>
+{% include hiphop-notebook.html %}
+{% include hiphop-filter.html items=site.data.hiphop.songs label='Search songs, artists, or techniques' placeholder='Try Stan, Tupac, or beat switch…' group_label='Artist' noun='artists' kinds=true kind_label='Learning focus' kind_noun='focuses' %}
+<nav class="hh-song-jumps" aria-label="Jump to a song">{% for song in site.data.hiphop.songs %}<a href="#{{ song.id }}" data-term-index="{{ song.id }}"><span>{{ song.artist | escape }}</span><strong>{{ song.title | escape }}</strong><span aria-hidden="true">↗</span></a>{% endfor %}</nav>
+<div class="hh-song-list" data-results>
+{% for entry in site.data.hiphop.songs %}
+<article class="hh-card hh-song" id="{{ entry.id }}" data-entry data-group="{{ entry.group | escape }}" data-kind="{{ entry.kind | escape }}" data-search="{{ entry.aliases | join: ' ' | escape }}">
+  <div class="hh-song-head"><div class="hh-song-number" aria-hidden="true">0{{ forloop.index }}</div><div><p class="hh-kicker">{{ entry.artist | escape }} / {{ entry.year }}</p><h2 tabindex="-1"><a class="hh-anchor" href="#{{ entry.id }}">{{ entry.title | escape }}</a></h2><p class="hh-song-album">{{ entry.album | escape }}</p></div><span class="badge">{{ entry.kind | escape }}</span></div>
+  <p class="hh-song-focus">{{ entry.focus | escape }}</p>
+  <p class="hh-song-themes"><strong>Before opening:</strong> {{ entry.themes | escape }}</p>
+  <details class="hh-song-details" data-song-details>
+    <summary>Open the breakdown <span aria-hidden="true">+</span><span class="sr-only">: {{ entry.title | escape }}</span></summary>
+    <section class="hh-song-context" aria-labelledby="{{ entry.id }}-context"><p class="eyebrow">BEFORE YOU LISTEN</p><h3 id="{{ entry.id }}-context">The record & the setting</h3><p>{{ entry.context | escape }}</p><ul class="hh-song-credits">{% for credit in entry.credits %}<li>{{ credit | escape }}</li>{% endfor %}</ul>
+    {% assign recording = site.data.hiphop.sources[entry.recording] %}<div class="hh-recording-link"><a class="btn btn-primary" href="{{ recording.url | escape }}" target="_blank" rel="noopener noreferrer">{{ entry.listen_label | escape }} ↗<span class="sr-only">: {{ entry.title | escape }} (opens a new tab)</span></a><p class="small muted">{{ entry.edition | escape }}</p></div></section>
+    <div class="hh-song-study"><section aria-labelledby="{{ entry.id }}-map"><p class="eyebrow">FOLLOW THE SEQUENCE</p><h3 id="{{ entry.id }}-map">Your listening map</h3><ol class="hh-song-map">{% for moment in entry.map %}<li><h4>{{ moment.title | escape }}</h4><p>{{ moment.body | escape }}</p></li>{% endfor %}</ol></section>
+      <section class="hh-song-analysis" aria-labelledby="{{ entry.id }}-analysis"><p class="eyebrow">THREE LENSES</p><h3 id="{{ entry.id }}-analysis">What to listen for</h3>{% for lens in entry.analysis %}<details class="hh-song-lens"><summary>{{ lens.title | escape }}<span class="sr-only">: {{ entry.title | escape }}</span></summary><p>{{ lens.body | escape }}</p></details>{% endfor %}<p class="small muted">Try one lens per listen. Another interpretation may be useful if you can point to what you hear.</p></section>
+    </div>
+    <figure class="hh-craft-diagram"><figcaption><p class="eyebrow">MAKE THE TECHNIQUE VISIBLE</p><h3>{{ entry.diagram.title | escape }}</h3></figcaption><ol>{% for step in entry.diagram.steps %}<li><span class="hh-kicker">0{{ forloop.index }}</span>{{ step | escape }}</li>{% endfor %}</ol><p class="small muted">{{ entry.diagram.caption | escape }}</p></figure>
+    <div class="hh-song-takeaway"><section class="hh-prompt"><p class="eyebrow">TRY THE TECHNIQUE</p><h3>Make it your own</h3><p>{{ entry.exercise | escape }}</p></section><section aria-labelledby="{{ entry.id }}-questions"><p class="eyebrow">YOUR TAKEAWAY</p><h3 id="{{ entry.id }}-questions">What changed on a second listen?</h3><ol>{% for question in entry.questions %}<li>{{ question | escape }}</li>{% endfor %}</ol></section></div>
+    <div class="hh-note hh-song-note" data-enhance hidden><label for="note-{{ entry.id }}">Your observations on {{ entry.title | escape }}</label><textarea id="note-{{ entry.id }}" data-song-note="{{ entry.id }}" maxlength="1500" rows="4" placeholder="Name the recording, a moment or timestamp, what you heard, and something to try…"></textarea><p class="small muted">Up to 1,500 characters. Saving is optional in the notebook controls above; download temporary notes before leaving.</p></div>
+    <nav class="hh-song-connections" aria-label="Continue learning from {{ entry.title | escape }}"><div><h3>Explore the sound</h3><div class="hh-term-links">{% for style_id in entry.styles %}{% assign style = site.data.hiphop.styles | where: 'id', style_id | first %}<a href="{{ site.baseurl }}/hiphop/styles.html#{{ style.id }}" target="_blank" rel="noopener">{{ style.title | escape }} ↗<span class="sr-only"> (opens a new tab)</span></a>{% endfor %}</div></div><div><h3>Practise the craft</h3><div class="hh-term-links">{% for lesson_id in entry.lessons %}{% assign lesson = site.data.hiphop.lessons | where: 'id', lesson_id | first %}<a href="{{ site.baseurl }}/hiphop/rap.html#{{ lesson.id }}" target="_blank" rel="noopener">{{ lesson.title | escape }} ↗<span class="sr-only"> (opens a new tab)</span></a>{% endfor %}</div></div><div><h3>Another close listen</h3><div class="hh-term-links">{% for song_id in entry.related %}{% assign song = site.data.hiphop.songs | where: 'id', song_id | first %}<a href="#{{ song.id }}" data-related-song>{{ song.title | escape }} →</a>{% endfor %}</div></div></nav>
+    {% include hiphop-sources.html ids=entry.sources %}
+  </details>
+</article>
+{% endfor %}
+</div>

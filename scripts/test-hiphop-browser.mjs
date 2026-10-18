@@ -13,7 +13,7 @@ async function context(options={}) {
   const ctx=await browser.newContext({viewport:{width:1440,height:1000},...options});
   ctx.on('page',page=>{page.setDefaultTimeout(10000);page.on('pageerror',error=>errors.push(error.message));});return ctx;
 }
-const sections=['history','styles','scenes','listening','rap','dictionary'];
+const sections=['history','styles','scenes','listening','rap','dictionary','breakdowns'];
 const content=JSON.parse(await readFile(new URL('../data/hiphop.json',import.meta.url),'utf8'));
 const styleCount=content.styles.length;
 const writingCount=content.styles.filter(entry=>entry.group==='Writing & delivery').length;
@@ -22,7 +22,7 @@ async function ready(page) {await page.locator('#hiphop-notebook').waitFor({stat
 try {
   const ctx=await context(),page=await ctx.newPage();
   await page.goto(`${base}hiphop.html`);
-  check(await page.locator('.hh-portal').count()===6,'Hub has six entry cards');
+  check(await page.locator('.hh-portal').count()===7,'Hub has seven entry cards');
   check(await page.locator('.nav-main a[aria-current]').textContent()==='Hip-Hop Hub','main navigation identifies the Hub');
   await page.screenshot({path:`${output}/hiphop-desktop.png`,fullPage:true});
   for(const section of sections) {
@@ -170,7 +170,7 @@ try {
     }
   }
   const noJS=await context({javaScriptEnabled:false});const plain=await noJS.newPage();
-  for(const [section,count] of [['history',8],['styles',styleCount],['scenes',8],['listening',10],['rap',8],['dictionary',38]]) {
+  for(const [section,count] of [['history',8],['styles',styleCount],['scenes',8],['listening',10],['rap',8],['dictionary',38],['breakdowns',6]]) {
     await visit(plain,section);
     const selector=section==='history'?'.hh-timeline>li':section==='rap'?'.hh-lesson':'[data-entry]';
     check(await plain.locator(selector+':visible').count()===count,`${section} editorial content works without JS`);
